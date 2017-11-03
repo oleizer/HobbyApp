@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAA1FACC9460037B240 /* AppDelegate.swift */; };
+		A644FAAD1FACC9460037B240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAC1FACC9460037B240 /* ViewController.swift */; };
+		A644FAB01FACC9460037B240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAAE1FACC9460037B240 /* Main.storyboard */; };
+		A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB11FACC9460037B240 /* Assets.xcassets */; };
+		A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */; };
+		A644FAC01FACC9470037B240 /* HobbyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FABF1FACC9470037B240 /* HobbyAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A644FABC1FACC9470037B240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A644FA9F1FACC9460037B240 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A644FAA61FACC9460037B240;
+			remoteInfo = HobbyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A644FAA71FACC9460037B240 /* HobbyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A644FAAA1FACC9460037B240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A644FAAC1FACC9460037B240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A644FAAF1FACC9460037B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A644FAB11FACC9460037B240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A644FAB41FACC9460037B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A644FAB61FACC9460037B240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A644FABB1FACC9470037B240 /* HobbyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HobbyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A644FABF1FACC9470037B240 /* HobbyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyAppTests.swift; sourceTree = "<group>"; };
+		A644FAC11FACC9470037B240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A644FAA41FACC9460037B240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A644FAB81FACC9460037B240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A644FA9E1FACC9460037B240 = {
+			isa = PBXGroup;
+			children = (
+				A644FAA91FACC9460037B240 /* HobbyApp */,
+				A644FABE1FACC9470037B240 /* HobbyAppTests */,
+				A644FAA81FACC9460037B240 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A644FAA81FACC9460037B240 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A644FAA71FACC9460037B240 /* HobbyApp.app */,
+				A644FABB1FACC9470037B240 /* HobbyAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A644FAA91FACC9460037B240 /* HobbyApp */ = {
+			isa = PBXGroup;
+			children = (
+				A644FAAA1FACC9460037B240 /* AppDelegate.swift */,
+				A644FAAC1FACC9460037B240 /* ViewController.swift */,
+				A644FAAE1FACC9460037B240 /* Main.storyboard */,
+				A644FAB11FACC9460037B240 /* Assets.xcassets */,
+				A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */,
+				A644FAB61FACC9460037B240 /* Info.plist */,
+			);
+			path = HobbyApp;
+			sourceTree = "<group>";
+		};
+		A644FABE1FACC9470037B240 /* HobbyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A644FABF1FACC9470037B240 /* HobbyAppTests.swift */,
+				A644FAC11FACC9470037B240 /* Info.plist */,
+			);
+			path = HobbyAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A644FAA61FACC9460037B240 /* HobbyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A644FAC41FACC9470037B240 /* Build configuration list for PBXNativeTarget "HobbyApp" */;
+			buildPhases = (
+				A644FAA31FACC9460037B240 /* Sources */,
+				A644FAA41FACC9460037B240 /* Frameworks */,
+				A644FAA51FACC9460037B240 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HobbyApp;
+			productName = HobbyApp;
+			productReference = A644FAA71FACC9460037B240 /* HobbyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A644FABA1FACC9460037B240 /* HobbyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A644FAC71FACC9470037B240 /* Build configuration list for PBXNativeTarget "HobbyAppTests" */;
+			buildPhases = (
+				A644FAB71FACC9460037B240 /* Sources */,
+				A644FAB81FACC9460037B240 /* Frameworks */,
+				A644FAB91FACC9460037B240 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A644FABD1FACC9470037B240 /* PBXTargetDependency */,
+			);
+			name = HobbyAppTests;
+			productName = HobbyAppTests;
+			productReference = A644FABB1FACC9470037B240 /* HobbyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A644FA9F1FACC9460037B240 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Олег Лейзер";
+				TargetAttributes = {
+					A644FAA61FACC9460037B240 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					A644FABA1FACC9460037B240 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A644FAA61FACC9460037B240;
+					};
+				};
+			};
+			buildConfigurationList = A644FAA21FACC9460037B240 /* Build configuration list for PBXProject "HobbyApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A644FA9E1FACC9460037B240;
+			productRefGroup = A644FAA81FACC9460037B240 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A644FAA61FACC9460037B240 /* HobbyApp */,
+				A644FABA1FACC9460037B240 /* HobbyAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A644FAA51FACC9460037B240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */,
+				A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */,
+				A644FAB01FACC9460037B240 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A644FAB91FACC9460037B240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A644FAA31FACC9460037B240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A644FAAD1FACC9460037B240 /* ViewController.swift in Sources */,
+				A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A644FAB71FACC9460037B240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A644FAC01FACC9470037B240 /* HobbyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A644FABD1FACC9470037B240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A644FAA61FACC9460037B240 /* HobbyApp */;
+			targetProxy = A644FABC1FACC9470037B240 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A644FAAE1FACC9460037B240 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A644FAAF1FACC9460037B240 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A644FAB41FACC9460037B240 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A644FAC21FACC9470037B240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A644FAC31FACC9470037B240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A644FAC51FACC9470037B240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				INFOPLIST_FILE = HobbyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.HobbyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A644FAC61FACC9470037B240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				INFOPLIST_FILE = HobbyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.HobbyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A644FAC81FACC9470037B240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				INFOPLIST_FILE = HobbyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.HobbyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HobbyApp.app/HobbyApp";
+			};
+			name = Debug;
+		};
+		A644FAC91FACC9470037B240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				INFOPLIST_FILE = HobbyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.HobbyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HobbyApp.app/HobbyApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A644FAA21FACC9460037B240 /* Build configuration list for PBXProject "HobbyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A644FAC21FACC9470037B240 /* Debug */,
+				A644FAC31FACC9470037B240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A644FAC41FACC9470037B240 /* Build configuration list for PBXNativeTarget "HobbyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A644FAC51FACC9470037B240 /* Debug */,
+				A644FAC61FACC9470037B240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A644FAC71FACC9470037B240 /* Build configuration list for PBXNativeTarget "HobbyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A644FAC81FACC9470037B240 /* Debug */,
+				A644FAC91FACC9470037B240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A644FA9F1FACC9460037B240 /* Project object */;
+}
