@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78B75E580D5D5CA0E00DC526 /* Pods_HobbyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D86D7A6206FE405E68EA022 /* Pods_HobbyApp.framework */; };
 		A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAA1FACC9460037B240 /* AppDelegate.swift */; };
 		A644FAAD1FACC9460037B240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAC1FACC9460037B240 /* ViewController.swift */; };
 		A644FAB01FACC9460037B240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAAE1FACC9460037B240 /* Main.storyboard */; };
 		A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB11FACC9460037B240 /* Assets.xcassets */; };
 		A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */; };
 		A644FAC01FACC9470037B240 /* HobbyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FABF1FACC9470037B240 /* HobbyAppTests.swift */; };
+		A644FACE1FACC9870037B240 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A644FACC1FACC9870037B240 /* Localizable.strings */; };
+		A644FACF1FACC9870037B240 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = A644FACD1FACC9870037B240 /* Colors.json */; };
+		D3FDD98E2F001677DAC618CF /* Pods_HobbyApp_HobbyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD7B4F5DB1742CB69102028 /* Pods_HobbyApp_HobbyAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D53DA54AB9B646989D1BBEA /* Pods-HobbyApp-HobbyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp-HobbyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A9A066A94C58DB8C310FB35 /* Pods-HobbyApp-HobbyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp-HobbyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D86D7A6206FE405E68EA022 /* Pods_HobbyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7F7CB85F4BB4D4C65A705B /* Pods-HobbyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp.release.xcconfig"; sourceTree = "<group>"; };
 		A644FAA71FACC9460037B240 /* HobbyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644FAAA1FACC9460037B240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A644FAAC1FACC9460037B240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,10 @@
 		A644FABB1FACC9470037B240 /* HobbyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HobbyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644FABF1FACC9470037B240 /* HobbyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyAppTests.swift; sourceTree = "<group>"; };
 		A644FAC11FACC9470037B240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A644FACC1FACC9870037B240 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A644FACD1FACC9870037B240 /* Colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
+		B207631CC247DD81CFA444A2 /* Pods-HobbyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD7B4F5DB1742CB69102028 /* Pods_HobbyApp_HobbyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyApp_HobbyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B75E580D5D5CA0E00DC526 /* Pods_HobbyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +63,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FDD98E2F001677DAC618CF /* Pods_HobbyApp_HobbyAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A379E81F9212579AC680B69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B207631CC247DD81CFA444A2 /* Pods-HobbyApp.debug.xcconfig */,
+				6F7F7CB85F4BB4D4C65A705B /* Pods-HobbyApp.release.xcconfig */,
+				0D53DA54AB9B646989D1BBEA /* Pods-HobbyApp-HobbyAppTests.debug.xcconfig */,
+				5A9A066A94C58DB8C310FB35 /* Pods-HobbyApp-HobbyAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A644FA9E1FACC9460037B240 = {
 			isa = PBXGroup;
 			children = (
+				A644FACB1FACC9580037B240 /* Support */,
+				A644FACA1FACC94D0037B240 /* Resources */,
 				A644FAA91FACC9460037B240 /* HobbyApp */,
 				A644FABE1FACC9470037B240 /* HobbyAppTests */,
 				A644FAA81FACC9460037B240 /* Products */,
+				3A379E81F9212579AC680B69 /* Pods */,
+				F80515333B86AF425CA48723 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +106,13 @@
 		A644FAA91FACC9460037B240 /* HobbyApp */ = {
 			isa = PBXGroup;
 			children = (
+				A644FAD21FACC9C20037B240 /* ModelLayer */,
+				A644FAD11FACC9B40037B240 /* BusinessLogicLayer */,
+				A644FAD01FACC9AA0037B240 /* PresentationLayer */,
 				A644FAAA1FACC9460037B240 /* AppDelegate.swift */,
 				A644FAAC1FACC9460037B240 /* ViewController.swift */,
 				A644FAAE1FACC9460037B240 /* Main.storyboard */,
-				A644FAB11FACC9460037B240 /* Assets.xcassets */,
 				A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */,
-				A644FAB61FACC9460037B240 /* Info.plist */,
 			);
 			path = HobbyApp;
 			sourceTree = "<group>";
@@ -96,6 +126,54 @@
 			path = HobbyAppTests;
 			sourceTree = "<group>";
 		};
+		A644FACA1FACC94D0037B240 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A644FACD1FACC9870037B240 /* Colors.json */,
+				A644FACC1FACC9870037B240 /* Localizable.strings */,
+				A644FAB11FACC9460037B240 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A644FACB1FACC9580037B240 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A644FAB61FACC9460037B240 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A644FAD01FACC9AA0037B240 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		A644FAD11FACC9B40037B240 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		A644FAD21FACC9C20037B240 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		F80515333B86AF425CA48723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D86D7A6206FE405E68EA022 /* Pods_HobbyApp.framework */,
+				BDD7B4F5DB1742CB69102028 /* Pods_HobbyApp_HobbyAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A644FAC41FACC9470037B240 /* Build configuration list for PBXNativeTarget "HobbyApp" */;
 			buildPhases = (
+				79161B19D9B828B9E50FEC8F /* [CP] Check Pods Manifest.lock */,
 				A644FAA31FACC9460037B240 /* Sources */,
 				A644FAA41FACC9460037B240 /* Frameworks */,
 				A644FAA51FACC9460037B240 /* Resources */,
+				AAF1E78381C9D3619BD76965 /* [CP] Embed Pods Frameworks */,
+				54CFC45F6F0A63A04564FEB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A644FAC71FACC9470037B240 /* Build configuration list for PBXNativeTarget "HobbyAppTests" */;
 			buildPhases = (
+				AE87922FC4843F53BC03B8B9 /* [CP] Check Pods Manifest.lock */,
 				A644FAB71FACC9460037B240 /* Sources */,
 				A644FAB81FACC9460037B240 /* Frameworks */,
 				A644FAB91FACC9460037B240 /* Resources */,
+				7111EFCDA212CD8AA0322D80 /* [CP] Embed Pods Frameworks */,
+				275F1C55BD47F20DC7B8E043 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */,
+				A644FACF1FACC9870037B240 /* Colors.json in Resources */,
+				A644FACE1FACC9870037B240 /* Localizable.strings in Resources */,
 				A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */,
 				A644FAB01FACC9460037B240 /* Main.storyboard in Resources */,
 			);
@@ -193,6 +279,127 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		275F1C55BD47F20DC7B8E043 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54CFC45F6F0A63A04564FEB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7111EFCDA212CD8AA0322D80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79161B19D9B828B9E50FEC8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HobbyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF1E78381C9D3619BD76965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE87922FC4843F53BC03B8B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HobbyApp-HobbyAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A644FAA31FACC9460037B240 /* Sources */ = {
@@ -351,11 +558,13 @@
 		};
 		A644FAC51FACC9470037B240 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B207631CC247DD81CFA444A2 /* Pods-HobbyApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
-				INFOPLIST_FILE = HobbyApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.HobbyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,11 +575,13 @@
 		};
 		A644FAC61FACC9470037B240 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7F7CB85F4BB4D4C65A705B /* Pods-HobbyApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
-				INFOPLIST_FILE = HobbyApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.HobbyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,8 +592,9 @@
 		};
 		A644FAC81FACC9470037B240 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D53DA54AB9B646989D1BBEA /* Pods-HobbyApp-HobbyAppTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
@@ -398,8 +610,9 @@
 		};
 		A644FAC91FACC9470037B240 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9A066A94C58DB8C310FB35 /* Pods-HobbyApp-HobbyAppTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
