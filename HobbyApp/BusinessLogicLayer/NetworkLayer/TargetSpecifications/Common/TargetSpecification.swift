@@ -7,6 +7,7 @@
 //
 
 import Moya
+
 protocol Fallible {
     associatedtype Error: NetworkError
 }
@@ -15,9 +16,19 @@ protocol NetworkError: Swift.Error {
 }
 
 protocol TargetSpecification: TargetType {
+    //var baseUrl: URL { get }
     var defaultHeaders: [String: String] { get }
+    var mappingType: MappingType { get }
+
 }
+
 extension TargetSpecification {
+//    var baseURL: URL {
+//        return URL(string: "http://test.mhbb.ru/b" )!
+//    }
+    var task: Moya.Task {
+        return .requestPlain
+    }
     var defaultHeaders: [String: String] {
         let assigned: [String: String] = [
             "Accept": "application/json",
@@ -26,11 +37,11 @@ extension TargetSpecification {
             ]
         return assigned
     }
+    var mappingType: MappingType { return .errorType }
 }
-
 extension TargetType {
     var baseURL: URL {
-        return URL(string: "B" )!
+        return URL(string: "http://test.mhbb.ru/b" )!
     }
     var sampleData: Data {
         return Data()
@@ -38,29 +49,55 @@ extension TargetType {
     var task: Moya.Task {
         return .requestPlain
     }
-//    var headers: [String : String]? {
-//        return nil
-//    }
+    var headers: [String : String]? {
+        return nil
+    }
     func stubbedData(_ filename: String) -> Data {
         let bundle = Bundle.main
         let path = bundle.path(forResource: filename, ofType: "json")
         return (try! Data(contentsOf: URL(fileURLWithPath: path!)))
     }
-    var stubbedNetworkResponse: EndpointSampleResponse {
-        switch self {
-        default:
-            return .networkResponse(200, sampleData)
+        var stubbedNetworkResponse: EndpointSampleResponse {
+            switch self {
+            default:
+                return .networkResponse(200, sampleData)
+            }
         }
-    }
-    func headers() -> [String: String] {
-        var assigned: [String: String] = [
-            "Accept": "application/json",
-            "Accept-Language": "",
-            "Content-Type": "application/json",
-            ]
-        return assigned
-    }
 }
+//
+//extension TargetType {
+//    var baseURL: URL {
+//        return URL(string: "http://test.mhbb.ru/b" )!
+//    }
+//    var sampleData: Data {
+//        return Data()
+//    }
+//    var task: Moya.Task {
+//        return .requestPlain
+//    }
+////    var headers: [String : String]? {
+////        return nil
+////    }
+//    func stubbedData(_ filename: String) -> Data {
+//        let bundle = Bundle.main
+//        let path = bundle.path(forResource: filename, ofType: "json")
+//        return (try! Data(contentsOf: URL(fileURLWithPath: path!)))
+//    }
+//    var stubbedNetworkResponse: EndpointSampleResponse {
+//        switch self {
+//        default:
+//            return .networkResponse(200, sampleData)
+//        }
+//    }
+//    func headers() -> [String: String] {
+//        var assigned: [String: String] = [
+//            "Accept": "application/json",
+//            "Accept-Language": "",
+//            "Content-Type": "application/json",
+//            ]
+//        return assigned
+//    }
+//}
 
 func url(_ route: Moya.TargetType) -> String {
     return route.baseURL.appendingPathComponent(route.path).absoluteString

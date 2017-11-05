@@ -10,11 +10,10 @@ import Moya
 import Result
 import Alamofire
 import PromiseKit
-typealias APIResponse = (Any)
 
 typealias RequestClosure = (target: AppAPI, success: SuccessCompletion, failure: FailureCompletion)
 
-typealias SuccessCompletion = (Any) -> Void
+typealias Success2Completion = (Any) -> Void
 typealias FailureCompletion = (NSError, Int?) -> Void
 
 
@@ -24,7 +23,7 @@ class AppProvider {
     static func endpointClosure(_ target: AppAPI) -> Endpoint<AppAPI> {
         let endpoint = Endpoint<AppAPI>(url: url(target), sampleResponseClosure: { () -> EndpointSampleResponse in
             return target.stubbedNetworkResponse
-        }, method: target.method, task: target.task, httpHeaderFields: target.headers())
+        }, method: target.method, task: target.task, httpHeaderFields: target.headers)
         
         return endpoint
     }
@@ -49,6 +48,7 @@ class AppProvider {
             SharedProvider.instance = newValue
         }
     }
+    
     // MARK: - Public
 
     func request(_ target: AppAPI) -> Promise<APIResponse> {
@@ -76,6 +76,31 @@ class AppProvider {
         
         AppProvider.sharedProvider.request(target) { (result) in
             print(result)
+
+            self.handleRequest(target: target, result: result, success: success, failure: failure)
+        }
+    }
+}
+
+// MARK: appRequest implementation
+extension AppProvider {
+    private func handleRequest(target: AppAPI, result: MoyaResult, success: @escaping SuccessCompletion, failure: @escaping FailureCompletion) {
+        switch result {
+        case let .success(moyaResponse):
+            let response = moyaResponse.response as? HTTPURLResponse
+            let data = moyaResponse.data
+            let statusCode = moyaResponse.statusCode
+            print(response)
+            
+            switch statusCode {
+            case 200...299, 300...399:
+                print("Sus")
+            default:
+                print("de")
+            }
+            success(response)
+        case let .failure(error):
+            print(error)
         }
     }
 }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-            timestampString = "531574905.538007"
+            timestampString = "531595504.831317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "request(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -54,27 +54,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-            timestampString = "531574905.538659"
+            timestampString = "531595504.832017"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "appRequest(_:success:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "HobbyApp.AppProvider.(appRequest in _935977A5686077D4CA4E8BD38CBE13CB)(HobbyApp.AppAPI, success: (Any) -&gt; ()) -&gt; ()"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-                  timestampString = "531574905.72876"
+                  timestampString = "531578567.168947"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -82,14 +82,14 @@
                   offsetFromSymbolStart = "26">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (__ObjC.NSError, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in HobbyApp.AppProvider.(appRequest in _935977A5686077D4CA4E8BD38CBE13CB)(HobbyApp.AppAPI, success: (Any) -&gt; ()) -&gt; ()"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-                  timestampString = "531574905.731652"
+                  timestampString = "531578567.170796"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-            timestampString = "531574905.539004"
+            timestampString = "531595504.832316"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "appRequest(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -118,11 +118,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-            timestampString = "531574905.539453"
+            timestampString = "531595504.832548"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -131,14 +131,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "static HobbyApp.AppProvider.endpointClosure(HobbyApp.AppAPI) -&gt; Moya.Endpoint&lt;HobbyApp.AppAPI&gt;"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-                  timestampString = "531574905.749149"
+                  timestampString = "531578567.182464"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -146,14 +146,14 @@
                   offsetFromSymbolStart = "21">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 () -&gt; Moya.EndpointSampleResponse in static HobbyApp.AppProvider.endpointClosure(HobbyApp.AppAPI) -&gt; Moya.Endpoint&lt;HobbyApp.AppAPI&gt;"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-                  timestampString = "531574905.754218"
+                  timestampString = "531578567.184966"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "26"
@@ -166,11 +166,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-            timestampString = "531574905.53979"
+            timestampString = "531595504.83279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -182,11 +182,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-            timestampString = "531574905.540073"
+            timestampString = "531595504.83303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -195,14 +195,14 @@
             landmarkType = "14">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "globalinit_33_935977A5686077D4CA4E8BD38CBE13CB_func1"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-                  timestampString = "531574905.773614"
+                  timestampString = "531578567.193605"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -210,19 +210,99 @@
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "HobbyApp.AppProvider.(SharedProvider in _935977A5686077D4CA4E8BD38CBE13CB).instance.unsafeMutableAddressor : Moya.MoyaProvider&lt;HobbyApp.AppAPI&gt;"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-                  timestampString = "531574905.77915"
+                  timestampString = "531578567.196075"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
                   endingLineNumber = "36"
                   offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
+            timestampString = "531595504.833267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "appRequest(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
+            timestampString = "531595504.83349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "handleRequest(target:result:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIRequestSender.swift"
+            timestampString = "531594464.744672"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Moya.MultiTarget) -&gt; Moya.Endpoint&lt;Moya.MultiTarget&gt; in HobbyApp.APIRequestSender.init() -&gt; HobbyApp.APIRequestSender"
+                  moduleName = "HobbyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIRequestSender.swift"
+                  timestampString = "531589907.532348"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "231">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Moya.MultiTarget) -&gt; Moya.Endpoint&lt;Moya.MultiTarget&gt; in HobbyApp.APIRequestSender.init() -&gt; HobbyApp.APIRequestSender"
+                  moduleName = "HobbyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIRequestSender.swift"
+                  timestampString = "531589907.534859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "327">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -233,46 +313,190 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Services/CityService.swift"
-            timestampString = "531574905.540524"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/TargetSpecifications/Common/TargetSpecification.swift"
+            timestampString = "531599855.776625"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "allCities()"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "defaultHeaders"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Services/CityService.swift"
+            timestampString = "531599855.776954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchCity(by:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIRequestSender.swift"
+            timestampString = "531594464.745102"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "sendRequest(targetSpecification:success:failure:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "HobbyApp.CityService.allCities() -&gt; ()"
+                  symbolName = "HobbyApp.APIRequestSender.sendRequest&lt;A where A: HobbyApp.Fallible, A: HobbyApp.TargetSpecification&gt;(targetSpecification: A, success: (Any) -&gt; (), failure: (A.Error) -&gt; ()) -&gt; ()"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/Services/CityService.swift"
-                  timestampString = "531574905.786845"
+                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIRequestSender.swift"
+                  timestampString = "531594464.912512"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "4">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "136">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Any) throws -&gt; Swift.Array&lt;HobbyApp.City&gt; in HobbyApp.CityService.allCities() -&gt; ()"
+                  symbolName = "closure #1 (Result.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in HobbyApp.APIRequestSender.sendRequest&lt;A where A: HobbyApp.Fallible, A: HobbyApp.TargetSpecification&gt;(targetSpecification: A, success: (Any) -&gt; (), failure: (A.Error) -&gt; ()) -&gt; ()"
                   moduleName = "HobbyApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/Services/CityService.swift"
-                  timestampString = "531574905.789978"
+                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIRequestSender.swift"
+                  timestampString = "531594464.914005"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "24">
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "315">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.777238"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "appRequest(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.777463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.777528"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.777585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.777648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "handleRequest(target:result:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.777703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "handleNetworkSuccess(data:target:statusCode:response:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
+            timestampString = "531599855.777761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "mapToObjectArray(_:type:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -281,13 +505,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/AppProvider.swift"
-            timestampString = "531574905.540605"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
+            timestampString = "531599855.777965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "appRequest(_:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "mapToObject(_:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
+            timestampString = "531599855.778024"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "mapToObjectArray(_:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.778077"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "parseArrayJSON(_:array:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/RequestSender/APIProvider.swift"
+            timestampString = "531599855.778134"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "parseDictionaryJSON(_:dict:success:failure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

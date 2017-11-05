@@ -7,6 +7,40 @@
 //
 
 import Foundation
-struct City {
+import SwiftyJSON
+
+// Version 1: init
+let CityVersion = 1
+
+final class City: JSONAble {
+    let id: String
+    let name: String
+    init(id: String,
+         name: String)
+    {
+        self.id = id
+        self.name = name
+        super.init(version: CityVersion)
+    }
     
+    required init(coder: NSCoder) {
+        let decoder = Coder(coder)
+        id = decoder.decodeKey("id")
+        name = decoder.decodeKey("name")
+        super.init(coder: coder)
+    }
+    
+    override func encode(with coder: NSCoder) {
+        let encoder = Coder(coder)
+        encoder.encodeObject(id, forKey: "id")
+        encoder.encodeObject(name, forKey: "name")
+        super.encode(with: coder)
+    }
+    override class func fromJSON(_ data: [String: Any]) -> JSONAble {
+        let json = JSON(data)
+        let id = json["id"].stringValue
+        let name = json["name"].stringValue
+        let city = City(id: id, name: name)
+        return city
+    }
 }

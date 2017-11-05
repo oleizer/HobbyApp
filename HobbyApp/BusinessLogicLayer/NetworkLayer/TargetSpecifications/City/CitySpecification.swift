@@ -9,47 +9,80 @@
 import Moya
 
 enum CitySpecification {
-    case cities
     case cityId(cityId: Int)
+    case editCity(cityId: Int, name: String)
+    case deleteCity(cityId: Int)
+    case searchCity(keyword: String)
+    case cities
+    case addCity
 }
 
 extension CitySpecification: TargetSpecification {
-    var headers: [String : String]? {
-        return ["dd":"dd"]
-    }
-    
-
-    
+    //public var baseURL: URL { return URL(string: "http://test.mhbb.ru/b")! }
     var path: String {
         switch self {
-        case .cities: return "/api/city"
         case .cityId(let cityId): return "/api/city/\(cityId)"
+        case .editCity(let cityId): return "/api/city/\(cityId)"
+        case .deleteCity(let cityId): return "/api/city/\(cityId)"
+        case .searchCity: return "/api/city/search"
+        case .cities: return "/api/city"
+        case .addCity: return "/api/city"
         }
     }
-    
-    var method: Method {
+    var method: Moya.Method {
         switch self {
-        case .cities, .cityId:
+        case .cities, .cityId, .searchCity:
             return .get
+        case .addCity:
+            return .post
+        case .editCity:
+            return .put
+        case .deleteCity:
+            return .delete
         default:
             return .get
         }
     }
     var task: Task {
-        switch self {
-        case .cities:
-            return .requestParameters(parameters: ["hui": "hui"], encoding: JSONEncoding.default)
-        default:
-            return .requestParameters(parameters: ["hui": "hui"], encoding: JSONEncoding.default)
-        }
-
+        return .requestPlain
     }
-    var sampleData: Data {
+    var mappingType: MappingType {
         switch self {
         case .cities:
-            return stubbedData("cities")
-        case .cityId:
-            return stubbedData("city")
+            return .errorType
+        default:
+            return .errorType
         }
+    }
+//    var sampleData: Data {
+//        switch self {
+//        case .cities:
+//            return stubbedData("cities")
+//        case .cityId:
+//            return stubbedData("city")
+//        }
+//    }
+    var headers: [String : String]? {
+        return nil
     }
 }
+//
+extension CitySpecification: Fallible {
+    typealias Error = UserError
+
+    enum UserError: NetworkError {
+        case userNotFound
+
+        static func error(from: MoyaError) -> UserError {
+            switch from {
+            case .underlying(let un):
+                return .userNotFound
+            default:
+                return .userNotFound
+            }
+        }
+        
+    }
+    
+}
+

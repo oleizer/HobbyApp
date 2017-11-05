@@ -21,7 +21,27 @@ class CityViewController: UIViewController, CityViewInput {
 
     // MARK: CityViewInput
     func setupInitialState() {
-        CityService().allCities()
+        
+        let cities = CityService().fetchAllCities().thenFinally{ [weak self] ci in
+            guard let `self` = self else { return }
+            print("HUI: \(ci)")
+            }.always {
+                print("Aplways")
+        }
+//        CityService().fetchAllCities(success: {
+//            print("s")
+//        }) { (error) in
+//            print("er")
+//        }
+//
+//        CityService().fetchCity(by: 1)
+        //CityService().fetchCity(by: 1)
+        //CityService().fetchAllCities()
+//        CityService().fetchAllCities(success: {
+//            print("ssss")
+//        }) { (error) in
+//            print(error)
+//        }
 
     }
 }

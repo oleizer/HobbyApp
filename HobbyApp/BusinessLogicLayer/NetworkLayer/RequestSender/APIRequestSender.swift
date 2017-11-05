@@ -9,8 +9,10 @@
 import Foundation
 import Moya
 import Result
-import PromiseKit
-//typealias APIResponse = (Any)
+
+typealias SuccessCompletion = (Any) -> Void
+//typealias FailureCompletion = (NSError, Int?) -> Void
+
 class APIRequestSender {
     fileprivate let provider: MoyaProvider<MultiTarget>
     
@@ -25,27 +27,27 @@ class APIRequestSender {
                 fatalError("Unexpected target type")
             }
         }
-        //var plugins: [PluginType] = [ErrorsProcessorPlugin()]
-//        #if DEBUG
-//            plugins.append(
-//                NetworkLoggerPlugin(verbose: true, cURL: true) { (data: Data) -> (Data) in
-//                    do {
-//                        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
-//                        let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
-//                        return prettyData
-//                    } catch {
-//                        return data
-//                    }
-//                }
-//            )
-//        #endif
+        var plugins: [PluginType] = []
+        #if DEBUG
+            plugins.append(
+                NetworkLoggerPlugin(verbose: true, cURL: true) { (data: Data) -> (Data) in
+                    do {
+                        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
+                        let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
+                        return prettyData
+                    } catch {
+                        return data
+                    }
+                }
+            )
+        #endif
         provider = MoyaProvider<MultiTarget>(endpointClosure: endpointClosure)
     }
-
     func sendRequest<TargetSpecificationType: TargetSpecification & Fallible>(
         targetSpecification: TargetSpecificationType,
-        success: @escaping (_ response: Response) -> Void,
+        success: @escaping SuccessCompletion,
         failure: @escaping (_ error: TargetSpecificationType.Error) -> Void) {
+        
         provider.request(MultiTarget(targetSpecification)) { result in
             switch result {
             case let .success(response):
@@ -55,4 +57,18 @@ class APIRequestSender {
             }
         }
     }
+//    func sendRequest<TargetSpecificationType: TargetSpecification & Fallible>(
+//        targetSpecification: TargetSpecificationType,
+//        success: @escaping (_ response: Response) -> Void,
+//        failure: @escaping (_ error: TargetSpecificationType.Error) -> Void) {
+//
+//        provider.request(MultiTarget(targetSpecification)) { result in
+//            switch result {
+//            case let .success(response):
+//                success(response)
+//            case let .failure(error):
+//                failure(TargetSpecificationType.Error.error(from: error))
+//            }
+//        }
+//    }
 }
