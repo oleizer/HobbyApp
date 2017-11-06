@@ -1,6 +1,6 @@
-<img src="http://d324imu86q1bqn.cloudfront.net/uploads/user/avatar/641/large_Ello.1000x1000.png" width="200px" height="200px" />
+<img src="https://ibb.co/e0sdkw" width="200px" height="200px" />
 
-## Ello iOS App
+## Hobby iOS App
 
 [![Build Status](https://travis-ci.org/ello/ello-ios.svg?branch=master)](https://travis-ci.org/ello/ello-ios)
 
