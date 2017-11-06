@@ -32,9 +32,9 @@ struct Mapper {
         let fromJSON = mappingType.fromJSON
         return dicts.map { data in
             let jsonable = fromJSON(data)
-            if let id = (jsonable as? JSONSaveable)?.tableId {
-                //ElloLinkedStore.shared.saveObject(jsonable, id: id, type: mappingType)
-            }
+//            if let id = (jsonable as? JSONSaveable)?.tableId {
+//                //ElloLinkedStore.shared.saveObject(jsonable, id: id, type: mappingType)
+//            }
             return jsonable
         }
     }
@@ -43,9 +43,9 @@ struct Mapper {
         let fromJSON = mappingType.fromJSON
         return (object as? [String: Any]).flatMap { data in
             let jsonable = fromJSON(data)
-            if let id = (jsonable as? JSONSaveable)?.tableId {
-                //ElloLinkedStore.shared.saveObject(jsonable, id: id, type: mappingType)
-            }
+//            if let id = (jsonable as? JSONSaveable)?.tableId {
+//                //ElloLinkedStore.shared.saveObject(jsonable, id: id, type: mappingType)
+//            }
             return jsonable
         }
     }

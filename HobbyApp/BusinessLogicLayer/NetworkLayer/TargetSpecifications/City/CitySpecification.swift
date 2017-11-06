@@ -22,7 +22,7 @@ extension CitySpecification: TargetSpecification {
     var path: String {
         switch self {
         case .cityId(let cityId): return "/api/city/\(cityId)"
-        case .editCity(let cityId): return "/api/city/\(cityId)"
+        case .editCity(let cityId, _): return "/api/city/\(cityId)"
         case .deleteCity(let cityId): return "/api/city/\(cityId)"
         case .searchCity: return "/api/city/search"
         case .cities: return "/api/city"
@@ -39,8 +39,8 @@ extension CitySpecification: TargetSpecification {
             return .put
         case .deleteCity:
             return .delete
-        default:
-            return .get
+//        default:
+//            return .get
         }
     }
     var task: Task {
@@ -75,7 +75,7 @@ extension CitySpecification: Fallible {
 
         static func error(from: MoyaError) -> UserError {
             switch from {
-            case .underlying(let un):
+            case .underlying( _):
                 return .userNotFound
             default:
                 return .userNotFound

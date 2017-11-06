@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import HobbyApp
 
 class CityInteractorTests: XCTestCase {
 
@@ -21,6 +22,6 @@ class CityInteractorTests: XCTestCase {
     }
 
     class MockPresenter: CityInteractorOutput {
-
+        
     }
 }

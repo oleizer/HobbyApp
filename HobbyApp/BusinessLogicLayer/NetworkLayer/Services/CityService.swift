@@ -39,7 +39,7 @@ class CityService {
     
     func fetchCity(by cityId: Int) {
         print("fetch city by cityId: \(cityId)")
-        APIProvider.shared.request(CitySpecification.cityId(cityId: cityId))
+        //APIProvider.shared.request(CitySpecification.cityId(cityId: cityId))
 //        requestSender.sendRequest(targetSpecification: CitySpecification.cityId(cityId: cityId)) { (response) in
 //            print(response)
 //        }

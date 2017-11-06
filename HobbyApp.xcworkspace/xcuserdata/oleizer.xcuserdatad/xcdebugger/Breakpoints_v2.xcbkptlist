@@ -330,13 +330,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Services/CityService.swift"
-            timestampString = "531600032.007908"
+            timestampString = "531667118.660037"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "fetchCity(by:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -486,33 +486,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
-            timestampString = "531600032.008744"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "mapToObjectArray(_:type:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
-            timestampString = "531600032.00895"
+            timestampString = "531667118.660714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
             landmarkName = "mapToObject(_:type:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Optional&lt;HobbyApp.JSONAble&gt; in static HobbyApp.Mapper.mapToObject(Swift.Optional&lt;Any&gt;, type: HobbyApp.MappingType) -&gt; Swift.Optional&lt;HobbyApp.JSONAble&gt;"
+                  moduleName = "HobbyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
+                  timestampString = "531667118.792865"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "74">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; Swift.Optional&lt;HobbyAppTests.JSONAble&gt; in static HobbyAppTests.Mapper.mapToObject(Swift.Optional&lt;Any&gt;, type: HobbyAppTests.MappingType) -&gt; Swift.Optional&lt;HobbyAppTests.JSONAble&gt;"
+                  moduleName = "HobbyAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oleizer/Developer/Open%20Sources/HobbyApp/HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
+                  timestampString = "531667119.547496"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "74">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -522,7 +538,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/BusinessLogicLayer/NetworkLayer/Mapper.swift"
-            timestampString = "531600032.009008"
+            timestampString = "531667118.660995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"

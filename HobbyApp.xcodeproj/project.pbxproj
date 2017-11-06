@@ -15,6 +15,7 @@
 		351B6C5F275240358611E77D /* CityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81D59D8DF36D4421AC51366 /* CityPresenter.swift */; };
 		4D431A61D648BE37E779ECD3 /* AddCityPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5956BB718BC061FBB38A4276 /* AddCityPresenterTests.swift */; };
 		5A25C46E8C08279C4854F8B8 /* AddCityInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D3E28D3D9882E08202F19 /* AddCityInteractorInput.swift */; };
+		63D511E2A9A794B5A7875048 /* Pods_HobbyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18976B5EAA1EEECCBEEA9717 /* Pods_HobbyAppTests.framework */; };
 		659712C04D7C7FDB46B8F21A /* AddCityRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95F6DC3CA545EDF4400047E /* AddCityRouterTests.swift */; };
 		78B75E580D5D5CA0E00DC526 /* Pods_HobbyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D86D7A6206FE405E68EA022 /* Pods_HobbyApp.framework */; };
 		7DD41E61E9DB67686C0FEA2D /* CityRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F53FECB4D1C27B67F9E4533 /* CityRouterTests.swift */; };
@@ -52,6 +53,11 @@
 		A66370C31FAF84510061AD3C /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C21FAF84510061AD3C /* Coder.swift */; };
 		A66370C71FAF88750061AD3C /* APIProviderErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C61FAF88750061AD3C /* APIProviderErrors.swift */; };
 		A66370C91FAF8EE40061AD3C /* PromiseKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C81FAF8EE40061AD3C /* PromiseKitExtensions.swift */; };
+		A66E42131FB08AAB0040CFB0 /* InterestSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42121FB08AAB0040CFB0 /* InterestSpecification.swift */; };
+		A66E42151FB08B650040CFB0 /* InterestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42141FB08B650040CFB0 /* InterestService.swift */; };
+		A66E42171FB08BA60040CFB0 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42161FB08BA60040CFB0 /* Interest.swift */; };
+		A66E421A1FB093830040CFB0 /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42191FB093830040CFB0 /* CityTests.swift */; };
+		A66E421D1FB095910040CFB0 /* CitySpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E421C1FB095910040CFB0 /* CitySpecificationTests.swift */; };
 		A6B67C761FB047AD0057A778 /* AddCity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B67C751FB047AD0057A778 /* AddCity.storyboard */; };
 		A6B67C821FB048BF0057A778 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C791FB048BE0057A778 /* Router.swift */; };
 		A6B67C831FB048BF0057A778 /* ClosableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7A1FB048BE0057A778 /* ClosableRouter.swift */; };
@@ -61,18 +67,6 @@
 		A6B67C871FB048BF0057A778 /* ModuleTransitionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7F1FB048BE0057A778 /* ModuleTransitionSource.swift */; };
 		A6B67C881FB048BF0057A778 /* EmbedSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C801FB048BE0057A778 /* EmbedSegue.swift */; };
 		A6B67C891FB048BF0057A778 /* ModuleTransitionSource+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C811FB048BE0057A778 /* ModuleTransitionSource+UIViewController.swift */; };
-		A6F83E8C1FB04A3A0010342F /* CityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F7870FCE813C607E7BE53 /* CityViewInput.swift */; };
-		A6F83E8D1FB04A3A0010342F /* CityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC0518939F9825F4041690 /* CityViewOutput.swift */; };
-		A6F83E8E1FB04A3A0010342F /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975E29E69477B49865E3077 /* CityViewController.swift */; };
-		A6F83E8F1FB04A420010342F /* CityModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97310D5BEEF548F58B919F2 /* CityModuleInput.swift */; };
-		A6F83E901FB04A420010342F /* CityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81D59D8DF36D4421AC51366 /* CityPresenter.swift */; };
-		A6F83E911FB04A460010342F /* CityInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA816895670DA8DD8551F26B /* CityInteractorInput.swift */; };
-		A6F83E921FB04A460010342F /* CityInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1C22187424ACD96A0C5BC /* CityInteractorOutput.swift */; };
-		A6F83E931FB04A460010342F /* CityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8A20D8CCBF908D0C860DB /* CityInteractor.swift */; };
-		A6F83E941FB04A490010342F /* CityRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853C96C166DC0AAB954D29CC /* CityRouterInput.swift */; };
-		A6F83E951FB04A490010342F /* CityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC905402DB84FD73735D3756 /* CityRouter.swift */; };
-		A6F83E961FB04A4D0010342F /* CityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF44E54380C8A9C9E639671A /* CityConfigurator.swift */; };
-		A6F83E971FB04A4D0010342F /* CityInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B3684B05439309E564315 /* CityInitializer.swift */; };
 		A6F83E981FB04A510010342F /* AddCityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171FE41F91D17091B1954B5D /* AddCityViewInput.swift */; };
 		A6F83E991FB04A510010342F /* AddCityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9FBACCF570BF9B212DB09 /* AddCityViewOutput.swift */; };
 		A6F83E9A1FB04A510010342F /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D075CE1806FEEB6771ACE4 /* AddCityViewController.swift */; };
@@ -99,7 +93,6 @@
 		A6F83EAF1FB04C6A0010342F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD41FACCCFB0037B240 /* Colors.swift */; };
 		A6F83EB01FB04C6A0010342F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD61FACCD020037B240 /* Images.swift */; };
 		A6F83EB11FB04C6A0010342F /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD81FACCD100037B240 /* Localizable.swift */; };
-		A6F83EB21FB04C6A0010342F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FADA1FACCD180037B240 /* Storyboards.swift */; };
 		A6F83EB31FB04CCD0010342F /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60ADCC01FAF713300C358E0 /* APIProvider.swift */; };
 		A6F83EB41FB04CCD0010342F /* APIProviderErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C61FAF88750061AD3C /* APIProviderErrors.swift */; };
 		A6F83EB51FB04CCD0010342F /* CityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAEF1FACE07C0037B240 /* CityService.swift */; };
@@ -147,15 +140,18 @@
 		0D53DA54AB9B646989D1BBEA /* Pods-HobbyApp-HobbyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp-HobbyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		171FE41F91D17091B1954B5D /* AddCityViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityViewInput.swift; sourceTree = "<group>"; };
 		17D7AF7C75D6A52EDD0F8910 /* CityConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityConfiguratorTests.swift; sourceTree = "<group>"; };
+		18976B5EAA1EEECCBEEA9717 /* Pods_HobbyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F53FECB4D1C27B67F9E4533 /* CityRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityRouterTests.swift; sourceTree = "<group>"; };
 		34A96C30D7825E33DB35666C /* AddCityInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityInteractorTests.swift; sourceTree = "<group>"; };
 		3AC8A20D8CCBF908D0C860DB /* CityInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractor.swift; sourceTree = "<group>"; };
 		3AD1C22187424ACD96A0C5BC /* CityInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractorOutput.swift; sourceTree = "<group>"; };
 		3ED9FBACCF570BF9B212DB09 /* AddCityViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityViewOutput.swift; sourceTree = "<group>"; };
+		46DE411AA6F673F0F0B5218A /* Pods-HobbyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyAppTests/Pods-HobbyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		567F7870FCE813C607E7BE53 /* CityViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewInput.swift; sourceTree = "<group>"; };
 		5956BB718BC061FBB38A4276 /* AddCityPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityPresenterTests.swift; sourceTree = "<group>"; };
 		5A9A066A94C58DB8C310FB35 /* Pods-HobbyApp-HobbyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp-HobbyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D86D7A6206FE405E68EA022 /* Pods_HobbyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F829BA84A97EFEBFBAFCA8E /* Pods-HobbyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyAppTests/Pods-HobbyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		623931C40B49B7A0C404FF79 /* AddCityRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityRouter.swift; sourceTree = "<group>"; };
 		6F7F7CB85F4BB4D4C65A705B /* Pods-HobbyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp.release.xcconfig"; sourceTree = "<group>"; };
 		733986D86557A59900849B68 /* CityPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityPresenterTests.swift; sourceTree = "<group>"; };
@@ -196,6 +192,11 @@
 		A66370C21FAF84510061AD3C /* Coder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coder.swift; sourceTree = "<group>"; };
 		A66370C61FAF88750061AD3C /* APIProviderErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderErrors.swift; sourceTree = "<group>"; };
 		A66370C81FAF8EE40061AD3C /* PromiseKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitExtensions.swift; sourceTree = "<group>"; };
+		A66E42121FB08AAB0040CFB0 /* InterestSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestSpecification.swift; sourceTree = "<group>"; };
+		A66E42141FB08B650040CFB0 /* InterestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestService.swift; sourceTree = "<group>"; };
+		A66E42161FB08BA60040CFB0 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
+		A66E42191FB093830040CFB0 /* CityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
+		A66E421C1FB095910040CFB0 /* CitySpecificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySpecificationTests.swift; sourceTree = "<group>"; };
 		A6B67C751FB047AD0057A778 /* AddCity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCity.storyboard; sourceTree = "<group>"; };
 		A6B67C791FB048BE0057A778 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A6B67C7A1FB048BE0057A778 /* ClosableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosableRouter.swift; sourceTree = "<group>"; };
@@ -240,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3FDD98E2F001677DAC618CF /* Pods_HobbyApp_HobbyAppTests.framework in Frameworks */,
+				63D511E2A9A794B5A7875048 /* Pods_HobbyAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +289,8 @@
 				6F7F7CB85F4BB4D4C65A705B /* Pods-HobbyApp.release.xcconfig */,
 				0D53DA54AB9B646989D1BBEA /* Pods-HobbyApp-HobbyAppTests.debug.xcconfig */,
 				5A9A066A94C58DB8C310FB35 /* Pods-HobbyApp-HobbyAppTests.release.xcconfig */,
+				5F829BA84A97EFEBFBAFCA8E /* Pods-HobbyAppTests.debug.xcconfig */,
+				46DE411AA6F673F0F0B5218A /* Pods-HobbyAppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -483,6 +487,8 @@
 		A644FABE1FACC9470037B240 /* HobbyAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				A66E421B1FB0955D0040CFB0 /* NetworkLayer */,
+				A66E42181FB093650040CFB0 /* ModelLayer */,
 				A644FABF1FACC9470037B240 /* HobbyAppTests.swift */,
 				A644FAC11FACC9470037B240 /* Info.plist */,
 				88AA6DD687FB6DDC1ACAB15D /* PresentationLayer */,
@@ -531,6 +537,7 @@
 			children = (
 				A644FAFC1FAF2F0B0037B240 /* City.swift */,
 				A66370C21FAF84510061AD3C /* Coder.swift */,
+				A66E42161FB08BA60040CFB0 /* Interest.swift */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -565,6 +572,7 @@
 		A644FAE21FACD88F0037B240 /* TargetSpecifications */ = {
 			isa = PBXGroup;
 			children = (
+				A66E42111FB08A8B0040CFB0 /* Interest */,
 				A644FAE61FACD8C30037B240 /* City */,
 				A644FAE31FACD8A30037B240 /* Common */,
 			);
@@ -600,6 +608,7 @@
 			isa = PBXGroup;
 			children = (
 				A644FAEF1FACE07C0037B240 /* CityService.swift */,
+				A66E42141FB08B650040CFB0 /* InterestService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -619,6 +628,30 @@
 				A66370BE1FAF83070061AD3C /* JSONAble.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A66E42111FB08A8B0040CFB0 /* Interest */ = {
+			isa = PBXGroup;
+			children = (
+				A66E42121FB08AAB0040CFB0 /* InterestSpecification.swift */,
+			);
+			path = Interest;
+			sourceTree = "<group>";
+		};
+		A66E42181FB093650040CFB0 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A66E42191FB093830040CFB0 /* CityTests.swift */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		A66E421B1FB0955D0040CFB0 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A66E421C1FB095910040CFB0 /* CitySpecificationTests.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		A6B67C771FB048930057A778 /* Common */ = {
@@ -712,6 +745,7 @@
 			children = (
 				5D86D7A6206FE405E68EA022 /* Pods_HobbyApp.framework */,
 				BDD7B4F5DB1742CB69102028 /* Pods_HobbyApp_HobbyAppTests.framework */,
+				18976B5EAA1EEECCBEEA9717 /* Pods_HobbyAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -849,7 +883,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyAppTests/Pods-HobbyAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		54CFC45F6F0A63A04564FEB9 /* [CP] Copy Pods Resources */ = {
@@ -896,7 +930,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyApp-HobbyAppTests/Pods-HobbyApp-HobbyAppTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HobbyAppTests/Pods-HobbyAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		79161B19D9B828B9E50FEC8F /* [CP] Check Pods Manifest.lock */ = {
@@ -974,7 +1008,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HobbyApp-HobbyAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HobbyAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -992,11 +1026,13 @@
 				A644FAAD1FACC9460037B240 /* ViewController.swift in Sources */,
 				A644FAD71FACCD020037B240 /* Images.swift in Sources */,
 				A644FAD91FACCD100037B240 /* Localizable.swift in Sources */,
+				A66E42151FB08B650040CFB0 /* InterestService.swift in Sources */,
 				A644FAD51FACCCFB0037B240 /* Colors.swift in Sources */,
 				A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */,
 				A644FAE81FACD8E50037B240 /* CitySpecification.swift in Sources */,
 				A66370BF1FAF83070061AD3C /* JSONAble.swift in Sources */,
 				A66370BC1FAF82930061AD3C /* NetworkError.swift in Sources */,
+				A66E42131FB08AAB0040CFB0 /* InterestSpecification.swift in Sources */,
 				A60ADCC11FAF713300C358E0 /* APIProvider.swift in Sources */,
 				A66370BA1FAF82400061AD3C /* Mapper.swift in Sources */,
 				A644FAE51FACD8BC0037B240 /* TargetSpecification.swift in Sources */,
@@ -1025,6 +1061,7 @@
 				A7D85C30C98D732C311738E2 /* CityInitializer.swift in Sources */,
 				FBE040F735F387A26ED76B8E /* AddCityViewInput.swift in Sources */,
 				B706C36A8F9DBE2083BD1B39 /* AddCityViewOutput.swift in Sources */,
+				A66E42171FB08BA60040CFB0 /* Interest.swift in Sources */,
 				BC0DAE1AE37896B1231276A9 /* AddCityViewController.swift in Sources */,
 				9EB3999B8661D54AAF4A57C1 /* AddCityModuleInput.swift in Sources */,
 				A6B67C871FB048BF0057A778 /* ModuleTransitionSource.swift in Sources */,
@@ -1051,14 +1088,10 @@
 				A644FAC01FACC9470037B240 /* HobbyAppTests.swift in Sources */,
 				A6F83EBB1FB04CDD0010342F /* MappingType.swift in Sources */,
 				A6F83E981FB04A510010342F /* AddCityViewInput.swift in Sources */,
-				A6F83E901FB04A420010342F /* CityPresenter.swift in Sources */,
-				A6F83E941FB04A490010342F /* CityRouterInput.swift in Sources */,
 				A6F83EB31FB04CCD0010342F /* APIProvider.swift in Sources */,
 				A6F83EA01FB04A5D0010342F /* AddCityRouterInput.swift in Sources */,
-				A6F83E961FB04A4D0010342F /* CityConfigurator.swift in Sources */,
 				A6F83EA11FB04A5D0010342F /* AddCityRouter.swift in Sources */,
 				A6F83EB11FB04C6A0010342F /* Localizable.swift in Sources */,
-				A6F83E8C1FB04A3A0010342F /* CityViewInput.swift in Sources */,
 				A6F83E9B1FB04A550010342F /* AddCityModuleInput.swift in Sources */,
 				A6F83EAF1FB04C6A0010342F /* Colors.swift in Sources */,
 				A6F83EAC1FB04B920010342F /* ModuleTransitionSource+UIViewController.swift in Sources */,
@@ -1066,22 +1099,18 @@
 				A6F83EB01FB04C6A0010342F /* Images.swift in Sources */,
 				A6F83EC41FB04F6A0010342F /* AppManager.swift in Sources */,
 				A6F83EB51FB04CCD0010342F /* CityService.swift in Sources */,
-				A6F83E911FB04A460010342F /* CityInteractorInput.swift in Sources */,
 				C280ADC349A64B365272BB3A /* CityConfiguratorTests.swift in Sources */,
 				A6F83E9C1FB04A550010342F /* AddCityPresenter.swift in Sources */,
 				A20799FCE6730FEEA5C7FBAF /* CityViewTests.swift in Sources */,
 				A6F83EA91FB04B920010342F /* ModuleOutput.swift in Sources */,
 				A6F83EAB1FB04B920010342F /* EmbedSegue.swift in Sources */,
-				A6F83E971FB04A4D0010342F /* CityInitializer.swift in Sources */,
 				D1666E31EFDDDFAF423F6EE1 /* CityInteractorTests.swift in Sources */,
 				A6F83E9F1FB04A5A0010342F /* AddCityInteractor.swift in Sources */,
-				A6F83E951FB04A490010342F /* CityRouter.swift in Sources */,
 				A6F83EB71FB04CCD0010342F /* TargetSpecification.swift in Sources */,
 				A6F83EBC1FB04D620010342F /* ViewController.swift in Sources */,
 				A6F83EA41FB04A9D0010342F /* City.swift in Sources */,
 				A6F83EB61FB04CCD0010342F /* CitySpecification.swift in Sources */,
 				A6F83EAD1FB04B960010342F /* Router.swift in Sources */,
-				A6F83E8D1FB04A3A0010342F /* CityViewOutput.swift in Sources */,
 				FBC995BB2746BC5664D1E10A /* CityPresenterTests.swift in Sources */,
 				7DD41E61E9DB67686C0FEA2D /* CityRouterTests.swift in Sources */,
 				0FDA8F2F7DB0BB46BF4B7ED0 /* AddCityConfiguratorTests.swift in Sources */,
@@ -1091,21 +1120,18 @@
 				A6F83E991FB04A510010342F /* AddCityViewOutput.swift in Sources */,
 				A6F83EA81FB04B920010342F /* ModuleInput.swift in Sources */,
 				A6F83EA21FB04A610010342F /* AddCityConfigurator.swift in Sources */,
-				A6F83EB21FB04C6A0010342F /* Storyboards.swift in Sources */,
-				A6F83E8F1FB04A420010342F /* CityModuleInput.swift in Sources */,
 				9718CF55136FEAD58B67262B /* AddCityInteractorTests.swift in Sources */,
+				A66E421D1FB095910040CFB0 /* CitySpecificationTests.swift in Sources */,
 				A6F83EA31FB04A610010342F /* AddCityInitializer.swift in Sources */,
 				A6F83E9E1FB04A5A0010342F /* AddCityInteractorOutput.swift in Sources */,
-				A6F83E931FB04A460010342F /* CityInteractor.swift in Sources */,
 				A6F83EA61FB04AB50010342F /* Coder.swift in Sources */,
 				A6F83EAA1FB04B920010342F /* ModuleTransitionSource.swift in Sources */,
 				4D431A61D648BE37E779ECD3 /* AddCityPresenterTests.swift in Sources */,
-				A6F83E8E1FB04A3A0010342F /* CityViewController.swift in Sources */,
+				A66E421A1FB093830040CFB0 /* CityTests.swift in Sources */,
 				A6F83EA51FB04AA80010342F /* JSONAble.swift in Sources */,
 				A6F83EB41FB04CCD0010342F /* APIProviderErrors.swift in Sources */,
 				A6F83EB81FB04CCD0010342F /* PromiseKitExtensions.swift in Sources */,
 				A6F83EA71FB04B920010342F /* ModuleTransition.swift in Sources */,
-				A6F83E921FB04A460010342F /* CityInteractorOutput.swift in Sources */,
 				659712C04D7C7FDB46B8F21A /* AddCityRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1283,7 +1309,7 @@
 		};
 		A644FAC81FACC9470037B240 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D53DA54AB9B646989D1BBEA /* Pods-HobbyApp-HobbyAppTests.debug.xcconfig */;
+			baseConfigurationReference = 5F829BA84A97EFEBFBAFCA8E /* Pods-HobbyAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1301,7 +1327,7 @@
 		};
 		A644FAC91FACC9470037B240 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A9A066A94C58DB8C310FB35 /* Pods-HobbyApp-HobbyAppTests.release.xcconfig */;
+			baseConfigurationReference = 46DE411AA6F673F0F0B5218A /* Pods-HobbyAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";

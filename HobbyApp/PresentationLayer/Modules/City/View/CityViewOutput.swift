@@ -15,4 +15,5 @@ protocol CityViewOutput {
 
     func viewIsReady()
     func addCityAction()
+    func loadCities()
 }

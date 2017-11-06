@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import HobbyApp
 
 class CityPresenterTest: XCTestCase {
 
@@ -21,7 +22,9 @@ class CityPresenterTest: XCTestCase {
     }
 
     class MockInteractor: CityInteractorInput {
-
+        func loadCities() {
+            print("load")
+        }
     }
 
     class MockRouter: CityRouterInput {

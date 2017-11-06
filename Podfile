@@ -13,6 +13,7 @@ target 'HobbyApp' do
     pod 'SwiftyUserDefaults', '~> 3.0'
     pod 'SwiftyJSON', '4.0.0-alpha.1'
     target 'HobbyAppTests' do
+    inherit! :search_paths
     #Put pods used for both test targets here
     end
 end

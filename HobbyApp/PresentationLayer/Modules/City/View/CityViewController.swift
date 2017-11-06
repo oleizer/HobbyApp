@@ -13,71 +13,32 @@ class CityViewController: UIViewController, CityViewInput {
     
     // MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
-
-    
+    private var selectedCity: City?
     private var cities: [City] = []
-    
-    var allCities:[City]?
+    private var interests: [Interest] = []
 
-//    var cities:[City] = []{
-//        didSet {
-//            print(self.cities.count)
-//        }
-//    }
-    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
     }
 
-    func loadCities() {
-        
-    }
-
     // MARK: CityViewInput
     func setupInitialState() {
+        setupView()
+        //loadCities()
+        output.loadCities()
+    }
+    
+    // MARK: - Private
+    private func setupView() {
         self.navigationItem.title = L10n.City.Navigation.title
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAction))
         self.navigationItem.rightBarButtonItem = addButton
-        loadCities()
-        
-        CityService().fetchAllCities().thenFinally{ [weak self] cities in
-            guard let `self` = self else { return }
-            self.cities = cities
-            self.tableView.reloadData()
-        }.ignoreErrors()
-        
-//        let cities = CityService().fetchAllCities().thenFinally{ [weak self] ci in
-//            guard let `self` = self else { return }
-//            print("HUI: \(ci)")
-//            self.cities = ci
-//            self.tableView.reloadData()
-//            }.always {
-//                print("Aplways")
-//                print(self.cities[0].name)
-//                self.tableView.reloadData()
-//            }.thenFinally {
-//                self.tableView.reloadData()
-//
-//        }
-//        CityService().fetchAllCities(success: {
-//            print("s")
-//        }) { (error) in
-//            print("er")
-//        }
-//
-//        CityService().fetchCity(by: 1)
-        //CityService().fetchCity(by: 1)
-        //CityService().fetchAllCities()
-//        CityService().fetchAllCities(success: {
-//            print("ssss")
-//        }) { (error) in
-//            print(error)
-//        }
-
     }
-    @objc func addAction() {
+    
+    // MARK: - Actions
+    @objc private func addAction() {
         print("Add Action")
         output.addCityAction()
     }
@@ -99,9 +60,12 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = "Row: \(self.cities[indexPath.row].name)"
         return cell
     }
+    // MARK: - UITableViewDelegate
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCity = self.cities[indexPath.row]
-        print("Select city: \(selectedCity.name)")
         tableView.deselectRow(at: indexPath, animated: false)
+        let selected: City = self.cities[indexPath.row]
+        self.selectedCity = selected
+        print("Select city: \(self.selectedCity?.name ?? "Unknown")")
     }
 }
