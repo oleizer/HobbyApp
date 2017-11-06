@@ -19,4 +19,12 @@ class UserService {
             return user
         })
     }
+    func user() -> Promise<User>  {
+        return APIProvider.shared.request(UserSpecification.user).then(execute: { user -> User in
+            guard let user = user as? User else {
+                throw NSError()
+            }
+            return user
+        })
+    }
 }

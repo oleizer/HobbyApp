@@ -11,7 +11,7 @@ class LoginInteractor: LoginInteractorInput {
     weak var output: LoginInteractorOutput!
     func login(_ email: String, result: @escaping (UserSpecification.Error?) -> Void) {
         UserService().login(email: email).thenFinally { user in
-            print("User: \(user.email)")
+            //print("User: \(user.email)")
             result(nil)
             }.catch { error in
                 print(error)

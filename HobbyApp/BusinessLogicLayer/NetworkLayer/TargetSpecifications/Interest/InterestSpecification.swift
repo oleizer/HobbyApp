@@ -17,6 +17,10 @@ enum InterestSpecification {
 }
 
 extension InterestSpecification: TargetSpecification {
+    var requiresToken: Bool {
+        return false
+    }
+    
     //public var baseURL: URL { return URL(string: "http://test.mhbb.ru/b")! }
     var path: String {
         switch self {

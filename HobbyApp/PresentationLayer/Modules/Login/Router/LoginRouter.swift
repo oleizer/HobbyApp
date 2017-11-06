@@ -7,5 +7,8 @@
 //
 
 class LoginRouter: LoginRouterInput {
-
+    var transitionHandler: ModuleTransitionSource!
+    func showToken() {
+        transitionHandler.openModule(segueIdentifier: StoryboardSegue.Login.toToken.rawValue)
+    }
 }

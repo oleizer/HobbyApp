@@ -23,9 +23,12 @@ class LoginViewController: UIViewController, LoginViewInput {
 
     @IBAction func loginButtonTouched(_ sender: Any) {
         output.login("oleizer@gmail.com")
+        
     }
     
     // MARK: LoginViewInput
     func setupInitialState() {
+        loginButton.backgroundColor = ColorName.orange.color
+        loginButton.layer.cornerRadius = loginButton.bounds.height / 2
     }
 }

@@ -1,5 +1,5 @@
 //
-//  LoginLoginRouterInput.swift
+//  TokenTokenInteractorOutput.swift
 //  HobbyApp
 //
 //  Created by Oleg Leizer on 06/11/2017.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-protocol LoginRouterInput {
+protocol TokenInteractorOutput: class {
 
-    func showToken()
 }

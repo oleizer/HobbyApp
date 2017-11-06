@@ -19,9 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBe-HW-oxE">
-                                <rect key="frame" x="30" y="180" width="315" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="20" y="180" width="335" height="56"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="33B-o6-MUU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -40,15 +44,16 @@
                             <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="UhQ-hu-XNM" secondAttribute="trailing" constant="30" id="05t-5L-aNl"/>
                             <constraint firstItem="UhQ-hu-XNM" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="30" id="0tC-oY-xzl"/>
                             <constraint firstItem="bBe-HW-oxE" firstAttribute="top" secondItem="UhQ-hu-XNM" secondAttribute="bottom" constant="30" id="6Fa-NV-aJU"/>
-                            <constraint firstItem="bBe-HW-oxE" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="30" id="SnC-kX-tjb"/>
+                            <constraint firstItem="bBe-HW-oxE" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="20" id="SnC-kX-tjb"/>
                             <constraint firstItem="UhQ-hu-XNM" firstAttribute="top" secondItem="bF9-B5-tLr" secondAttribute="top" constant="100" id="e6c-lC-Jc6"/>
-                            <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="bBe-HW-oxE" secondAttribute="trailing" constant="30" id="gra-hY-Rph"/>
+                            <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="bBe-HW-oxE" secondAttribute="trailing" constant="20" id="gra-hY-Rph"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bF9-B5-tLr"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="UhQ-hu-XNM" id="zhC-6d-Au9"/>
                         <outlet property="loginButton" destination="bBe-HW-oxE" id="2mA-IU-NaU"/>
+                        <segue destination="97l-8G-YGO" kind="show" identifier="toToken" id="zvl-jJ-Nt0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtf-mJ-F7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,6 +64,14 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="589" y="100"/>
+        </scene>
+        <!--Token-->
+        <scene sceneID="fgk-cK-aBw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Token" id="97l-8G-YGO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUE-0z-H6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="45"/>
         </scene>
     </scenes>
 </document>

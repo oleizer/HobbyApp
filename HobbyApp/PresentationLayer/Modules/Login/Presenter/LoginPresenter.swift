@@ -23,6 +23,7 @@ class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
                 print(error)
             } else {
                 print("Success")
+                self.router.showToken()
             }
         }
 

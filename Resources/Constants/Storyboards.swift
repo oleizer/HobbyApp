@@ -83,11 +83,21 @@ enum StoryboardScene {
 
     static let initialScene = InitialSceneType<ViewController>(storyboard: Main.self)
   }
+  enum Token: StoryboardType {
+    static let storyboardName = "Token"
+
+    static let initialScene = InitialSceneType<HobbyApp.TokenViewController>(storyboard: Token.self)
+
+    static let tokenViewController = SceneType<HobbyApp.TokenViewController>(storyboard: Token.self, identifier: "TokenViewController")
+  }
 }
 
 enum StoryboardSegue {
   enum City: String, SegueType {
     case toAddCity
+  }
+  enum Login: String, SegueType {
+    case toToken
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

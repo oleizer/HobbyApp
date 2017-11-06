@@ -1,5 +1,5 @@
 //
-//  LoginLoginConfigurator.swift
+//  TokenTokenConfigurator.swift
 //  HobbyApp
 //
 //  Created by Oleg Leizer on 06/11/2017.
@@ -8,24 +8,24 @@
 
 import UIKit
 
-class LoginModuleConfigurator {
+class TokenModuleConfigurator {
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
 
-        if let viewController = viewInput as? LoginViewController {
+        if let viewController = viewInput as? TokenViewController {
             configure(viewController: viewController)
         }
     }
 
-    private func configure(viewController: LoginViewController) {
+    private func configure(viewController: TokenViewController) {
 
-        let router = LoginRouter()
-        router.transitionHandler = viewController
-        let presenter = LoginPresenter()
+        let router = TokenRouter()
+
+        let presenter = TokenPresenter()
         presenter.view = viewController
         presenter.router = router
 
-        let interactor = LoginInteractor()
+        let interactor = TokenInteractor()
         interactor.output = presenter
 
         presenter.interactor = interactor

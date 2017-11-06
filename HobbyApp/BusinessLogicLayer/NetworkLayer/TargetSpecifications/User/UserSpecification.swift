@@ -10,7 +10,7 @@ import Moya
 
 enum UserSpecification {
     case createUser(email: String)
-    
+    case user
 //    case cityId(cityId: Int)
 //    case editCity(cityId: Int, name: String)
 //    case deleteCity(cityId: Int)
@@ -24,23 +24,28 @@ extension UserSpecification: TargetSpecification {
     var path: String {
         switch self {
         case .createUser: return "/api/user"
+        case .user: return "/api/user"
         }
     }
     var method: Moya.Method {
         switch self {
         case .createUser:
             return .post
+        case .user:
+            return .get
         }
     }
     var task: Task {
         switch self {
         case .createUser(let email):
             return .requestParameters(parameters: ["email": email], encoding: JSONEncoding.default)
+        case .user:
+            return .requestPlain
         }
     }
     var mappingType: MappingType {
         switch self {
-        case .createUser:
+        case .createUser, .user:
             return .user
         }
     }
@@ -52,8 +57,26 @@ extension UserSpecification: TargetSpecification {
     //            return stubbedData("city")
     //        }
     //    }
+    var requiresToken: Bool {
+        switch self {
+        case .createUser:
+            return false
+        case .user:
+            return true
+        }
+    }
     var headers: [String : String]? {
-        return nil
+        var assigned: [String: String] = [
+            "Accept": "application/json",
+            //"Accept-Language": "",
+            "Content-Type": "application/json",
+            ]
+        
+        if requiresToken {
+            assigned["Authorization"] = "Token 6e548e6831adebf50f9280d10b805347f34598805c3f75e388646bc53069be02"
+            //assigned += "Token "
+        }
+        return assigned
     }
 }
 //
