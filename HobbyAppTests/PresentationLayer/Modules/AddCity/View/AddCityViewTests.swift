@@ -1,14 +1,14 @@
 //
-//  CityCityRouterTests.swift
+//  AddCityAddCityViewTests.swift
 //  HobbyApp
 //
-//  Created by Oleg Leizer on 03/11/2017.
+//  Created by Oleg Leizer on 06/11/2017.
 //  Copyright © 2017 idev.kz. All rights reserved.
 //
 
 import XCTest
-@testable import HobbyApp
-class CityRouterTests: XCTestCase {
+
+class AddCityViewTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -19,4 +19,5 @@ class CityRouterTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+
 }

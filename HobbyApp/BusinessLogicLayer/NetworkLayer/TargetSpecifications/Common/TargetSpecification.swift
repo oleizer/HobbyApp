@@ -7,6 +7,9 @@
 //
 
 import Moya
+import Result
+
+typealias MoyaResult = Result<Moya.Response, Moya.MoyaError>
 
 protocol Fallible {
     associatedtype Error: NetworkError

@@ -15,4 +15,8 @@ class CityPresenter: CityModuleInput, CityViewOutput, CityInteractorOutput {
     func viewIsReady() {
         view.setupInitialState()
     }
+    func addCityAction() {
+        router.showAddCity()
+    }
+    
 }

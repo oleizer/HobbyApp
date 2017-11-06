@@ -7,6 +7,14 @@ import Foundation
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 enum L10n {
 
+  enum City {
+
+    enum Navigation {
+      /// Выбор города
+      static let title = L10n.tr("Localizable", "City.Navigation.Title")
+    }
+  }
+
   enum Intro {
 
     enum Message {

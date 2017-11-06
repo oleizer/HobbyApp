@@ -7,5 +7,9 @@
 //
 
 class CityRouter: CityRouterInput {
+    var transitionHandler: ModuleTransitionSource!
 
+    func showAddCity() {
+        transitionHandler.openModule(segueIdentifier: StoryboardSegue.City.toAddCity.rawValue)
+    }
 }

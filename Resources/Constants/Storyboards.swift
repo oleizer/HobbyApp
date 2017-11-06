@@ -52,10 +52,17 @@ extension UIViewController {
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 enum StoryboardScene {
+  enum AddCity: StoryboardType {
+    static let storyboardName = "AddCity"
+
+    static let initialScene = InitialSceneType<HobbyApp.AddCityViewController>(storyboard: AddCity.self)
+
+    static let addCityViewController = SceneType<HobbyApp.AddCityViewController>(storyboard: AddCity.self, identifier: "AddCityViewController")
+  }
   enum City: StoryboardType {
     static let storyboardName = "City"
 
-    static let initialScene = InitialSceneType<HobbyApp.CityViewController>(storyboard: City.self)
+    static let initialScene = InitialSceneType<UINavigationController>(storyboard: City.self)
 
     static let cityViewController = SceneType<HobbyApp.CityViewController>(storyboard: City.self, identifier: "CityViewController")
   }
@@ -63,13 +70,6 @@ enum StoryboardScene {
     static let storyboardName = "LaunchScreen"
 
     static let initialScene = InitialSceneType<UIViewController>(storyboard: LaunchScreen.self)
-  }
-  enum Login: StoryboardType {
-    static let storyboardName = "Login"
-
-    static let initialScene = InitialSceneType<HobbyApp.LoginViewController>(storyboard: Login.self)
-
-    static let loginViewController = SceneType<HobbyApp.LoginViewController>(storyboard: Login.self, identifier: "LoginViewController")
   }
   enum Main: StoryboardType {
     static let storyboardName = "Main"
@@ -79,6 +79,9 @@ enum StoryboardScene {
 }
 
 enum StoryboardSegue {
+  enum City: String, SegueType {
+    case toAddCity
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

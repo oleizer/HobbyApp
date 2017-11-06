@@ -38,8 +38,8 @@ final class City: JSONAble {
     }
     override class func fromJSON(_ data: [String: Any]) -> JSONAble {
         let json = JSON(data)
-        let id = json["id"].stringValue
-        let name = json["name"].stringValue
+        let id = json["Id"].stringValue
+        let name = json["Name"].stringValue
         let city = City(id: id, name: name)
         return city
     }

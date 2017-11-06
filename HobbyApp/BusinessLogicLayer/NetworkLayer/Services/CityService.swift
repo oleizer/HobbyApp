@@ -12,6 +12,9 @@ import PromiseKit
 class CityService {
     //private let requestSender = APIRequestSender()
 
+    func addCity(_ name: String) {
+        
+    }
     func fetchAllCities() -> Promise<[City]> {
         return APIProvider.shared.request(CitySpecification.cities).then(execute: { data -> [City] in
             guard let cities = data as? [City] else {

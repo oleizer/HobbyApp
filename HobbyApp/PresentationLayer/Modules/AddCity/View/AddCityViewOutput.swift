@@ -1,12 +1,12 @@
 //
-//  CityCityViewOutput.swift
+//  AddCityAddCityViewOutput.swift
 //  HobbyApp
 //
-//  Created by Oleg Leizer on 03/11/2017.
+//  Created by Oleg Leizer on 06/11/2017.
 //  Copyright © 2017 idev.kz. All rights reserved.
 //
 
-protocol CityViewOutput {
+protocol AddCityViewOutput {
 
     /**
         @author Oleg Leizer
@@ -14,5 +14,4 @@ protocol CityViewOutput {
     */
 
     func viewIsReady()
-    func addCityAction()
 }

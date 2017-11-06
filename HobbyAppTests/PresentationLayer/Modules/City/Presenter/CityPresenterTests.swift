@@ -25,6 +25,10 @@ class CityPresenterTest: XCTestCase {
     }
 
     class MockRouter: CityRouterInput {
+        func showAddCity() {
+            print("Show city")
+        }
+        
 
     }
 
