@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dua-Tf-V8d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="IQ0-m5-rPh">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dua-Tf-V8d" customClass="LoginViewController" customModule="HobbyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3oe-MK-T6w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBe-HW-oxE">
+                                <rect key="frame" x="30" y="180" width="315" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTouched:" destination="Dua-Tf-V8d" eventType="touchUpInside" id="e7w-Ss-vyU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhQ-hu-XNM">
+                                <rect key="frame" x="30" y="120" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="UhQ-hu-XNM" secondAttribute="trailing" constant="30" id="05t-5L-aNl"/>
+                            <constraint firstItem="UhQ-hu-XNM" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="30" id="0tC-oY-xzl"/>
+                            <constraint firstItem="bBe-HW-oxE" firstAttribute="top" secondItem="UhQ-hu-XNM" secondAttribute="bottom" constant="30" id="6Fa-NV-aJU"/>
+                            <constraint firstItem="bBe-HW-oxE" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="30" id="SnC-kX-tjb"/>
+                            <constraint firstItem="UhQ-hu-XNM" firstAttribute="top" secondItem="bF9-B5-tLr" secondAttribute="top" constant="100" id="e6c-lC-Jc6"/>
+                            <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="bBe-HW-oxE" secondAttribute="trailing" constant="30" id="gra-hY-Rph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bF9-B5-tLr"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="UhQ-hu-XNM" id="zhC-6d-Au9"/>
+                        <outlet property="loginButton" destination="bBe-HW-oxE" id="2mA-IU-NaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtf-mJ-F7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="bUg-SV-bbw" customClass="LoginModuleInitializer" customModule="HobbyApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="loginViewController" destination="Dua-Tf-V8d" id="Tpz-1g-ZZg"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="589" y="100"/>
+        </scene>
+    </scenes>
+</document>

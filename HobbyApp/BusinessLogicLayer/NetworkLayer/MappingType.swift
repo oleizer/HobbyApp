@@ -12,9 +12,11 @@ typealias FromJSONClosure = ([String: Any]) -> JSONAble
 enum MappingType: String {
     case errorType = "error"
     case noContentType = "204"
-
+    case user = "user"
     var fromJSON: FromJSONClosure {
         switch self {
+        case .user:
+            return User.fromJSON
         case .noContentType:
             return UnknownJSONAble.fromJSON
         case .errorType:
