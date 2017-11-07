@@ -2,9 +2,9 @@ platform :ios, '10.0'
 
 target 'HobbyApp' do
     use_frameworks!
-    pod 'Crashlytics'
+    #pod 'Crashlytics'
 	pod 'Validator'
-    pod 'Fabric'
+#pod 'Fabric', '~> 1.7'
 	pod 'PromiseKit'
     pod 'Moya'
     pod 'SnapKit'

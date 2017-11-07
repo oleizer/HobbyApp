@@ -14,7 +14,7 @@ class LoginViewController: UIViewController, LoginViewInput {
 
     var output: LoginViewOutput!
     // MARK: - IBOutlet
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var loginButton: UIButton!
 
     // MARK: Life cycle
@@ -26,6 +26,7 @@ class LoginViewController: UIViewController, LoginViewInput {
     @IBAction func loginButtonTouched(_ sender: Any) {
         output.login("oleizer@gmail.com")
         //output.login("")
+ 
 
     }
     
@@ -38,8 +39,26 @@ class LoginViewController: UIViewController, LoginViewInput {
 
     }
     func setupInitialState() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.backgroundColor = .clear
+        navigationItem.title = L10n.Login.Navigation.title
+
+
         loginButton.backgroundColor = ColorName.orange.color
         loginButton.layer.cornerRadius = loginButton.bounds.height / 2
+        
+
+        emailTextField.font = FontFamily.SFUIText.medium.font(size: 20)
+        emailTextField.borderStyle = .none
+        emailTextField.layer.masksToBounds = true
+        emailTextField.layer.cornerRadius = 10
+        emailTextField.backgroundColor = ColorName.lightGray.color
+        emailTextField.tintColor = ColorName.dark.color
+        emailTextField.textAlignment = .left
+        emailTextField.contentVerticalAlignment = .center
     }
     func showMessage(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
