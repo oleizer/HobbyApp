@@ -9,10 +9,10 @@
 class CityInteractor: CityInteractorInput {
 
     weak var output: CityInteractorOutput!
-    
+
     func loadCities() {
         CityService().fetchAllCities().thenFinally{ cities in
-            self.output.loadCitiesSuccessful()
+            self.output.loadCitiesSuccessful(cities)
             //guard let `self` = self else { return }
             //self.cities = cities
             //self.tableView.reloadData()

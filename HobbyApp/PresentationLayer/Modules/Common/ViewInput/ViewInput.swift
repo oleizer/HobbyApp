@@ -17,11 +17,9 @@ extension ViewInput where Self: UIViewController {
     func showProgress() {
         print("Show progress")
         MBProgressHUD.showAdded(to: self.view, animated: true)
-        //MBProgressHUD.show
     }
     func hideProgress() {
         print("Hide progress")
         MBProgressHUD.hide(for: self.view, animated: true)
-        //MBProgressHUD.hide()
     }
 }

@@ -29,7 +29,10 @@ class CityViewController: UIViewController, CityViewInput {
         //loadCities()
         output.loadCities()
     }
-
+    func setCities(cities: [City]) {
+        self.cities = cities
+        tableView.reloadData()
+    }
     // MARK: - Private
     private func setupView() {
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -38,7 +41,7 @@ class CityViewController: UIViewController, CityViewInput {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.backgroundColor = .clear
-        
+
         navigationItem.title = L10n.City.Navigation.title
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAction))
         self.navigationItem.rightBarButtonItem = addButton
