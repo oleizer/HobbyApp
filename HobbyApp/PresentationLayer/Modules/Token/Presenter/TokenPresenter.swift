@@ -7,6 +7,10 @@
 //
 
 class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
+    func selectCity() {
+        
+    }
+    
 
     weak var view: TokenViewInput!
     var interactor: TokenInteractorInput!
