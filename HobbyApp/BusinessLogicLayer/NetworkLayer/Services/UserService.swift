@@ -14,17 +14,25 @@ class UserService {
     func login(email: String) -> Promise<User> {
         return APIProvider.shared.request(UserSpecification.createUser(email: email)).then(execute: { user -> User in
             guard let user = user as? User else {
-                throw NSError()
+                throw NSError.uncastableJSONAble()
             }
             return user
         })
     }
-    func user() -> Promise<User>  {
-        return APIProvider.shared.request(UserSpecification.user).then(execute: { user -> User in
+    func loadUser(with token: String) -> Promise<User> {
+        return APIProvider.shared.request(UserSpecification.user(token: token)).then(execute: { user -> User in
             guard let user = user as? User else {
-                throw NSError()
+                throw NSError.uncastableJSONAble()
             }
             return user
-        })
+         })
     }
+//    func user() -> Promise<User>  {
+//        return APIProvider.shared.request(UserSpecification.user).then(execute: { user -> User in
+//            guard let user = user as? User else {
+//                throw NSError.uncastableJSONAble()
+//            }
+//            return user
+//        })
+//    }
 }

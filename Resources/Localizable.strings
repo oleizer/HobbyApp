@@ -12,3 +12,5 @@
 "Login.Navigation.Title" = "Авторизация";
 
 "City.Navigation.Title" = "Выбор города";
+
+"Error.UnknownError" = "Неизвестная ошибка";

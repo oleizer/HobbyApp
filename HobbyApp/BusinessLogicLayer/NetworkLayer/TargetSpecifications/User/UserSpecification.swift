@@ -10,7 +10,7 @@ import Moya
 
 enum UserSpecification {
     case createUser(email: String)
-    case user
+    case user(token: String)
 //    case cityId(cityId: Int)
 //    case editCity(cityId: Int, name: String)
 //    case deleteCity(cityId: Int)
@@ -72,8 +72,8 @@ extension UserSpecification: TargetSpecification {
             "Content-Type": "application/json",
             ]
         
-        if requiresToken {
-            assigned["Authorization"] = "Token 6e548e6831adebf50f9280d10b805347f34598805c3f75e388646bc53069be02"
+        if self.requiresToken, let token = AuthToken().token {
+            assigned["Authorization"] = "Token \(token)"
             //assigned += "Token "
         }
         return assigned

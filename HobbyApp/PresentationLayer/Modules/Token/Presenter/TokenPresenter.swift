@@ -15,4 +15,17 @@ class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
     func viewIsReady() {
 
     }
+
+    func loadUser(_ token: String) {
+        interactor.loadUser(token)
+    }
+
+    func loadUserFailed(_ error: Error) {
+
+    }
+
+    func loadUserSuccessful() {
+        let token = AuthToken.sharedKeychain
+        print(token.authToken)
+    }
 }

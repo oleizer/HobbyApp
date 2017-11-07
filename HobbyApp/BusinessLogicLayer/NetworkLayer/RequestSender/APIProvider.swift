@@ -20,21 +20,25 @@ typealias APIFailureCompletion = (NSError, Int?) -> Void
 
 class APIProvider {
     static var shared: APIProvider = APIProvider()
-//    static func endpointClosure(_ target: MultiTarget) -> Endpoint<MultiTarget> {
-//        let endpoint = Endpoint(url: url(target), sampleResponseClosure: { return target.stubbedNetworkResponse }, method: target.method, task: target.task, httpHeaderFields: target.headers)
-//        return endpoint
-//    }
-    static func DefaultProvider() -> MoyaProvider<MultiTarget> {
-        let endpointClosure = { (target: MultiTarget) -> Endpoint<MultiTarget> in
-            let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
 
-            switch target.target {
-            case let target as TargetSpecification:
-                return defaultEndpoint.adding(newHTTPHeaderFields: target.defaultHeaders)
-            default:
-                fatalError("Unexpected target type")
-            }
-        }
+    static func endpointClosure(_ target: MultiTarget) -> Endpoint<MultiTarget>{
+        let endpoint = Endpoint<MultiTarget>(url: url(target), sampleResponseClosure: { return target.stubbedNetworkResponse}, method: target.method, task: target.task, httpHeaderFields: target.headers)
+        return endpoint
+    }
+    
+    static func DefaultProvider() -> MoyaProvider<MultiTarget> {
+        
+        
+//        let endpointClosure = { (target: MultiTarget) -> Endpoint<MultiTarget> in
+//            let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
+//
+//            switch target.target {
+//            case let target as TargetSpecification:
+//                return defaultEndpoint.adding(newHTTPHeaderFields: target.defaultHeaders)
+//            default:
+//                fatalError("Unexpected target type")
+//            }
+        //}
         var plugins: [PluginType] = []
         #if DEBUG
             plugins.append(
@@ -49,8 +53,10 @@ class APIProvider {
                 }
             )
         #endif
-        return MoyaProvider<MultiTarget>(endpointClosure: endpointClosure, manager: AppManager.manager, plugins: plugins)
+//        return MoyaProvider<MultiTarget>(endpointClosure: endpointClosure, manager: AppManager.manager, plugins: plugins)
         //return MoyaProvider<MultiTarget>(endpointClosure: APIProvider.endpointClosure, manager: ElloManager.manager)
+        return MoyaProvider(endpointClosure: APIProvider.endpointClosure, manager: AppManager.manager, plugins: plugins)
+
     }
     private struct SharedProvider {
         static var instance = APIProvider.DefaultProvider()
@@ -121,20 +127,31 @@ extension APIProvider {
     private func handleRequest(target: TargetSpecification, result: MoyaResult, success: @escaping APISuccessCompletion, failure: @escaping APIFailureCompletion) {
         switch result {
         case let .success(moyaResponse):
-            let response = moyaResponse.response as? HTTPURLResponse
+            let response = moyaResponse.response
             let data = moyaResponse.data
             let statusCode = moyaResponse.statusCode
-            print(response)
+            //print(response)
             
             switch statusCode {
             case 200...299, 300...399:
-                self.handleNetworkSuccess(data: data, target: target, statusCode: statusCode, response: response, success: success, failure: failure)
+                handleNetworkSuccess(data: data, target: target, statusCode: statusCode, response: response, success: success, failure: failure)
+            case 401:
+                print("401")
             default:
-                print("de")
+                handleServerError(target.path, failure: failure, data: data, statusCode: statusCode)
             }
-            success(response)
+            //success(response)
         case let .failure(error):
-            print(error)
+            handleNetworkFailure(target, success: success, failure: failure, error: error)
+        }
+    }
+    private func handleServerError(_ path: String, failure: APIFailureCompletion, data: Data?, statusCode: Int?) {
+        let appError = APIProvider.generateAppError(data, statusCode: statusCode)
+        failure(appError, statusCode)
+    }
+    private func handleNetworkFailure(_ target: TargetSpecification, success: @escaping APISuccessCompletion, failure: @escaping APIFailureCompletion, error: Swift.Error?) {
+        delay(1) {
+            self.appRequest(target, success: success, failure: failure)
         }
     }
     private func handleNetworkSuccess(data: Data, target: TargetSpecification, statusCode: Int?, response: HTTPURLResponse?, success: @escaping APISuccessCompletion, failure: @escaping APIFailureCompletion) {
