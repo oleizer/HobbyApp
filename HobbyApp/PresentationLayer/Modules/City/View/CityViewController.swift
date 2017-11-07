@@ -10,7 +10,7 @@ import UIKit
 
 class CityViewController: UIViewController, CityViewInput {
     var output: CityViewOutput!
-    
+
     // MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
     private var selectedCity: City?
@@ -29,14 +29,21 @@ class CityViewController: UIViewController, CityViewInput {
         //loadCities()
         output.loadCities()
     }
-    
+
     // MARK: - Private
     private func setupView() {
-        self.navigationItem.title = L10n.City.Navigation.title
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .automatic
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.backgroundColor = .clear
+        
+        navigationItem.title = L10n.City.Navigation.title
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAction))
         self.navigationItem.rightBarButtonItem = addButton
     }
-    
+
     // MARK: - Actions
     @objc private func addAction() {
         print("Add Action")
@@ -49,7 +56,7 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.cities.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") else {

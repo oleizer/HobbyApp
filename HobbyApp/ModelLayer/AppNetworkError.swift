@@ -13,7 +13,7 @@ let AppNetworkErrorVersion = 1
 
 @objc(AppNetworkError)
 class AppNetworkError: JSONAble {
-    
+
     enum CodeType: String {
 //        case blacklisted = "blacklisted"
 //        case invalidRequest = "invalid_request"
@@ -32,14 +32,14 @@ class AppNetworkError: JSONAble {
         case unavailable = "unavailable"
         case unknown = "unknown"
     }
-    
+
     let attrs: [String:[String]]?
     let code: CodeType
     let detail: String?
     let messages: [String]?
     let status: String?
     let title: String
-    
+
     init(attrs: [String:[String]]?,
          code: CodeType,
          detail: String?,
@@ -55,7 +55,7 @@ class AppNetworkError: JSONAble {
         self.title = title
         super.init(version: AppNetworkErrorVersion)
     }
-    
+
     required init(coder: NSCoder) {
         let decoder = Coder(coder)
         self.attrs = decoder.decodeOptionalKey("attrs")
@@ -66,7 +66,7 @@ class AppNetworkError: JSONAble {
         self.title = decoder.decodeKey("title")
         super.init(coder: coder)
     }
-    
+
     override class func fromJSON(_ data: [String: Any]) -> JSONAble {
         let json = JSON(data)
         let title = json["title"].stringValue
@@ -81,7 +81,7 @@ class AppNetworkError: JSONAble {
         let status = json["status"].string
         let messages = json["messages"].object as? [String]
         let attrs = json["attrs"].object as? [String:[String]]
-        
+
         return AppNetworkError(
             attrs: attrs,
             code: codeType,
@@ -92,4 +92,3 @@ class AppNetworkError: JSONAble {
         )
     }
 }
-

@@ -22,6 +22,14 @@ class TokenInteractorTests: XCTestCase {
     }
 
     class MockPresenter: TokenInteractorOutput {
+        func loadUserSuccessful() {
+            
+        }
+        
+        func loadUserFailed(_ error: Error) {
+            
+        }
+        
 
     }
 }

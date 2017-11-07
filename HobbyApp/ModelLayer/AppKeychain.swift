@@ -18,12 +18,12 @@ private let AuthTokenKey = "AppAuthToken"
 
 struct AppKeychain: KeychainType {
     var keychain: Keychain
-    
+
     init() {
         //let appIdentifierPrefix: String = ElloKeys().teamId()
         keychain = Keychain(service: "kz.idev.HobbyApp", accessGroup: "1.kz.idev.HobbyApp")
     }
-    
+
     var authToken: String? {
         get { return keychain[AuthTokenKey] }
         set { keychain[AuthTokenKey] = newValue }
@@ -34,4 +34,3 @@ struct AppKeychain: KeychainType {
         set { keychain[AuthEmail] = newValue }
     }
 }
-

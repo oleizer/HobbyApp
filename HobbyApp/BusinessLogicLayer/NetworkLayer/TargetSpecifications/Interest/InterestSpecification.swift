@@ -20,7 +20,7 @@ extension InterestSpecification: TargetSpecification {
     var requiresToken: Bool {
         return false
     }
-    
+
     //public var baseURL: URL { return URL(string: "http://test.mhbb.ru/b")! }
     var path: String {
         switch self {
@@ -71,10 +71,10 @@ extension InterestSpecification: TargetSpecification {
 //
 extension InterestSpecification: Fallible {
     typealias Error = UserError
-    
+
     enum UserError: NetworkError {
         case userNotFound
-        
+
         static func error(from: MoyaError) -> UserError {
             switch from {
             case .underlying(_):
@@ -83,7 +83,7 @@ extension InterestSpecification: Fallible {
                 return .userNotFound
             }
         }
-        
+
     }
-    
+
 }

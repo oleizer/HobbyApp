@@ -10,9 +10,7 @@ class LoginInteractor: LoginInteractorInput {
 
     weak var output: LoginInteractorOutput!
     
-    
     func login(_ email: String) {
-        
         UserService().login(email: email).thenFinally { user in
             //print("User: \(user.email)")
             //result(nil)
@@ -23,22 +21,5 @@ class LoginInteractor: LoginInteractorInput {
                 //result(error as? UserSpecification.Error)
                 self.output.loginFailed(error)
         }
-    }
-    func login(_ email: String, result: @escaping (UserSpecification.Error?) -> Void) {
-        UserService().login(email: email).thenFinally { user in
-            //print("User: \(user.email)")
-            result(nil)
-            
-            }.catch { error in
-                print(error)
-                let errorTitle = error.appErrorMessage ?? L10n.Error.unknownError
-                result(error as? UserSpecification.Error)
-        }
-        
-//        UserService().createUser(with: email, success: {
-//            result(nil)
-//        }, failure: { error in
-//            result(error)
-//        })
     }
 }

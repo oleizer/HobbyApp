@@ -9,5 +9,6 @@
 import Foundation
 
 protocol CityInteractorOutput: class {
-
+    func loadCitiesSuccessful()
+    func loadCitiesFailed(_ error: Error)
 }

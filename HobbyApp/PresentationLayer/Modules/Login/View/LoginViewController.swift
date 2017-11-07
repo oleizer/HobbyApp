@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController, LoginViewInput {
 
-    
+
 
     var output: LoginViewOutput!
     // MARK: - IBOutlet
@@ -26,10 +26,10 @@ class LoginViewController: UIViewController, LoginViewInput {
     @IBAction func loginButtonTouched(_ sender: Any) {
         output.login("oleizer@gmail.com")
         //output.login("")
- 
+
 
     }
-    
+
     // MARK: LoginViewInput
     func showLoadingHUD() {
         AppHUD.showLoadingHudInView(view)
@@ -38,6 +38,8 @@ class LoginViewController: UIViewController, LoginViewInput {
         AppHUD.hideLoadingHudInView(view)
 
     }
+
+
     func setupInitialState() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -49,7 +51,7 @@ class LoginViewController: UIViewController, LoginViewInput {
 
         loginButton.backgroundColor = ColorName.orange.color
         loginButton.layer.cornerRadius = loginButton.bounds.height / 2
-        
+
 
         emailTextField.font = FontFamily.SFUIText.medium.font(size: 20)
         emailTextField.borderStyle = .none

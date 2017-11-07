@@ -21,4 +21,10 @@ class CityPresenter: CityModuleInput, CityViewOutput, CityInteractorOutput {
     func loadCities() {
         interactor.loadCities()
     }
+    func loadCitiesSuccessful() {
+        
+    }
+    func loadCitiesFailed(_ error: Error) {
+        
+    }
 }

@@ -22,10 +22,18 @@ class TokenPresenterTest: XCTestCase {
     }
 
     class MockInteractor: TokenInteractorInput {
+        func loadUser(_ token: String) {
+            
+        }
+        
 
     }
 
     class MockRouter: TokenRouterInput {
+        func showSelectCity() {
+            
+        }
+        
 
     }
 

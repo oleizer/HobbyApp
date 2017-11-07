@@ -6,7 +6,7 @@
 //  Copyright © 2017 idev.kz. All rights reserved.
 //
 
-protocol LoginViewInput: class {
+protocol LoginViewInput: class, ViewInput {
 
     /**
         @author Oleg Leizer

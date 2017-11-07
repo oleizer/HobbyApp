@@ -71,7 +71,7 @@ extension UserSpecification: TargetSpecification {
             //"Accept-Language": "",
             "Content-Type": "application/json",
             ]
-        
+
         if self.requiresToken, let token = AuthToken().token {
             assigned["Authorization"] = "Token \(token)"
             //assigned += "Token "
@@ -82,10 +82,10 @@ extension UserSpecification: TargetSpecification {
 //
 extension UserSpecification: Fallible {
     typealias Error = UserError
-    
+
     enum UserError: NetworkError {
         case userNotFound
-        
+
         static func error(from: MoyaError) -> UserError {
             switch from {
             case .underlying( _):
@@ -94,7 +94,7 @@ extension UserSpecification: Fallible {
                 return .userNotFound
             }
         }
-        
+
     }
-    
+
 }

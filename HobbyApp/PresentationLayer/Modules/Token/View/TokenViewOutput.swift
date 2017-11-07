@@ -14,6 +14,6 @@ protocol TokenViewOutput {
     */
 
     func viewIsReady()
-    func loadUser(_ token: String)
-    func selectCity()
+    func confirm(_ token: String)
+    func showSelectCity()
 }

@@ -62,8 +62,8 @@
 		A62EFD551FB1D9D9004B67D5 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD541FB1D9D9004B67D5 /* EmailTextField.swift */; };
 		A62EFD6C1FB1DB85004B67D5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD6B1FB1DB85004B67D5 /* Fonts.swift */; };
 		A62EFD6E1FB1DCC1004B67D5 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62EFD6D1FB1DCC1004B67D5 /* Intro.storyboard */; };
-		A62EFD6F1FB20D95004B67D5 /* ModuleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7C1FB048BE0057A778 /* ModuleTransition.swift */; };
-		A62EFD701FB20D95004B67D5 /* ModuleTransitionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7F1FB048BE0057A778 /* ModuleTransitionSource.swift */; };
+		A62EFD801FB21367004B67D5 /* InterestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD7F1FB21367004B67D5 /* InterestTests.swift */; };
+		A62EFD831FB21594004B67D5 /* ViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD821FB21594004B67D5 /* ViewInput.swift */; };
 		A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAA1FACC9460037B240 /* AppDelegate.swift */; };
 		A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB11FACC9460037B240 /* Assets.xcassets */; };
 		A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */; };
@@ -126,23 +126,12 @@
 		A6F83EA11FB04A5D0010342F /* AddCityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623931C40B49B7A0C404FF79 /* AddCityRouter.swift */; };
 		A6F83EA21FB04A610010342F /* AddCityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D5DFC0EEEC5D84F405EA0 /* AddCityConfigurator.swift */; };
 		A6F83EA31FB04A610010342F /* AddCityInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF6092D0C76AB9371D949CF /* AddCityInitializer.swift */; };
-		A6F83EA41FB04A9D0010342F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAFC1FAF2F0B0037B240 /* City.swift */; };
-		A6F83EA51FB04AA80010342F /* JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370BE1FAF83070061AD3C /* JSONAble.swift */; };
-		A6F83EA61FB04AB50010342F /* Coder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C21FAF84510061AD3C /* Coder.swift */; };
 		A6F83EA81FB04B920010342F /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7D1FB048BE0057A778 /* ModuleInput.swift */; };
 		A6F83EA91FB04B920010342F /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7E1FB048BE0057A778 /* ModuleOutput.swift */; };
-		A6F83EAE1FB04B960010342F /* ClosableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7A1FB048BE0057A778 /* ClosableRouter.swift */; };
 		A6F83EAF1FB04C6A0010342F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD41FACCCFB0037B240 /* Colors.swift */; };
 		A6F83EB01FB04C6A0010342F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD61FACCD020037B240 /* Images.swift */; };
 		A6F83EB11FB04C6A0010342F /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD81FACCD100037B240 /* Localizable.swift */; };
-		A6F83EB51FB04CCD0010342F /* CityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAEF1FACE07C0037B240 /* CityService.swift */; };
-		A6F83EB61FB04CCD0010342F /* CitySpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAE71FACD8E50037B240 /* CitySpecification.swift */; };
-		A6F83EB71FB04CCD0010342F /* TargetSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAE41FACD8BC0037B240 /* TargetSpecification.swift */; };
-		A6F83EB81FB04CCD0010342F /* PromiseKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C81FAF8EE40061AD3C /* PromiseKitExtensions.swift */; };
-		A6F83EB91FB04CDD0010342F /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370B91FAF82400061AD3C /* Mapper.swift */; };
-		A6F83EBA1FB04CDD0010342F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370BB1FAF82930061AD3C /* NetworkError.swift */; };
 		A6F83EC31FB04F540010342F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F83EC21FB04F540010342F /* AppManager.swift */; };
-		A6F83EC41FB04F6A0010342F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F83EC21FB04F540010342F /* AppManager.swift */; };
 		A78464AE0742E45E6908DAF0 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975E29E69477B49865E3077 /* CityViewController.swift */; };
 		A7D85C30C98D732C311738E2 /* CityInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948B3684B05439309E564315 /* CityInitializer.swift */; };
 		AA9BEC982980D46FAE873427 /* CityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC0518939F9825F4041690 /* CityViewOutput.swift */; };
@@ -276,6 +265,8 @@
 		A62EFD6A1FB1DB53004B67D5 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
 		A62EFD6B1FB1DB85004B67D5 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		A62EFD6D1FB1DCC1004B67D5 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		A62EFD7F1FB21367004B67D5 /* InterestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTests.swift; sourceTree = "<group>"; };
+		A62EFD821FB21594004B67D5 /* ViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInput.swift; sourceTree = "<group>"; };
 		A644FAA71FACC9460037B240 /* HobbyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644FAAA1FACC9460037B240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A644FAB11FACC9460037B240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -853,6 +844,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		A62EFD811FB21583004B67D5 /* ViewInput */ = {
+			isa = PBXGroup;
+			children = (
+				A62EFD821FB21594004B67D5 /* ViewInput.swift */,
+			);
+			path = ViewInput;
+			sourceTree = "<group>";
+		};
 		A644FA9E1FACC9460037B240 = {
 			isa = PBXGroup;
 			children = (
@@ -1056,6 +1055,7 @@
 			isa = PBXGroup;
 			children = (
 				A66E42191FB093830040CFB0 /* CityTests.swift */,
+				A62EFD7F1FB21367004B67D5 /* InterestTests.swift */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -1114,6 +1114,7 @@
 		A6B67C771FB048930057A778 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A62EFD811FB21583004B67D5 /* ViewInput */,
 				A6B67C781FB048BE0057A778 /* Router */,
 				A6B67C7B1FB048BE0057A778 /* Transitions */,
 			);
@@ -1317,6 +1318,7 @@
 				A644FADC1FACCD200037B240 /* SwiftGen */,
 				40582DDAE8365DF8419A7FBF /* [CP] Embed Pods Frameworks */,
 				2C7108C526371F7315AA705A /* [CP] Copy Pods Resources */,
+				A62EFD841FB21878004B67D5 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -1504,6 +1506,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A62EFD841FB21878004B67D5 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		A644FADC1FACCD200037B240 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1585,6 +1601,7 @@
 				A66370C11FAF83360061AD3C /* MappingType.swift in Sources */,
 				E5E803697BCDC6EB10FEDD45 /* CityInteractorInput.swift in Sources */,
 				A6B67C831FB048BF0057A778 /* ClosableRouter.swift in Sources */,
+				A62EFD831FB21594004B67D5 /* ViewInput.swift in Sources */,
 				23C21F026317033E543E2FE9 /* CityInteractorOutput.swift in Sources */,
 				A66E42221FB0A0D50040CFB0 /* UserService.swift in Sources */,
 				A66E42371FB183020040CFB0 /* AppHUD.swift in Sources */,
@@ -1663,35 +1680,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F83E9D1FB04A5A0010342F /* AddCityInteractorInput.swift in Sources */,
-				A6F83EBA1FB04CDD0010342F /* NetworkError.swift in Sources */,
 				A644FAC01FACC9470037B240 /* HobbyAppTests.swift in Sources */,
+				A62EFD801FB21367004B67D5 /* InterestTests.swift in Sources */,
 				A6F83E981FB04A510010342F /* AddCityViewInput.swift in Sources */,
 				A6F83EA01FB04A5D0010342F /* AddCityRouterInput.swift in Sources */,
 				A6F83EA11FB04A5D0010342F /* AddCityRouter.swift in Sources */,
 				A6F83EB11FB04C6A0010342F /* Localizable.swift in Sources */,
 				A6F83E9B1FB04A550010342F /* AddCityModuleInput.swift in Sources */,
 				A6F83EAF1FB04C6A0010342F /* Colors.swift in Sources */,
-				A6F83EAE1FB04B960010342F /* ClosableRouter.swift in Sources */,
 				A6F83EB01FB04C6A0010342F /* Images.swift in Sources */,
-				A6F83EC41FB04F6A0010342F /* AppManager.swift in Sources */,
-				A6F83EB51FB04CCD0010342F /* CityService.swift in Sources */,
 				C280ADC349A64B365272BB3A /* CityConfiguratorTests.swift in Sources */,
 				A6F83E9C1FB04A550010342F /* AddCityPresenter.swift in Sources */,
 				A20799FCE6730FEEA5C7FBAF /* CityViewTests.swift in Sources */,
 				A6F83EA91FB04B920010342F /* ModuleOutput.swift in Sources */,
 				D1666E31EFDDDFAF423F6EE1 /* CityInteractorTests.swift in Sources */,
 				A6F83E9F1FB04A5A0010342F /* AddCityInteractor.swift in Sources */,
-				A6F83EB71FB04CCD0010342F /* TargetSpecification.swift in Sources */,
-				A6F83EA41FB04A9D0010342F /* City.swift in Sources */,
-				A62EFD6F1FB20D95004B67D5 /* ModuleTransition.swift in Sources */,
-				A6F83EB61FB04CCD0010342F /* CitySpecification.swift in Sources */,
 				FBC995BB2746BC5664D1E10A /* CityPresenterTests.swift in Sources */,
 				7DD41E61E9DB67686C0FEA2D /* CityRouterTests.swift in Sources */,
 				0FDA8F2F7DB0BB46BF4B7ED0 /* AddCityConfiguratorTests.swift in Sources */,
-				A62EFD701FB20D95004B67D5 /* ModuleTransitionSource.swift in Sources */,
 				81862B174DE7A11B49AC20F4 /* AddCityViewTests.swift in Sources */,
 				A6F83E9A1FB04A510010342F /* AddCityViewController.swift in Sources */,
-				A6F83EB91FB04CDD0010342F /* Mapper.swift in Sources */,
 				A6F83E991FB04A510010342F /* AddCityViewOutput.swift in Sources */,
 				A6F83EA81FB04B920010342F /* ModuleInput.swift in Sources */,
 				A6F83EA21FB04A610010342F /* AddCityConfigurator.swift in Sources */,
@@ -1699,11 +1707,8 @@
 				A66E421D1FB095910040CFB0 /* CitySpecificationTests.swift in Sources */,
 				A6F83EA31FB04A610010342F /* AddCityInitializer.swift in Sources */,
 				A6F83E9E1FB04A5A0010342F /* AddCityInteractorOutput.swift in Sources */,
-				A6F83EA61FB04AB50010342F /* Coder.swift in Sources */,
 				4D431A61D648BE37E779ECD3 /* AddCityPresenterTests.swift in Sources */,
 				A66E421A1FB093830040CFB0 /* CityTests.swift in Sources */,
-				A6F83EA51FB04AA80010342F /* JSONAble.swift in Sources */,
-				A6F83EB81FB04CCD0010342F /* PromiseKitExtensions.swift in Sources */,
 				659712C04D7C7FDB46B8F21A /* AddCityRouterTests.swift in Sources */,
 				4C0DA3A1CC0810D4C1DBB8AE /* LoginConfiguratorTests.swift in Sources */,
 				88961853B75BE81C24ADCC2B /* LoginViewTests.swift in Sources */,

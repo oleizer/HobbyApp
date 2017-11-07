@@ -1,15 +1,15 @@
 //
-//  CityTests.swift
+//  InterestTests.swift
 //  HobbyAppTests
 //
-//  Created by Олег Лейзер on 06.11.2017.
+//  Created by Олег Лейзер on 07.11.2017.
 //  Copyright © 2017 Олег Лейзер. All rights reserved.
 //
 
 import XCTest
 @testable import HobbyApp
 
-class CityTests: XCTestCase {
+class InterestTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -23,12 +23,16 @@ class CityTests: XCTestCase {
     func testParseJSON() {
         let data: [String: Any] = [
             "Id": "1",
-            "Name": "City"
+            "Name": "Interest"
         ]
-        let city: City = City.fromJSON(data) as! City
-        XCTAssertNotNil(city)
-        XCTAssertEqual(city.name, "City")
-        XCTAssertEqual(city.id, "1")
+        let interest: Interest = Interest.fromJSON(data) as! Interest
+        XCTAssertNotNil(interest)
+        XCTAssertEqual(interest.name, "Interest")
+        XCTAssertEqual(interest.id, "1")
+    }
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {

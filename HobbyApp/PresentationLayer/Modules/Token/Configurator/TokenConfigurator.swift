@@ -20,6 +20,7 @@ class TokenModuleConfigurator {
     private func configure(viewController: TokenViewController) {
 
         let router = TokenRouter()
+        router.transitionHandler = viewController
 
         let presenter = TokenPresenter()
         presenter.view = viewController

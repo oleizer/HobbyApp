@@ -7,7 +7,9 @@
 //
 
 class TokenRouter: TokenRouterInput {
+    var transitionHandler: ModuleTransitionSource!
+
     func showSelectCity() {
-        
+        transitionHandler.openModule(segueIdentifier: StoryboardSegue.Token.toSelectCity.rawValue)
     }
 }

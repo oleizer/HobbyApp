@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         printDebug(launchOptions)
         return true
     }
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupGlobalStyles()
         return true
@@ -52,16 +52,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
     }
     //  MARK: Debug
-    
-    func printDebug(_ launchOptions: Dictionary<UIApplicationLaunchOptionsKey, Any>?) {
+
+    func printDebug(_ launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         let device = UIDevice.current
         let languages = UserDefaults.standard.object(forKey: "AppleLanguages") as! NSArray
         let currentLanguage = languages.firstObject
-        
+
         print("Device model: \(UIDevice.current)")
         print("OS: \(device.systemName) \(device.systemVersion)")
         print("Language: \(String(describing: currentLanguage))")
-        
+
     }
 }
-

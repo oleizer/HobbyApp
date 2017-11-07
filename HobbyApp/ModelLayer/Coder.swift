@@ -10,7 +10,7 @@ import Foundation
 
 struct Coder {
     let coder: NSCoder
-    
+
     init(_ coder: NSCoder) {
         self.coder = coder
     }
@@ -20,7 +20,7 @@ extension Coder {
     func decodeKey<T>(_ key: String) -> T {
         return coder.decodeObject(forKey: key) as! T
     }
-    
+
     func decodeKey(_ key: String) -> Bool {
         if coder.containsValue(forKey: key) {
             return coder.decodeBool(forKey: key)
@@ -28,7 +28,7 @@ extension Coder {
             return false
         }
     }
-    
+
     func decodeKey(_ key: String) -> Int {
         return Int(coder.decodeCInt(forKey: key))
     }
@@ -42,7 +42,7 @@ extension Coder {
             return .none
         }
     }
-    
+
     func decodeOptionalKey(_ key: String) -> Bool? {
         if coder.containsValue(forKey: key) {
             return coder.decodeBool(forKey: key)
@@ -50,7 +50,7 @@ extension Coder {
             return .none
         }
     }
-    
+
     func decodeOptionalKey(_ key: String) -> Int? {
         if coder.containsValue(forKey: key) {
             return Int(coder.decodeCInt(forKey: key))

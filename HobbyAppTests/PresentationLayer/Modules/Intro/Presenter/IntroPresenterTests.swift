@@ -26,6 +26,10 @@ class IntroPresenterTest: XCTestCase {
     }
 
     class MockRouter: IntroRouterInput {
+        func showLogin() {
+            
+        }
+        
 
     }
 

@@ -22,14 +22,14 @@ final class Interest: JSONAble {
         self.name = name
         super.init(version: CityVersion)
     }
-    
+
     required init(coder: NSCoder) {
         let decoder = Coder(coder)
         id = decoder.decodeKey("id")
         name = decoder.decodeKey("name")
         super.init(coder: coder)
     }
-    
+
     override func encode(with coder: NSCoder) {
         let encoder = Coder(coder)
         encoder.encodeObject(id, forKey: "id")

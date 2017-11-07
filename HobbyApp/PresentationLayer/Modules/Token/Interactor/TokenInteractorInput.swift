@@ -10,5 +10,5 @@ import Foundation
 
 protocol TokenInteractorInput {
 
-    func loadUser(_ token: String)
+    func confirm(_ token: String)
 }

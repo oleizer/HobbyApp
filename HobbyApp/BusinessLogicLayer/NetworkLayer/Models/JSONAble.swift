@@ -15,24 +15,24 @@ protocol JSONSaveable {
 }
 class JSONAble: NSObject, NSCoding {
     let version: Int
-    
+
     init(version: Int) {
         self.version = version
         super.init()
     }
-    
+
     required init(coder: NSCoder) {
         let decoder = Coder(coder)
 
         self.version = decoder.decodeKey("version")
     }
-    
+
     func encode(with encoder: NSCoder) {
         let coder = Coder(encoder)
 
         coder.encodeObject(version, forKey: "version")
     }
-    
+
     class func fromJSON(_ data: [String: Any]) -> JSONAble {
         return JSONAble(version: JSONAbleVersion)
     }

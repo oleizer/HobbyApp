@@ -28,11 +28,11 @@ class IntroViewController: UIViewController, IntroViewInput {
         welcomeLabel.text = L10n.Intro.Welcome.text
         infoLabel.text = L10n.Intro.Message.text
         nextButton.setTitle(L10n.Intro.Next.title, for: .normal)
-        
+
         nextButton.backgroundColor = ColorName.orange.color
         nextButton.layer.cornerRadius = nextButton.bounds.height / 2
     }
-    
+
     @IBAction func nextButtonTouched(_ sender: Any) {
         output.showLogin()
     }
