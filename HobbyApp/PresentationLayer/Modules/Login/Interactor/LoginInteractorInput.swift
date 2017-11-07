@@ -10,4 +10,6 @@ import Foundation
 
 protocol LoginInteractorInput {
     func login(_ email: String, result: @escaping (UserSpecification.Error?) -> Void)
+    func login(_ email: String)
+
 }

@@ -46,6 +46,7 @@
                     <connections>
                         <outlet property="saveButton" destination="kus-jf-yny" id="McL-QZ-L26"/>
                         <outlet property="tokenTextField" destination="mLk-aD-Ogl" id="xxc-gW-5C6"/>
+                        <segue destination="Kbm-pU-0Ne" kind="show" identifier="toSelectCity" id="QOg-OY-6ju"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6V-Ya-Mpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -56,6 +57,14 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="436" y="-172"/>
+        </scene>
+        <!--City-->
+        <scene sceneID="GSu-UI-Uot">
+            <objects>
+                <viewControllerPlaceholder storyboardName="City" id="Kbm-pU-0Ne" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1D-CZ-PWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="-142"/>
         </scene>
     </scenes>
 </document>

@@ -14,4 +14,7 @@ protocol LoginViewInput: class {
     */
 
     func setupInitialState()
+    func showLoadingHUD()
+    func hideLoadingHUD()
+    func showMessage(title: String, message: String)
 }

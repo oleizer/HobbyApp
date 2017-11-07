@@ -9,5 +9,6 @@
 import Foundation
 
 protocol LoginInteractorOutput: class {
-
+    func loginSuccessful()
+    func loginFailed(_ error: Error)
 }

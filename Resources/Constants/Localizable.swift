@@ -15,6 +15,11 @@ enum L10n {
     }
   }
 
+  enum Error {
+    /// Неизвестная ошибка
+    static let unknownError = L10n.tr("Localizable", "Error.UnknownError")
+  }
+
   enum Intro {
 
     enum Message {

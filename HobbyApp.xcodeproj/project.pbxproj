@@ -51,8 +51,6 @@
 		A20799FCE6730FEEA5C7FBAF /* CityViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA76696B6009808D65E51A5E /* CityViewTests.swift */; };
 		A60ADCC11FAF713300C358E0 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60ADCC01FAF713300C358E0 /* APIProvider.swift */; };
 		A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAA1FACC9460037B240 /* AppDelegate.swift */; };
-		A644FAAD1FACC9460037B240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAC1FACC9460037B240 /* ViewController.swift */; };
-		A644FAB01FACC9460037B240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAAE1FACC9460037B240 /* Main.storyboard */; };
 		A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB11FACC9460037B240 /* Assets.xcassets */; };
 		A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */; };
 		A644FAC01FACC9470037B240 /* HobbyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FABF1FACC9470037B240 /* HobbyAppTests.swift */; };
@@ -88,6 +86,10 @@
 		A66E42281FB0BFD20040CFB0 /* Token.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66E42271FB0BFD20040CFB0 /* Token.storyboard */; };
 		A66E422B1FB0D9C60040CFB0 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E422A1FB0D9C60040CFB0 /* AuthToken.swift */; };
 		A66E422D1FB0D9F30040CFB0 /* AppKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E422C1FB0D9F30040CFB0 /* AppKeychain.swift */; };
+		A66E42301FB0DEC20040CFB0 /* NSErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E422F1FB0DEC20040CFB0 /* NSErrorExtensions.swift */; };
+		A66E42321FB0DEEA0040CFB0 /* AppNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42311FB0DEEA0040CFB0 /* AppNetworkError.swift */; };
+		A66E42351FB0E4880040CFB0 /* FreeMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42341FB0E4880040CFB0 /* FreeMethods.swift */; };
+		A66E42371FB183020040CFB0 /* AppHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42361FB183020040CFB0 /* AppHUD.swift */; };
 		A6B67C761FB047AD0057A778 /* AddCity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B67C751FB047AD0057A778 /* AddCity.storyboard */; };
 		A6B67C821FB048BF0057A778 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C791FB048BE0057A778 /* Router.swift */; };
 		A6B67C831FB048BF0057A778 /* ClosableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7A1FB048BE0057A778 /* ClosableRouter.swift */; };
@@ -124,16 +126,12 @@
 		A6F83EAF1FB04C6A0010342F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD41FACCCFB0037B240 /* Colors.swift */; };
 		A6F83EB01FB04C6A0010342F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD61FACCD020037B240 /* Images.swift */; };
 		A6F83EB11FB04C6A0010342F /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAD81FACCD100037B240 /* Localizable.swift */; };
-		A6F83EB31FB04CCD0010342F /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60ADCC01FAF713300C358E0 /* APIProvider.swift */; };
-		A6F83EB41FB04CCD0010342F /* APIProviderErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C61FAF88750061AD3C /* APIProviderErrors.swift */; };
 		A6F83EB51FB04CCD0010342F /* CityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAEF1FACE07C0037B240 /* CityService.swift */; };
 		A6F83EB61FB04CCD0010342F /* CitySpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAE71FACD8E50037B240 /* CitySpecification.swift */; };
 		A6F83EB71FB04CCD0010342F /* TargetSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAE41FACD8BC0037B240 /* TargetSpecification.swift */; };
 		A6F83EB81FB04CCD0010342F /* PromiseKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C81FAF8EE40061AD3C /* PromiseKitExtensions.swift */; };
 		A6F83EB91FB04CDD0010342F /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370B91FAF82400061AD3C /* Mapper.swift */; };
 		A6F83EBA1FB04CDD0010342F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370BB1FAF82930061AD3C /* NetworkError.swift */; };
-		A6F83EBB1FB04CDD0010342F /* MappingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66370C01FAF83360061AD3C /* MappingType.swift */; };
-		A6F83EBC1FB04D620010342F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAC1FACC9460037B240 /* ViewController.swift */; };
 		A6F83EC31FB04F540010342F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F83EC21FB04F540010342F /* AppManager.swift */; };
 		A6F83EC41FB04F6A0010342F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F83EC21FB04F540010342F /* AppManager.swift */; };
 		A78464AE0742E45E6908DAF0 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975E29E69477B49865E3077 /* CityViewController.swift */; };
@@ -230,8 +228,6 @@
 		A60ADCC01FAF713300C358E0 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		A644FAA71FACC9460037B240 /* HobbyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644FAAA1FACC9460037B240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A644FAAC1FACC9460037B240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A644FAAF1FACC9460037B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A644FAB11FACC9460037B240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A644FAB41FACC9460037B240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A644FAB61FACC9460037B240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -270,6 +266,10 @@
 		A66E42271FB0BFD20040CFB0 /* Token.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Token.storyboard; sourceTree = "<group>"; };
 		A66E422A1FB0D9C60040CFB0 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		A66E422C1FB0D9F30040CFB0 /* AppKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeychain.swift; sourceTree = "<group>"; };
+		A66E422F1FB0DEC20040CFB0 /* NSErrorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtensions.swift; sourceTree = "<group>"; };
+		A66E42311FB0DEEA0040CFB0 /* AppNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetworkError.swift; sourceTree = "<group>"; };
+		A66E42341FB0E4880040CFB0 /* FreeMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeMethods.swift; sourceTree = "<group>"; };
+		A66E42361FB183020040CFB0 /* AppHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHUD.swift; sourceTree = "<group>"; };
 		A6B67C751FB047AD0057A778 /* AddCity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCity.storyboard; sourceTree = "<group>"; };
 		A6B67C791FB048BE0057A778 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A6B67C7A1FB048BE0057A778 /* ClosableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosableRouter.swift; sourceTree = "<group>"; };
@@ -715,13 +715,13 @@
 		A644FAA91FACC9460037B240 /* HobbyApp */ = {
 			isa = PBXGroup;
 			children = (
+				A66E42331FB0E4720040CFB0 /* Utilities */,
+				A66E422E1FB0DEAE0040CFB0 /* Extensions */,
 				A66E42291FB0C2840040CFB0 /* View */,
 				A644FAD21FACC9C20037B240 /* ModelLayer */,
 				A644FAD11FACC9B40037B240 /* BusinessLogicLayer */,
 				A644FAD01FACC9AA0037B240 /* PresentationLayer */,
 				A644FAAA1FACC9460037B240 /* AppDelegate.swift */,
-				A644FAAC1FACC9460037B240 /* ViewController.swift */,
-				A644FAAE1FACC9460037B240 /* Main.storyboard */,
 				A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */,
 			);
 			path = HobbyApp;
@@ -783,6 +783,7 @@
 				A66E42161FB08BA60040CFB0 /* Interest.swift */,
 				A66E42251FB0A58E0040CFB0 /* User.swift */,
 				A66E422C1FB0D9F30040CFB0 /* AppKeychain.swift */,
+				A66E42311FB0DEEA0040CFB0 /* AppNetworkError.swift */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -913,8 +914,25 @@
 		A66E42291FB0C2840040CFB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A66E42361FB183020040CFB0 /* AppHUD.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A66E422E1FB0DEAE0040CFB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A66E422F1FB0DEC20040CFB0 /* NSErrorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A66E42331FB0E4720040CFB0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A66E42341FB0E4880040CFB0 /* FreeMethods.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A692F4F249D13A8F267E3621 /* Interactor */ = {
@@ -1190,7 +1208,6 @@
 				A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */,
 				A66E42281FB0BFD20040CFB0 /* Token.storyboard in Resources */,
 				A66E42241FB0A1440040CFB0 /* Login.storyboard in Resources */,
-				A644FAB01FACC9460037B240 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1360,11 +1377,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A644FADB1FACCD180037B240 /* Storyboards.swift in Sources */,
-				A644FAAD1FACC9460037B240 /* ViewController.swift in Sources */,
 				A644FAD71FACCD020037B240 /* Images.swift in Sources */,
 				A644FAD91FACCD100037B240 /* Localizable.swift in Sources */,
 				A66E422D1FB0D9F30040CFB0 /* AppKeychain.swift in Sources */,
 				A66E42151FB08B650040CFB0 /* InterestService.swift in Sources */,
+				A66E42321FB0DEEA0040CFB0 /* AppNetworkError.swift in Sources */,
 				A644FAD51FACCCFB0037B240 /* Colors.swift in Sources */,
 				A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */,
 				A644FAE81FACD8E50037B240 /* CitySpecification.swift in Sources */,
@@ -1383,12 +1400,14 @@
 				8374B5E4A9E263D49B9F9591 /* CityModuleInput.swift in Sources */,
 				A6B67C891FB048BF0057A778 /* ModuleTransitionSource+UIViewController.swift in Sources */,
 				351B6C5F275240358611E77D /* CityPresenter.swift in Sources */,
+				A66E42301FB0DEC20040CFB0 /* NSErrorExtensions.swift in Sources */,
 				A6B67C861FB048BF0057A778 /* ModuleOutput.swift in Sources */,
 				A66370C11FAF83360061AD3C /* MappingType.swift in Sources */,
 				E5E803697BCDC6EB10FEDD45 /* CityInteractorInput.swift in Sources */,
 				A6B67C831FB048BF0057A778 /* ClosableRouter.swift in Sources */,
 				23C21F026317033E543E2FE9 /* CityInteractorOutput.swift in Sources */,
 				A66E42221FB0A0D50040CFB0 /* UserService.swift in Sources */,
+				A66E42371FB183020040CFB0 /* AppHUD.swift in Sources */,
 				235A4EDFBF68AAB9135C13BE /* CityInteractor.swift in Sources */,
 				A644FAF01FACE07C0037B240 /* CityService.swift in Sources */,
 				A6B67C841FB048BF0057A778 /* ModuleTransition.swift in Sources */,
@@ -1431,6 +1450,7 @@
 				D1E5C67ED6AA5626F8FAAA63 /* LoginInitializer.swift in Sources */,
 				A66E42261FB0A58E0040CFB0 /* User.swift in Sources */,
 				460445640481E28520868320 /* TokenViewInput.swift in Sources */,
+				A66E42351FB0E4880040CFB0 /* FreeMethods.swift in Sources */,
 				8D7035C672210C0A25C1EB50 /* TokenViewOutput.swift in Sources */,
 				B56D77B5633F1ABE057E3E3F /* TokenViewController.swift in Sources */,
 				125D64CA8D8B6598C8733ACE /* TokenModuleInput.swift in Sources */,
@@ -1452,9 +1472,7 @@
 				A6F83E9D1FB04A5A0010342F /* AddCityInteractorInput.swift in Sources */,
 				A6F83EBA1FB04CDD0010342F /* NetworkError.swift in Sources */,
 				A644FAC01FACC9470037B240 /* HobbyAppTests.swift in Sources */,
-				A6F83EBB1FB04CDD0010342F /* MappingType.swift in Sources */,
 				A6F83E981FB04A510010342F /* AddCityViewInput.swift in Sources */,
-				A6F83EB31FB04CCD0010342F /* APIProvider.swift in Sources */,
 				A6F83EA01FB04A5D0010342F /* AddCityRouterInput.swift in Sources */,
 				A6F83EA11FB04A5D0010342F /* AddCityRouter.swift in Sources */,
 				A6F83EB11FB04C6A0010342F /* Localizable.swift in Sources */,
@@ -1473,7 +1491,6 @@
 				D1666E31EFDDDFAF423F6EE1 /* CityInteractorTests.swift in Sources */,
 				A6F83E9F1FB04A5A0010342F /* AddCityInteractor.swift in Sources */,
 				A6F83EB71FB04CCD0010342F /* TargetSpecification.swift in Sources */,
-				A6F83EBC1FB04D620010342F /* ViewController.swift in Sources */,
 				A6F83EA41FB04A9D0010342F /* City.swift in Sources */,
 				A6F83EB61FB04CCD0010342F /* CitySpecification.swift in Sources */,
 				A6F83EAD1FB04B960010342F /* Router.swift in Sources */,
@@ -1495,7 +1512,6 @@
 				4D431A61D648BE37E779ECD3 /* AddCityPresenterTests.swift in Sources */,
 				A66E421A1FB093830040CFB0 /* CityTests.swift in Sources */,
 				A6F83EA51FB04AA80010342F /* JSONAble.swift in Sources */,
-				A6F83EB41FB04CCD0010342F /* APIProviderErrors.swift in Sources */,
 				A6F83EB81FB04CCD0010342F /* PromiseKitExtensions.swift in Sources */,
 				A6F83EA71FB04B920010342F /* ModuleTransition.swift in Sources */,
 				659712C04D7C7FDB46B8F21A /* AddCityRouterTests.swift in Sources */,
@@ -1523,14 +1539,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A644FAAE1FACC9460037B240 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A644FAAF1FACC9460037B240 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
