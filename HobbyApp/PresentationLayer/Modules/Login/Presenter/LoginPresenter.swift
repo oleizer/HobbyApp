@@ -17,16 +17,17 @@ class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
     }
     
     func login(_ email: String) {
-        print(email)
-        self.interactor.login(email) { [unowned self] error in
-            if let error = error {
-                print(error)
-            } else {
-                print("Success")
-                self.router.showToken()
-            }
-        }
-
+        view.showLoadingHUD()
+        self.interactor.login(email)
+    }
+    func loginSuccessful() {
+        view.hideLoadingHUD()
+        router.showToken()
+    }
+    
+    func loginFailed(_ error: Error) {
+        view.hideLoadingHUD()
+        self.view.showMessage(title: "Error", message: error.appErrorMessage ?? L10n.Error.unknownError)
     }
 
 }

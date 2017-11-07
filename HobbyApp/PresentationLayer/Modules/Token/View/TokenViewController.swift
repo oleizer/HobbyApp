@@ -25,7 +25,7 @@ class TokenViewController: UIViewController, TokenViewInput {
     func setupInitialState() {
     }
     @IBAction func saveButtonTouched(_ sender: Any) {
-        output.login("oleizer@gmail.com")
-        
+        //output.login("oleizer@gmail.com")
+        output.loadUser("6e548e6831adebf50f9280d10b805347f34598805c3f75e388646bc53069be02")
     }
 }

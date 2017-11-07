@@ -9,5 +9,6 @@
 import Foundation
 
 protocol TokenInteractorOutput: class {
-
+    func loadUserSuccessful()
+    func loadUserFailed(_ error: Error)
 }

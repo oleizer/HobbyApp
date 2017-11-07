@@ -11,6 +11,8 @@ typealias FromJSONClosure = ([String: Any]) -> JSONAble
 
 enum MappingType: String {
     case errorType = "error"
+    case errorsType = "Message"
+
     case noContentType = "204"
     case user = "user"
     var fromJSON: FromJSONClosure {
@@ -21,6 +23,8 @@ enum MappingType: String {
             return UnknownJSONAble.fromJSON
         case .errorType:
             return City.fromJSON
+        case .errorsType:
+            return AppNetworkError.fromJSON
         }
     }
 }
