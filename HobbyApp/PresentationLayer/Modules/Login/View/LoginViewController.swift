@@ -17,6 +17,11 @@ class LoginViewController: UIViewController, LoginViewInput {
     @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var loginButton: UIButton!
 
+    // MARK: - Varibles
+    private var email: String {
+        get { return emailTextField.text?.trimmingCharacters(in: CharacterSet.whitespaces) ?? "" }
+        set { emailTextField.text = email }
+    }
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()

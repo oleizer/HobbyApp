@@ -601,11 +601,11 @@
 			isa = PBXGroup;
 			children = (
 				A6B67C771FB048930057A778 /* Common */,
-				3D769F78CFFDD666616C4F72 /* City */,
-				D099AE9FA753ACCE2C45B1FF /* AddCity */,
+				0E8A2DE4817804D2F35C5B94 /* Intro */,
 				903D8655DFA1D6F130C1C3D7 /* Login */,
 				990197C641C6F92E10106D4E /* Token */,
-				0E8A2DE4817804D2F35C5B94 /* Intro */,
+				3D769F78CFFDD666616C4F72 /* City */,
+				D099AE9FA753ACCE2C45B1FF /* AddCity */,
 			);
 			path = Modules;
 			sourceTree = "<group>";

@@ -42,6 +42,14 @@ class LoginPresenterTest: XCTestCase {
     }
 
     class MockViewController: LoginViewInput {
+        func showProgress() {
+            
+        }
+        
+        func hideProgress() {
+            
+        }
+        
         func showLoadingHUD() {
             
         }
