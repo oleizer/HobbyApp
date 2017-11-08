@@ -12,8 +12,8 @@ target 'HobbyApp' do
     pod 'MBProgressHUD'
     pod 'KeychainAccess'
     pod 'SwiftLint'
-    pod 'SwiftyUserDefaults', '~> 3.0'
-    pod 'SwiftyJSON', '4.0.0-alpha.1'
+    pod 'SwiftyUserDefaults'
+    pod 'SwiftyJSON'
     target 'HobbyAppTests' do
     inherit! :search_paths
     #Put pods used for both test targets here
