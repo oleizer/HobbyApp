@@ -135,6 +135,7 @@
 		A6D6AD466EB916E91229E6DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4552D28A6B7CBECE4E2864 /* LoginViewController.swift */; };
 		A6EDAC4B1FB39CBB007223F4 /* ActivitySpecifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */; };
 		A6EDAC4D1FB39E78007223F4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4C1FB39E78007223F4 /* Activity.swift */; };
+		A6EDAC511FB3A037007223F4 /* ActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC501FB3A037007223F4 /* ActivityTests.swift */; };
 		A6F83E981FB04A510010342F /* AddCityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171FE41F91D17091B1954B5D /* AddCityViewInput.swift */; };
 		A6F83E991FB04A510010342F /* AddCityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9FBACCF570BF9B212DB09 /* AddCityViewOutput.swift */; };
 		A6F83E9A1FB04A510010342F /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D075CE1806FEEB6771ACE4 /* AddCityViewController.swift */; };
@@ -372,6 +373,7 @@
 		A6C538E30E835611A436D2DB /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
 		A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySpecifications.swift; sourceTree = "<group>"; };
 		A6EDAC4C1FB39E78007223F4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		A6EDAC501FB3A037007223F4 /* ActivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTests.swift; sourceTree = "<group>"; };
 		A6F83EC21FB04F540010342F /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		A7F1E9C1A445DC847270037C /* LoginRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
 		A81D59D8DF36D4421AC51366 /* CityPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityPresenter.swift; sourceTree = "<group>"; };
@@ -1219,6 +1221,7 @@
 			children = (
 				A66E42191FB093830040CFB0 /* CityTests.swift */,
 				A62EFD7F1FB21367004B67D5 /* InterestTests.swift */,
+				A6EDAC501FB3A037007223F4 /* ActivityTests.swift */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -1948,6 +1951,7 @@
 				4C0DA3A1CC0810D4C1DBB8AE /* LoginConfiguratorTests.swift in Sources */,
 				88961853B75BE81C24ADCC2B /* LoginViewTests.swift in Sources */,
 				6752168E06266678D5958604 /* LoginInteractorTests.swift in Sources */,
+				A6EDAC511FB3A037007223F4 /* ActivityTests.swift in Sources */,
 				951C4496542BF225E1962EB2 /* LoginPresenterTests.swift in Sources */,
 				498BDFFA6BDB54FF42F230D7 /* LoginRouterTests.swift in Sources */,
 				ED2FF4715EDFBABCABAF18DE /* TokenConfiguratorTests.swift in Sources */,

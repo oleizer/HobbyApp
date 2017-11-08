@@ -28,10 +28,10 @@ class CityViewTests: XCTestCase {
         self.view?.viewDidLoad()
         XCTAssert(self.output?.viewIsReadyWasCalled == true)
     }
-    func testSuccessLoadCityWasCalled(){
-        self.view?.viewDidLoad()
-        XCTAssert(self.output?.loadCityWasCalled == true)
-    }
+//    func testSuccessLoadCityWasCalled(){
+//        self.view?.viewDidLoad()
+//        XCTAssert(self.output?.loadCityWasCalled == true)
+//    }
     
     final class CityViewOutputMock: CityViewOutput {
         func city(atIndex index: Int) -> City {
