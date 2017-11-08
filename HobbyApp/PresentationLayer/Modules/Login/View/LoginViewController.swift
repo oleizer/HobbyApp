@@ -20,7 +20,7 @@ class LoginViewController: UIViewController, LoginViewInput {
     // MARK: - Varibles
     private var email: String {
         get { return emailTextField.text?.trimmingCharacters(in: CharacterSet.whitespaces) ?? "" }
-        set { emailTextField.text = email }
+        set { emailTextField.text = newValue }
     }
     // MARK: Life cycle
     override func viewDidLoad() {
