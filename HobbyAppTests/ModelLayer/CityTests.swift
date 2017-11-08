@@ -22,13 +22,13 @@ class CityTests: XCTestCase {
     }
     func testParseJSON() {
         let data: [String: Any] = [
-            "Id": "1",
+            "Id": 1,
             "Name": "City"
         ]
         let city: City = City.fromJSON(data) as! City
         XCTAssertNotNil(city)
         XCTAssertEqual(city.name, "City")
-        XCTAssertEqual(city.id, "1")
+        XCTAssertEqual(city.id, 1)
     }
     
     func testPerformanceExample() {

@@ -9,10 +9,10 @@
 import Foundation
 import PromiseKit
 class InterestService {
-    func getAllInterests() -> Promise<[Interest]> {
+    func fetchAllInterests() -> Promise<[Interest]> {
         return APIProvider.shared.request(InterestSpecification.interests).then(execute: { data -> [Interest] in
             guard let interests = data as? [Interest] else {
-                throw NSError()
+                throw NSError.uncastableJSONAble()
             }
             return interests
         })

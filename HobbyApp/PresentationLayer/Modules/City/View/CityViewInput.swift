@@ -14,5 +14,7 @@ protocol CityViewInput: class, ViewInput {
     */
 
     func setupInitialState()
-    func setCities(cities: [City])
+    func showContent()
+    func showNoContent()
+    func changeDoneState(isEnabled: Bool)
 }

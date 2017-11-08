@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CityRouterInput {
-    func showAddCity()
+    func showInterest()
 }

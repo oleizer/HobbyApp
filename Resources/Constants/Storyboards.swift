@@ -66,6 +66,13 @@ enum StoryboardScene {
 
     static let cityViewController = SceneType<HobbyApp.CityViewController>(storyboard: City.self, identifier: "CityViewController")
   }
+  enum Interest: StoryboardType {
+    static let storyboardName = "Interest"
+
+    static let initialScene = InitialSceneType<UINavigationController>(storyboard: Interest.self)
+
+    static let interestViewController = SceneType<HobbyApp.InterestViewController>(storyboard: Interest.self, identifier: "InterestViewController")
+  }
   enum Intro: StoryboardType {
     static let storyboardName = "Intro"
 
@@ -97,6 +104,7 @@ enum StoryboardScene {
 enum StoryboardSegue {
   enum City: String, SegueType {
     case toAddCity
+    case toInterest
   }
   enum Intro: String, SegueType {
     case toLogin

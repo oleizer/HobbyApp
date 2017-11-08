@@ -51,9 +51,9 @@ extension InterestSpecification: TargetSpecification {
     var mappingType: MappingType {
         switch self {
         case .interests:
-            return .errorType
+            return .interest
         default:
-            return .errorType
+            return .interest
         }
     }
     //    var sampleData: Data {

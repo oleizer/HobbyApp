@@ -12,8 +12,9 @@ protocol CityViewOutput {
         @author Oleg Leizer
         Notify presenter that view is ready
     */
-
+    func city(atIndex index: Int) -> City
+    func numberOfRows() -> Int
     func viewIsReady()
-    func addCityAction()
-    func loadCities()
+    func didSelectCity(_ city: City)
+    func doneAction()
 }

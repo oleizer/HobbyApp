@@ -11,14 +11,32 @@ import XCTest
 
 class {{ module_info.name }}ViewTests: XCTestCase {
 
+    private var view: {{ module_info.name }}ViewController?
+    private var output: {{ module_info.name }}ViewOutputMock?
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        view = {{ module_info.name }}ViewController()
+        output = {{ module_info.name }}ViewOutputMock()
+        view?.output = output
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    func testThatViewNotifiesPresenterOnDidLoad() {
+        // when
+        self.view?.viewDidLoad()
+        // then
+        XCTAssert(self.output?.viewLoadedWasCalled == true)
+    }
+    final class {{ module_info.name }}ViewOutputMock: {{ module_info.name }}ViewOutput {
+        var viewIsReadyWasCalled: Bool = false
 
+        func viewIsReadyWasCalled() {
+            viewIsReadyWasCalled = true
+        }
+    }
 }

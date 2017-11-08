@@ -10,4 +10,5 @@ import Foundation
 
 protocol CityInteractorInput {
     func loadCities()
+    func setCity(_ cityId: Int)
 }

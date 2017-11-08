@@ -22,12 +22,20 @@ class CityPresenterTest: XCTestCase {
     }
 
     class MockInteractor: CityInteractorInput {
+        func setCity(_ cityId: Int) {
+            
+        }
+        
         func loadCities() {
             print("load")
         }
     }
 
     class MockRouter: CityRouterInput {
+        func showInterest() {
+            
+        }
+        
         func showAddCity() {
             print("Show city")
         }
@@ -36,6 +44,18 @@ class CityPresenterTest: XCTestCase {
     }
 
     class MockViewController: CityViewInput {
+        func showContent() {
+            
+        }
+        
+        func showNoContent() {
+            
+        }
+        
+        func changeDoneState(isEnabled: Bool) {
+            
+        }
+        
         func setCities(cities: [City]) {
             
         }

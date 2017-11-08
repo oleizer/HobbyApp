@@ -13,9 +13,9 @@ import SwiftyJSON
 let CityVersion = 1
 
 final class City: JSONAble {
-    let id: String
+    let id: Int
     let name: String
-    init(id: String,
+    init(id: Int,
          name: String)
     {
         self.id = id
@@ -38,7 +38,7 @@ final class City: JSONAble {
     }
     override class func fromJSON(_ data: [String: Any]) -> JSONAble {
         let json = JSON(data)
-        let id = json["Id"].stringValue
+        let id = json["Id"].intValue
         let name = json["Name"].stringValue
         let city = City(id: id, name: name)
         return city

@@ -53,9 +53,9 @@ extension CitySpecification: TargetSpecification {
     var mappingType: MappingType {
         switch self {
         case .cities:
-            return .errorType
+            return .city
         default:
-            return .errorType
+            return .city
         }
     }
 //    var sampleData: Data {
