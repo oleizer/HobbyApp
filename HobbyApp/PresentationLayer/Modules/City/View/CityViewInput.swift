@@ -6,7 +6,7 @@
 //  Copyright © 2017 idev.kz. All rights reserved.
 //
 
-protocol CityViewInput: class {
+protocol CityViewInput: class, ViewInput {
 
     /**
         @author Oleg Leizer
@@ -14,4 +14,5 @@ protocol CityViewInput: class {
     */
 
     func setupInitialState()
+    func setCities(cities: [City])
 }

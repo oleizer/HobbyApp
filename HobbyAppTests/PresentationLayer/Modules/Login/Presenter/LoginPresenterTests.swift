@@ -22,14 +22,46 @@ class LoginPresenterTest: XCTestCase {
     }
 
     class MockInteractor: LoginInteractorInput {
+        func login(_ email: String, result: @escaping (UserSpecification.Error?) -> Void) {
+            
+        }
+        
+        func login(_ email: String) {
+            
+        }
+        
 
     }
 
     class MockRouter: LoginRouterInput {
+        func showToken() {
+            
+        }
+        
 
     }
 
     class MockViewController: LoginViewInput {
+        func showProgress() {
+            
+        }
+        
+        func hideProgress() {
+            
+        }
+        
+        func showLoadingHUD() {
+            
+        }
+        
+        func hideLoadingHUD() {
+            
+        }
+        
+        func showMessage(title: String, message: String) {
+            
+        }
+        
 
         func setupInitialState() {
 

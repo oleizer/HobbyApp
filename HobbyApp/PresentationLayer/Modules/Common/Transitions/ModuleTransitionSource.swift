@@ -5,7 +5,6 @@
 import UIKit
 
 protocol ModuleTransitionDestination: class {
-
     var moduleInput: ModuleInput! { get }
 }
 
@@ -34,7 +33,6 @@ protocol ModuleTransitionSource: class {
 }
 
 extension ModuleTransitionSource {
-
     func openModule(segueIdentifier: String) {
         openModule(segueIdentifier: segueIdentifier) { (_: ModuleInput) in }
     }

@@ -5,7 +5,7 @@
 import UIKit
 
 extension UIViewController {
-    
+
     class func performSwizzling() {
         if self != UIViewController.self { return }
 

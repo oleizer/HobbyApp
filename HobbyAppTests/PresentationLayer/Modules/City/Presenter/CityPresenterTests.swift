@@ -36,6 +36,18 @@ class CityPresenterTest: XCTestCase {
     }
 
     class MockViewController: CityViewInput {
+        func setCities(cities: [City]) {
+            
+        }
+        
+        func showProgress() {
+            
+        }
+        
+        func hideProgress() {
+            
+        }
+        
 
         func setupInitialState() {
 

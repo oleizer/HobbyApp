@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4fs-jY-coX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="70h-fF-cCQ">
+            <objects>
+                <viewController storyboardIdentifier="IntroViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4fs-jY-coX" customClass="IntroViewController" customModule="HobbyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72b-ku-tiP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2g-k4-dd9">
+                                <rect key="frame" x="20" y="530" width="335" height="56"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.3411764706" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="F4p-ac-FGg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Продолжить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTouched:" destination="4fs-jY-coX" eventType="touchUpInside" id="aqM-gc-Bpz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tcL-5k-O5X">
+                                <rect key="frame" x="80" y="70" width="215" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tcL-5k-O5X" secondAttribute="height" multiplier="1:1" id="6ZZ-jF-S8h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать в Тестоваое приложение" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSl-jK-iel">
+                                <rect key="frame" x="20" y="335" width="335" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для продолжения Вам необходимо авторизироваться. Для этого нажмите кнопку &quot;Продолжить&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw6-Fd-4eF">
+                                <rect key="frame" x="20" y="606" width="335" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tcL-5k-O5X" firstAttribute="leading" secondItem="1cA-Ua-xl2" secondAttribute="leading" constant="80" id="3jZ-1F-nY7"/>
+                            <constraint firstItem="tcL-5k-O5X" firstAttribute="top" secondItem="1cA-Ua-xl2" secondAttribute="top" constant="50" id="6lO-U4-kfP"/>
+                            <constraint firstItem="e2g-k4-dd9" firstAttribute="leading" secondItem="1cA-Ua-xl2" secondAttribute="leading" constant="20" id="KTs-Ii-h0D"/>
+                            <constraint firstItem="Qw6-Fd-4eF" firstAttribute="leading" secondItem="1cA-Ua-xl2" secondAttribute="leading" constant="20" id="Lq0-kS-BwT"/>
+                            <constraint firstItem="rSl-jK-iel" firstAttribute="leading" secondItem="1cA-Ua-xl2" secondAttribute="leading" constant="20" id="O3X-FH-RF6"/>
+                            <constraint firstItem="tcL-5k-O5X" firstAttribute="centerX" secondItem="72b-ku-tiP" secondAttribute="centerX" id="U6d-BY-lbl"/>
+                            <constraint firstItem="1cA-Ua-xl2" firstAttribute="trailing" secondItem="Qw6-Fd-4eF" secondAttribute="trailing" constant="20" id="c4g-NY-YOT"/>
+                            <constraint firstItem="rSl-jK-iel" firstAttribute="top" secondItem="tcL-5k-O5X" secondAttribute="bottom" constant="50" id="dDP-Zd-Myo"/>
+                            <constraint firstItem="1cA-Ua-xl2" firstAttribute="trailing" secondItem="e2g-k4-dd9" secondAttribute="trailing" constant="20" id="ixe-tb-RBY"/>
+                            <constraint firstItem="1cA-Ua-xl2" firstAttribute="bottom" secondItem="Qw6-Fd-4eF" secondAttribute="bottom" constant="10" id="jys-BG-hYh"/>
+                            <constraint firstItem="Qw6-Fd-4eF" firstAttribute="top" secondItem="e2g-k4-dd9" secondAttribute="bottom" constant="20" id="kui-hu-dbZ"/>
+                            <constraint firstItem="1cA-Ua-xl2" firstAttribute="trailing" secondItem="rSl-jK-iel" secondAttribute="trailing" constant="20" id="qyy-3b-JeH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1cA-Ua-xl2"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="Qw6-Fd-4eF" id="UdE-mG-I77"/>
+                        <outlet property="nextButton" destination="e2g-k4-dd9" id="7Wo-fT-RbZ"/>
+                        <outlet property="welcomeLabel" destination="rSl-jK-iel" id="BRZ-lM-HyF"/>
+                        <segue destination="7bj-ny-ys5" kind="show" identifier="toLogin" id="1D8-OF-4Tz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NP1-V2-yk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="SL2-HU-Ept" customClass="IntroModuleInitializer" customModule="HobbyApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="introViewController" destination="4fs-jY-coX" id="PvV-Br-FVA"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="23.838080959520241"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="1yP-Vq-kAA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="7bj-ny-ys5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFe-hs-rQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="-73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="197" height="194"/>
+    </resources>
+</document>

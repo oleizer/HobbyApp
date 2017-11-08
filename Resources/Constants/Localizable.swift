@@ -23,7 +23,7 @@ enum L10n {
   enum Intro {
 
     enum Message {
-      /// Для продолжения нажмите кнопку "Продолжить"
+      /// Для продолжения Вам необходимо авторизироваться. Для этого нажмите кнопку "Продолжить"
       static let text = L10n.tr("Localizable", "Intro.Message.text")
     }
 
@@ -33,7 +33,7 @@ enum L10n {
     }
 
     enum Welcome {
-      /// Добро пожаловать\nЭто проект шаблон
+      /// Добро пожаловать в Тестоваое приложение
       static let text = L10n.tr("Localizable", "Intro.Welcome.text")
     }
   }

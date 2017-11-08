@@ -19,18 +19,17 @@ struct AppManager {
 //        }
 //        return policyDict
 //    }
-    
+
     static var manager: SessionManager {
         let config = URLSessionConfiguration.default
         config.sharedContainerIdentifier = "kz.idev.id"
-        config.timeoutIntervalForRequest = 30
-        config.timeoutIntervalForResource = 30
+        config.timeoutIntervalForRequest = 10
+        config.timeoutIntervalForResource = 10
         return SessionManager(configuration: config)
-        
+
 //        return SessionManager(
 //            configuration: config,
 //            serverTrustPolicyManager: ServerTrustPolicyManager(policies: ElloManager.serverTrustPolicies)
 //        )
     }
 }
-

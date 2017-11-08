@@ -22,14 +22,28 @@ class TokenPresenterTest: XCTestCase {
     }
 
     class MockInteractor: TokenInteractorInput {
-
+        func confirm(_ token: String) {
+            
+        }
     }
 
     class MockRouter: TokenRouterInput {
+        func showSelectCity() {
+            
+        }
+        
 
     }
 
     class MockViewController: TokenViewInput {
+        func showProgress() {
+            
+        }
+        
+        func hideProgress() {
+            
+        }
+        
 
         func setupInitialState() {
 

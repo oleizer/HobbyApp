@@ -34,7 +34,7 @@ class UnknownJSONAble: JSONAble {
     convenience init() {
         self.init(version: UnknownJSONAbleVersion)
     }
-    
+
     override class func fromJSON(_ data: [String: Any]) -> JSONAble {
         return UnknownJSONAble()
     }

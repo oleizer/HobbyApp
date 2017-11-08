@@ -22,6 +22,14 @@ class LoginInteractorTests: XCTestCase {
     }
 
     class MockPresenter: LoginInteractorOutput {
+        func loginSuccessful() {
+            
+        }
+        
+        func loginFailed(_ error: Error) {
+            
+        }
+        
 
     }
 }

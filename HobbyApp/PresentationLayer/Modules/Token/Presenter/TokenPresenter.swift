@@ -7,7 +7,6 @@
 //
 
 class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
-
     weak var view: TokenViewInput!
     var interactor: TokenInteractorInput!
     var router: TokenRouterInput!
@@ -16,16 +15,22 @@ class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
 
     }
 
-    func loadUser(_ token: String) {
-        interactor.loadUser(token)
-    }
-
-    func loadUserFailed(_ error: Error) {
+    func showSelectCity() {
 
     }
 
-    func loadUserSuccessful() {
-        let token = AuthToken.sharedKeychain
-        print(token.authToken)
+    func confirm(_ token: String) {
+        view.showProgress()
+        interactor.confirm(token)
+    }
+
+    func confirmTokenFailed(_ error: Error) {
+        view.hideProgress()
+
+    }
+
+    func confirmTokenSuccessful() {
+        view.hideProgress()
+        router.showSelectCity()
     }
 }

@@ -15,16 +15,17 @@ class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
     func viewIsReady() {
         view.setupInitialState()
     }
-    
+
     func login(_ email: String) {
-        view.showLoadingHUD()
+        //view.showLoadingHUD()
+        view.showProgress()
         self.interactor.login(email)
     }
     func loginSuccessful() {
-        view.hideLoadingHUD()
+        view.hideProgress()
         router.showToken()
     }
-    
+
     func loginFailed(_ error: Error) {
         view.hideLoadingHUD()
         self.view.showMessage(title: "Error", message: error.appErrorMessage ?? L10n.Error.unknownError)

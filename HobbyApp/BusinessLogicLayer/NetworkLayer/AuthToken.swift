@@ -13,25 +13,25 @@ import SwiftyJSON
 struct AuthToken {
     static var sharedKeychain: KeychainType = AppKeychain()
     var keychain: KeychainType
-    
+
     // MARK: - Initializers
-    
+
     init() {
         keychain = AuthToken.sharedKeychain
     }
-    
+
     // MARK: - Properties
     var token: String? {
         get { return keychain.authToken }
         set(newToken) { keychain.authToken = newToken }
     }
-    
+
     var email: String? {
         get { return keychain.email }
         set { keychain.email = newValue }
     }
-    
-    
+
+
     static func storeToken(_ token: String, email: String? = nil) {
         var authToken = AuthToken()
         if let email = email {
@@ -39,7 +39,7 @@ struct AuthToken {
         }
         authToken.token = token
     }
-    
+
     static func reset() {
         var keychain = sharedKeychain
         keychain.authToken = nil
@@ -47,4 +47,3 @@ struct AuthToken {
 
     }
 }
-

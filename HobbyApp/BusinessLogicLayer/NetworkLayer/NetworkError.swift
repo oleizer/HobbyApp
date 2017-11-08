@@ -19,7 +19,7 @@ enum AppErrorCode: Int {
 }
 
 extension NSError {
-    
+
     class func networkError(_ error: Any?, code: AppErrorCode) -> NSError {
         var userInfo: [String: Any]?
         if let error: Any = error {
@@ -27,5 +27,5 @@ extension NSError {
         }
         return NSError(domain: AppErrorDomain, code: code.rawValue, userInfo: userInfo)
     }
-    
+
 }

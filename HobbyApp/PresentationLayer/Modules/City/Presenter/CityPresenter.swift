@@ -15,10 +15,20 @@ class CityPresenter: CityModuleInput, CityViewOutput, CityInteractorOutput {
     func viewIsReady() {
         view.setupInitialState()
     }
+
+    func loadCities() {
+        view.showProgress()
+        interactor.loadCities()
+    }
+    func loadCitiesSuccessful(_ cities: [City]) {
+        view.hideProgress()
+        view.setCities(cities: cities)
+    }
+    func loadCitiesFailed(_ error: Error) {
+        view.hideProgress()
+    }
+
     func addCityAction() {
         router.showAddCity()
-    }
-    func loadCities() {
-        interactor.loadCities()
     }
 }

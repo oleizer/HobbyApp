@@ -21,7 +21,7 @@ class CityModuleConfigurator {
 
         let router = CityRouter()
         router.transitionHandler = viewController
-        
+
         let presenter = CityPresenter()
         presenter.view = viewController
         presenter.router = router

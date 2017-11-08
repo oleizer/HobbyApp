@@ -15,26 +15,26 @@ extension APIProvider {
     }
     static func generateAppError(_ data: Data?, statusCode: Int?) -> NSError {
         var appNetworkError: AppNetworkError?
-        
+
         if let data = data {
             let (mappedJSON, _): (Any?, NSError?) = Mapper.mapJSON(data)
             let dictJSON = mappedJSON as? [String: Any]
-            
+
             if dictJSON != nil {
                 if let node = dictJSON?[MappingType.errorsType.rawValue] as? [String: Any] {
                     appNetworkError = Mapper.mapToObject(node, type: MappingType.errorType) as? AppNetworkError
                 }else if let node = dictJSON {
-                    
+
                 }
             }
         }
         else if statusCode == 401 {
             appNetworkError = AppNetworkError(attrs: nil, code: .unauthenticated, detail: nil, messages: nil, status: "401", title: "unauthenticated")
         }
-        
+
         let errorCodeType = (statusCode == nil) ? AppErrorCode.data : AppErrorCode.statusCode
         let appError = NSError.networkError(appNetworkError, code: errorCodeType)
-        
+
         return appError
     }
     static func failedToSendRequest(_ failure: APIFailureCompletion) {

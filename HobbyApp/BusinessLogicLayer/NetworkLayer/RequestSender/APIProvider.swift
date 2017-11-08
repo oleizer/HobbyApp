@@ -25,10 +25,10 @@ class APIProvider {
         let endpoint = Endpoint<MultiTarget>(url: url(target), sampleResponseClosure: { return target.stubbedNetworkResponse}, method: target.method, task: target.task, httpHeaderFields: target.headers)
         return endpoint
     }
-    
+
     static func DefaultProvider() -> MoyaProvider<MultiTarget> {
-        
-        
+
+
 //        let endpointClosure = { (target: MultiTarget) -> Endpoint<MultiTarget> in
 //            let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
 //
@@ -70,14 +70,14 @@ class APIProvider {
             }
             return SharedProvider.instance
         }
-        
+
         set {
             SharedProvider.instance = newValue
         }
     }
-    
+
     // MARK: - Public
-    
+
 //    func sendRequest<TargetSpecificationType: TargetSpecification>(
 //        targetSpecification: TargetSpecificationType ) -> Promise<APIResponse> {
 //        let (promise, resolve, reject) = Promise<APIResponse>.pending()
@@ -98,7 +98,7 @@ class APIProvider {
         })
         return promise
     }
-    
+
     // MARK: - Private
     private func appRequest(_ target: TargetSpecification, success: @escaping APISuccessCompletion){
         appRequest((target: target, success: success, failure: {_,_ in}))
@@ -131,7 +131,7 @@ extension APIProvider {
             let data = moyaResponse.data
             let statusCode = moyaResponse.statusCode
             //print(response)
-            
+
             switch statusCode {
             case 200...299, 300...399:
                 handleNetworkSuccess(data: data, target: target, statusCode: statusCode, response: response, success: success, failure: failure)
@@ -191,12 +191,12 @@ extension APIProvider {
             //            {
             //                newResponseConfig = self.parsePagination(pagination)
             //            }
-            
+
             guard target.mappingType != .noContentType else {
                 success(UnknownJSONAble())
                 return
             }
-            
+
             let mappedObjects: AnyObject?
             if let node = node as? [[String: AnyObject]] {
                 mappedObjects = Mapper.mapToObjectArray(node, type: target.mappingType) as AnyObject?
@@ -205,7 +205,7 @@ extension APIProvider {
             } else {
                 mappedObjects = nil
             }
-            
+
             if let mappedObjects = mappedObjects {
                 success(mappedObjects)
             } else {
@@ -232,7 +232,7 @@ extension APIProvider {
             //            }else{
             //                mappedObjects = nil
             //            }
-            
+
             if let result = mappedObjects {
                 success(result)
             } else {

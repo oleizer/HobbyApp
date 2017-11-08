@@ -11,7 +11,7 @@ extension NSError {
     var appError: AppNetworkError? {
         return userInfo[NSLocalizedFailureReasonErrorKey] as? AppNetworkError
     }
-    
+
     static func uncastableJSONAble() -> NSError {
         return NSError.networkError(nil, code: AppErrorCode.jsonMapping)
     }

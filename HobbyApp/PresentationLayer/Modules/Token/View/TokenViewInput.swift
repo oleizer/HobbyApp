@@ -6,7 +6,7 @@
 //  Copyright © 2017 idev.kz. All rights reserved.
 //
 
-protocol TokenViewInput: class {
+protocol TokenViewInput: class, ViewInput {
 
     /**
         @author Oleg Leizer

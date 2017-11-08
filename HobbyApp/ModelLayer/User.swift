@@ -39,7 +39,7 @@ final class User: JSONAble {
         self.email = email
         super.init(version: CityVersion)
     }
-    
+
     required init(coder: NSCoder) {
         let decoder = Coder(coder)
         id = decoder.decodeKey("id")
@@ -52,7 +52,7 @@ final class User: JSONAble {
 
         super.init(coder: coder)
     }
-    
+
     override func encode(with coder: NSCoder) {
         let encoder = Coder(coder)
         encoder.encodeObject(id, forKey: "id")
@@ -69,7 +69,7 @@ final class User: JSONAble {
         let json = JSON(data)
         let id = json["Id"].intValue
         let name = json["Name"].stringValue
-        
+
         let roleName = json["RoleName"].stringValue
         let cityId = json["CityId"].intValue
         let phone = json["Phone"].stringValue
