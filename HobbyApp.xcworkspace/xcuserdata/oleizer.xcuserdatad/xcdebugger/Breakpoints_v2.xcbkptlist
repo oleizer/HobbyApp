@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/PresentationLayer/Modules/City/View/CityViewController.swift"
-            timestampString = "531770094.493522"
+            timestampString = "531829221.486203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "setCities(cities:)"
             landmarkType = "7">
          </BreakpointContent>

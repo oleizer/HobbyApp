@@ -10,8 +10,6 @@ import UIKit
 
 class LoginViewController: UIViewController, LoginViewInput {
 
-
-
     var output: LoginViewOutput!
     // MARK: - IBOutlet
     @IBOutlet weak var emailTextField: EmailTextField!

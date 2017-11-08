@@ -13,6 +13,7 @@ class CityViewController: UIViewController, CityViewInput {
 
     // MARK: - IBOutlet
     @IBOutlet weak var tableView: UITableView!
+    private var doneButton = UIBarButtonItem()
     private var selectedCity: City?
     private var cities: [City] = []
     private var interests: [Interest] = []
@@ -43,8 +44,10 @@ class CityViewController: UIViewController, CityViewInput {
         navigationController?.navigationBar.backgroundColor = .clear
 
         navigationItem.title = L10n.City.Navigation.title
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addAction))
-        self.navigationItem.rightBarButtonItem = addButton
+        doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(addAction))
+        self.navigationItem.rightBarButtonItem = doneButton
+        doneButton.isEnabled = false
+        
     }
 
     // MARK: - Actions
@@ -77,5 +80,11 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
         let selected: City = self.cities[indexPath.row]
         self.selectedCity = selected
         print("Select city: \(self.selectedCity?.name ?? "Unknown")")
+        
+        if (self.selectedCity != nil) {
+            doneButton.isEnabled = true
+        }else{
+            doneButton.isEnabled = false
+        }
     }
 }
