@@ -1,5 +1,5 @@
 .PHONY=build
-NAME = CreditOn
+NAME = HobbyApp
 WORKSPACE = $(NAME).xcworkspace
 PROJECT = $(NAME).xcodeproj
 XCODE_VERSION = "$(shell xcodebuild -version 2>/dev/null)"
@@ -7,7 +7,7 @@ XCODE_VERSION = "$(shell xcodebuild -version 2>/dev/null)"
 help: ##Show this help
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 count: ##Show line of code count
-	cloc "Sources" "Specs"
+	cloc "HobbyApp" "HobbyAppTests"
 setup: ##Setop
 	bundle install & rake generate:keys
 cert: ##Download all certificates from apple

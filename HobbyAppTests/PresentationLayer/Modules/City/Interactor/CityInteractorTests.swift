@@ -22,6 +22,14 @@ class CityInteractorTests: XCTestCase {
     }
 
     class MockPresenter: CityInteractorOutput {
+        func changeUserSuccessful(_ user: User) {
+            
+        }
+        
+        func changeUserFailed(_ error: Error) {
+            
+        }
+        
         func loadCitiesSuccessful(_ cities: [City]) {
             
         }

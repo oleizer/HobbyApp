@@ -15,6 +15,9 @@ enum MappingType: String {
 
     case noContentType = "204"
     case user = "user"
+    case interest = "interest"
+    case city = "city"
+
     var fromJSON: FromJSONClosure {
         switch self {
         case .user:
@@ -23,8 +26,12 @@ enum MappingType: String {
             return UnknownJSONAble.fromJSON
         case .errorType:
             return City.fromJSON
+        case .city:
+            return City.fromJSON
         case .errorsType:
             return AppNetworkError.fromJSON
+        case .interest:
+            return Interest.fromJSON
         }
     }
 }

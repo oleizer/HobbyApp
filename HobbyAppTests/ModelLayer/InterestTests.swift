@@ -22,13 +22,13 @@ class InterestTests: XCTestCase {
     }
     func testParseJSON() {
         let data: [String: Any] = [
-            "Id": "1",
+            "Id": 1,
             "Name": "Interest"
         ]
         let interest: Interest = Interest.fromJSON(data) as! Interest
         XCTAssertNotNil(interest)
         XCTAssertEqual(interest.name, "Interest")
-        XCTAssertEqual(interest.id, "1")
+        XCTAssertEqual(interest.id, 1)
     }
     func testExample() {
         // This is an example of a functional test case.

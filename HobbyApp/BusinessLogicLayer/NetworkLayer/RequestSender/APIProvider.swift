@@ -110,7 +110,6 @@ class APIProvider {
         let target = request.target
         let success = request.success
         let failure = request.failure
-        print("ZZZZ")
         APIProvider.sharedProvider.request(MultiTarget(target)) { (result) in
             self.handleRequest(target: target, result: result, success: success, failure: failure)
         }

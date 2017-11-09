@@ -15,10 +15,10 @@ let UserVersion = 1
 
 final class User: JSONAble {
     let id: Int
-    let name: String
+    var name: String
     let roleName: String
-    let cityId: Int
-    let phone: String
+    var cityId: Int
+    var phone: String
     let cityName: String
     let email: String
     init(id: Int,

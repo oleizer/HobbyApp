@@ -40,6 +40,7 @@
                     <connections>
                         <outlet property="tableView" destination="Cqf-vO-oeB" id="Yz3-Ue-qYv"/>
                         <segue destination="0nv-Zv-azA" kind="show" identifier="toAddCity" id="MO3-f2-UpH"/>
+                        <segue destination="xCj-HR-qMp" kind="show" identifier="toInterest" id="cGP-oJ-ndn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3H5-6P-EAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,6 +51,14 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="580" y="207.34632683658174"/>
+        </scene>
+        <!--Interest-->
+        <scene sceneID="3ma-fl-Yn4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Interest" id="xCj-HR-qMp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdb-at-Y8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="152"/>
         </scene>
         <!--AddCity-->
         <scene sceneID="pSo-JC-sMU">

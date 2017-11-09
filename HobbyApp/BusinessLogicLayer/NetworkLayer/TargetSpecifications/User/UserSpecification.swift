@@ -10,7 +10,9 @@ import Moya
 
 enum UserSpecification {
     case createUser(email: String)
-    case user(token: String)
+    //case user(token: String)
+    case user
+    case changeUser(user: User)
 //    case cityId(cityId: Int)
 //    case editCity(cityId: Int, name: String)
 //    case deleteCity(cityId: Int)
@@ -21,10 +23,19 @@ enum UserSpecification {
 
 extension UserSpecification: TargetSpecification {
     //public var baseURL: URL { return URL(string: "http://test.mhbb.ru/b")! }
+    var baseURL: URL {
+        switch self {
+        case .changeUser(let user):
+            return URL(string: "http://test.mhbb.ru/b?email=\(user.email)")!
+        default:
+            return URL(string: "http://test.mhbb.ru/b" )!
+        }
+    }
     var path: String {
         switch self {
-        case .createUser: return "/api/user"
-        case .user: return "/api/user"
+        case .createUser, .user: return "/api/user"
+        case .changeUser(let user):
+            return "/api/user"
         }
     }
     var method: Moya.Method {
@@ -33,6 +44,8 @@ extension UserSpecification: TargetSpecification {
             return .post
         case .user:
             return .get
+        case .changeUser:
+            return .put
         }
     }
     var task: Task {
@@ -41,11 +54,21 @@ extension UserSpecification: TargetSpecification {
             return .requestParameters(parameters: ["email": email], encoding: JSONEncoding.default)
         case .user:
             return .requestPlain
+        case .changeUser(let user):
+            var parameters = [String: Any]()
+            parameters["CityId"] = user.cityId
+            parameters["Email"] = user.email
+//            if let name = user.name {
+//                parameters["Name"] = name
+//            }
+            return .requestParameters(parameters: parameters, encoding: JSONEncoding.prettyPrinted)
+
+
         }
     }
     var mappingType: MappingType {
         switch self {
-        case .createUser, .user:
+        case .createUser, .user, .changeUser:
             return .user
         }
     }
@@ -61,20 +84,18 @@ extension UserSpecification: TargetSpecification {
         switch self {
         case .createUser:
             return false
-        case .user:
+        case .user, .changeUser:
             return true
         }
     }
     var headers: [String : String]? {
         var assigned: [String: String] = [
             "Accept": "application/json",
-            //"Accept-Language": "",
             "Content-Type": "application/json",
             ]
 
         if self.requiresToken, let token = AuthToken().token {
             assigned["Authorization"] = "Token \(token)"
-            //assigned += "Token "
         }
         return assigned
     }

@@ -13,9 +13,9 @@ import SwiftyJSON
 let InterestVersion = 1
 
 final class Interest: JSONAble {
-    let id: String
+    let id: Int
     let name: String
-    init(id: String,
+    init(id: Int,
          name: String)
     {
         self.id = id
@@ -38,7 +38,7 @@ final class Interest: JSONAble {
     }
     override class func fromJSON(_ data: [String: Any]) -> JSONAble {
         let json = JSON(data)
-        let id = json["Id"].stringValue
+        let id = json["Id"].intValue
         let name = json["Name"].stringValue
         let interest = Interest(id: id, name: name)
         return interest

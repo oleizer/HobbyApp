@@ -9,6 +9,18 @@
 class CityInteractor: CityInteractorInput {
 
     weak var output: CityInteractorOutput!
+    func setCity(_ cityId: Int) {
+        UserService().fetchUser().thenFinally(execute: { user in
+            user.cityId = cityId
+            UserService().changeUser(user).thenFinally(execute: { newUser in
+                self.output.changeUserSuccessful(newUser)
+            }).catch(execute: { error in
+                self.output.changeUserFailed(error)
+            })
+        }).catch(execute: { error in
+            self.output.changeUserFailed(error)
+        })
+    }
 
     func loadCities() {
         CityService().fetchAllCities().thenFinally{ cities in

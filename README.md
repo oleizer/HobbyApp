@@ -3,3 +3,5 @@
 ## Hobby iOS App
 
 [![Build Status](https://travis-ci.org/oleizer/HobbyApp.svg?branch=master)](https://travis-ci.org/oleizer/HobbyApp)
+
+### Тестовое Задание, Open Source

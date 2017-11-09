@@ -13,6 +13,7 @@
 		0FDA8F2F7DB0BB46BF4B7ED0 /* AddCityConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC741B57782D31D34322E3AB /* AddCityConfiguratorTests.swift */; };
 		10E10943B66FD1A7AD31B4E7 /* TokenInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6F100FFBFA6E049FCB2D14 /* TokenInteractorTests.swift */; };
 		125D64CA8D8B6598C8733ACE /* TokenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC62A6211CB49D7B5470005 /* TokenModuleInput.swift */; };
+		141A5D30C467CAE960312669 /* InterestViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7C5A35EEF51DD3A3BDCBB /* InterestViewInput.swift */; };
 		163B88940E4648780DB98433 /* AddCityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623931C40B49B7A0C404FF79 /* AddCityRouter.swift */; };
 		1813BF4F87BD5E4A6A4C233A /* TokenPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186E30D5D304FF98FE6B7B6 /* TokenPresenterTests.swift */; };
 		1C02B209EBBD4261F847C714 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0F42ABD96453BB2BE31E /* IntroViewController.swift */; };
@@ -23,13 +24,17 @@
 		330D3599663F16D05F141BE7 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7D196AEBF095B979F9DDC /* LoginInteractorInput.swift */; };
 		351B6C5F275240358611E77D /* CityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81D59D8DF36D4421AC51366 /* CityPresenter.swift */; };
 		38D0979332D7233168329356 /* IntroViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FB84CECDEA11D291718D11 /* IntroViewOutput.swift */; };
+		3AD2BFE198994772494F6FA9 /* InterestInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E7CBC01795EA3E7DC889A7 /* InterestInitializer.swift */; };
 		3B56A3131968FA7DDE5FC2BD /* IntroInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9970CB6D33FBF386B7A1CF /* IntroInteractorOutput.swift */; };
+		437149AB236117495032A307 /* InterestRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BD09F21BB25F0A77D10A8 /* InterestRouterInput.swift */; };
 		460445640481E28520868320 /* TokenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F939957B7C289B83963478 /* TokenViewInput.swift */; };
 		498BDFFA6BDB54FF42F230D7 /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1E9C1A445DC847270037C /* LoginRouterTests.swift */; };
 		4C0DA3A1CC0810D4C1DBB8AE /* LoginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75DF6B84F541FE82360E3B /* LoginConfiguratorTests.swift */; };
 		4D431A61D648BE37E779ECD3 /* AddCityPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5956BB718BC061FBB38A4276 /* AddCityPresenterTests.swift */; };
 		4E1A17D948BE03C2302D94F1 /* IntroRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDA8278B38A8A13637B321 /* IntroRouterTests.swift */; };
+		4EB3B575E70B29B0075740BD /* InterestViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176058620A3A607F2FE07D70 /* InterestViewTests.swift */; };
 		4FAA93D169195BB32192C49B /* IntroViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670D8F7BB4E8E5306A0E6B4 /* IntroViewTests.swift */; };
+		540E545B675D9AF30C6966AE /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D40C7014A241B3D0BA566E5 /* InterestViewController.swift */; };
 		554C79319DB7962A18A54536 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245CDB479A9326FA4C51B1C4 /* LoginConfigurator.swift */; };
 		56E7705EBF2C90F95A311ED3 /* TokenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF9A630D4EFA5D48FA13BF /* TokenConfigurator.swift */; };
 		57DCFA9BC366D00FE4CAAE24 /* TokenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927BFC2415481E1755FBD29 /* TokenInteractor.swift */; };
@@ -37,12 +42,17 @@
 		5DB38BF3F33B0CBB720CC3C0 /* Pods_HobbyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E687A6CF8A4AB715541256 /* Pods_HobbyAppTests.framework */; };
 		62BBE11D286CFA150CD6B7CC /* Pods_HobbyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98445B09BF49C78CB716F9A3 /* Pods_HobbyApp.framework */; };
 		659712C04D7C7FDB46B8F21A /* AddCityRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95F6DC3CA545EDF4400047E /* AddCityRouterTests.swift */; };
+		661A053EE6F77429EDB50717 /* InterestViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9094A323F55D8501FF7DBB6B /* InterestViewOutput.swift */; };
 		6752168E06266678D5958604 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FACE312E71C6C76C76CDF8 /* LoginInteractorTests.swift */; };
+		6863C24C60CBF3DA602903B4 /* InterestInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854D4780150DADBB2EBC99D /* InterestInteractorTests.swift */; };
 		6932B162F6621D3E9329E028 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F3E8F84E16514EC145797 /* LoginPresenter.swift */; };
+		75E340D6302814D4F824B00D /* InterestConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98053895133C235B1A13A2DB /* InterestConfigurator.swift */; };
+		7989B06EAD43D03E7E0B1450 /* InterestRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294352FEEF1BCD76D3BCB413 /* InterestRouterTests.swift */; };
 		7DD41E61E9DB67686C0FEA2D /* CityRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F53FECB4D1C27B67F9E4533 /* CityRouterTests.swift */; };
 		81862B174DE7A11B49AC20F4 /* AddCityViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0257386A9C38FA53604B79C /* AddCityViewTests.swift */; };
 		81E24C7DB64068A5209CDB7F /* IntroModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7518B0C34F1928326EC1DB /* IntroModuleInput.swift */; };
 		8374B5E4A9E263D49B9F9591 /* CityModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97310D5BEEF548F58B919F2 /* CityModuleInput.swift */; };
+		87975B1BBAF18D7AB337D74E /* InterestInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34385550A057D4E9A2EF2FE7 /* InterestInteractorOutput.swift */; };
 		88961853B75BE81C24ADCC2B /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4B90E5DD9E60794EC5EFC8 /* LoginViewTests.swift */; };
 		897010D7BC35078BDA1034B0 /* TokenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564376C53F824628E9307C3 /* TokenRouterInput.swift */; };
 		89812163B45FD07CD25FA085 /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBC78FFA3B239311FEACD63 /* LoginInteractorOutput.swift */; };
@@ -64,6 +74,15 @@
 		A62EFD6E1FB1DCC1004B67D5 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62EFD6D1FB1DCC1004B67D5 /* Intro.storyboard */; };
 		A62EFD801FB21367004B67D5 /* InterestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD7F1FB21367004B67D5 /* InterestTests.swift */; };
 		A62EFD831FB21594004B67D5 /* ViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD821FB21594004B67D5 /* ViewInput.swift */; };
+		A6313C1D1FB38222003D84DD /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C1C1FB38222003D84DD /* UITableViewExtensions.swift */; };
+		A6313C1F1FB382FF003D84DD /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C1E1FB382FF003D84DD /* CellViewModelProtocol.swift */; };
+		A6313C221FB383EE003D84DD /* CityCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C211FB383EE003D84DD /* CityCellModel.swift */; };
+		A6313C251FB386B1003D84DD /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C231FB386B1003D84DD /* CityTableViewCell.swift */; };
+		A6313C261FB386B1003D84DD /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6313C241FB386B1003D84DD /* CityTableViewCell.xib */; };
+		A6313C281FB38DC0003D84DD /* Interest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6313C271FB38DC0003D84DD /* Interest.storyboard */; };
+		A6313C2D1FB395D9003D84DD /* InterestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C2B1FB395D9003D84DD /* InterestTableViewCell.swift */; };
+		A6313C2E1FB395D9003D84DD /* InterestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6313C2C1FB395D9003D84DD /* InterestTableViewCell.xib */; };
+		A6313C301FB396AC003D84DD /* InterestCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C2F1FB396AC003D84DD /* InterestCellModel.swift */; };
 		A644FAAB1FACC9460037B240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A644FAAA1FACC9460037B240 /* AppDelegate.swift */; };
 		A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB11FACC9460037B240 /* Assets.xcassets */; };
 		A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A644FAB31FACC9460037B240 /* LaunchScreen.storyboard */; };
@@ -114,6 +133,9 @@
 		A6B67C881FB048BF0057A778 /* EmbedSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C801FB048BE0057A778 /* EmbedSegue.swift */; };
 		A6B67C891FB048BF0057A778 /* ModuleTransitionSource+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C811FB048BE0057A778 /* ModuleTransitionSource+UIViewController.swift */; };
 		A6D6AD466EB916E91229E6DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4552D28A6B7CBECE4E2864 /* LoginViewController.swift */; };
+		A6EDAC4B1FB39CBB007223F4 /* ActivitySpecifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */; };
+		A6EDAC4D1FB39E78007223F4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4C1FB39E78007223F4 /* Activity.swift */; };
+		A6EDAC511FB3A037007223F4 /* ActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC501FB3A037007223F4 /* ActivityTests.swift */; };
 		A6F83E981FB04A510010342F /* AddCityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171FE41F91D17091B1954B5D /* AddCityViewInput.swift */; };
 		A6F83E991FB04A510010342F /* AddCityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9FBACCF570BF9B212DB09 /* AddCityViewOutput.swift */; };
 		A6F83E9A1FB04A510010342F /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D075CE1806FEEB6771ACE4 /* AddCityViewController.swift */; };
@@ -145,11 +167,16 @@
 		BC0DAE1AE37896B1231276A9 /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D075CE1806FEEB6771ACE4 /* AddCityViewController.swift */; };
 		C280ADC349A64B365272BB3A /* CityConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D7AF7C75D6A52EDD0F8910 /* CityConfiguratorTests.swift */; };
 		C3B4F62AEB4F50ED38196EB2 /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C538E30E835611A436D2DB /* LoginViewInput.swift */; };
+		C887AA59535144AF21785EE0 /* InterestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFFE195C78C9FFE1CD85E72 /* InterestPresenter.swift */; };
 		C904DEC631A14DC423D28863 /* TokenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC126957A56A164A3580D03 /* TokenRouter.swift */; };
 		CF8C8AF4469C528B332139D1 /* AddCityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500E412C9EC40215726A345 /* AddCityInteractor.swift */; };
 		D06285CB46A6516C558D5C8C /* IntroConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7E65702BAF03CE0836D61 /* IntroConfiguratorTests.swift */; };
 		D1666E31EFDDDFAF423F6EE1 /* CityInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12D5431EC19615DC1D3F2E1 /* CityInteractorTests.swift */; };
 		D1E5C67ED6AA5626F8FAAA63 /* LoginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE618E9F1D39318FC01E928B /* LoginInitializer.swift */; };
+		D43D0572D8F31A0F81DF6594 /* InterestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF3EFF85BBB77706BD6675 /* InterestRouter.swift */; };
+		D8BF1899F42983DCC6F63DAA /* InterestPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446EA387D13ACA80B6FDA1C /* InterestPresenterTests.swift */; };
+		DB32501EFBC6709B0A6655F4 /* InterestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D001EB743F18D52784E2E /* InterestInteractor.swift */; };
+		DD3A1A8643AAB5CDC53EB9C8 /* InterestInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83526EC59A4F13075A361D81 /* InterestInteractorInput.swift */; };
 		DDDEB904A594D51A02EB720D /* IntroInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25DBDFDAD2735334FDACA0A /* IntroInteractorInput.swift */; };
 		E02A1AE4983431C99D6FDFA6 /* CityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC905402DB84FD73735D3756 /* CityRouter.swift */; };
 		E0F79EF4C7B67B06AF640D53 /* IntroViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A962F7A31797F999FE2BFB /* IntroViewInput.swift */; };
@@ -161,9 +188,11 @@
 		EC195948EBF8A5DAFE05BF82 /* CityRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853C96C166DC0AAB954D29CC /* CityRouterInput.swift */; };
 		ED2FF4715EDFBABCABAF18DE /* TokenConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30AB4AA20BDC0C741B0A84 /* TokenConfiguratorTests.swift */; };
 		ED7EEC3756970FBA08B999F9 /* AddCityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB251A1122CB9BFDECE24280 /* AddCityPresenter.swift */; };
+		EDBDCF4C35D6F39827FDD51B /* InterestModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD97831BAE4EB26EDDFDF2D /* InterestModuleInput.swift */; };
 		F24EC495FF137299D641D15B /* IntroRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C741EB23D633564431C69EA /* IntroRouter.swift */; };
 		F2A6B64201D6937596FCB8B9 /* TokenRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2D656B1614D64F01C36F0 /* TokenRouterTests.swift */; };
 		F2DE71A112D4C836E05AC65D /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ADF64F6697A6331CDDD9EA /* IntroPresenter.swift */; };
+		FB0B5E679515B150BBAEE9FD /* InterestConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A5831EA911E47C960680C8 /* InterestConfiguratorTests.swift */; };
 		FBC995BB2746BC5664D1E10A /* CityPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733986D86557A59900849B68 /* CityPresenterTests.swift */; };
 		FBE040F735F387A26ED76B8E /* AddCityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171FE41F91D17091B1954B5D /* AddCityViewInput.swift */; };
 		FF1F59F68CD3F05FA09FDD70 /* TokenInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF3E4DA26643230A13146F /* TokenInteractorInput.swift */; };
@@ -181,19 +210,24 @@
 
 /* Begin PBXFileReference section */
 		005D3E28D3D9882E08202F19 /* AddCityInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityInteractorInput.swift; sourceTree = "<group>"; };
+		02A5831EA911E47C960680C8 /* InterestConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestConfiguratorTests.swift; sourceTree = "<group>"; };
 		03B7E65702BAF03CE0836D61 /* IntroConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroConfiguratorTests.swift; sourceTree = "<group>"; };
 		03E687A6CF8A4AB715541256 /* Pods_HobbyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABF3E4DA26643230A13146F /* TokenInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenInteractorInput.swift; sourceTree = "<group>"; };
 		0D7518B0C34F1928326EC1DB /* IntroModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroModuleInput.swift; sourceTree = "<group>"; };
 		0FC62A6211CB49D7B5470005 /* TokenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenModuleInput.swift; sourceTree = "<group>"; };
+		130BD09F21BB25F0A77D10A8 /* InterestRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestRouterInput.swift; sourceTree = "<group>"; };
 		171FE41F91D17091B1954B5D /* AddCityViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityViewInput.swift; sourceTree = "<group>"; };
+		176058620A3A607F2FE07D70 /* InterestViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestViewTests.swift; sourceTree = "<group>"; };
 		17D7AF7C75D6A52EDD0F8910 /* CityConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityConfiguratorTests.swift; sourceTree = "<group>"; };
 		1E74BE153007077164879012 /* IntroPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroPresenterTests.swift; sourceTree = "<group>"; };
 		1F53FECB4D1C27B67F9E4533 /* CityRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityRouterTests.swift; sourceTree = "<group>"; };
 		1FE4A235B7DE1ABF9FFEE298 /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
 		245CDB479A9326FA4C51B1C4 /* LoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		25CC19517C38EB08387E4EA2 /* Pods-HobbyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyAppTests/Pods-HobbyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		294352FEEF1BCD76D3BCB413 /* InterestRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestRouterTests.swift; sourceTree = "<group>"; };
 		2FD05B72E12E36A4ADDDD6A4 /* IntroInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroInteractorTests.swift; sourceTree = "<group>"; };
+		34385550A057D4E9A2EF2FE7 /* InterestInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestInteractorOutput.swift; sourceTree = "<group>"; };
 		34A96C30D7825E33DB35666C /* AddCityInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityInteractorTests.swift; sourceTree = "<group>"; };
 		35F939957B7C289B83963478 /* TokenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenViewInput.swift; sourceTree = "<group>"; };
 		3A6258439AA91C897F805966 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
@@ -204,6 +238,7 @@
 		488047F53F88E327E3BD5CFF /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		4DC126957A56A164A3580D03 /* TokenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenRouter.swift; sourceTree = "<group>"; };
 		4FCDA8278B38A8A13637B321 /* IntroRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroRouterTests.swift; sourceTree = "<group>"; };
+		52B7C5A35EEF51DD3A3BDCBB /* InterestViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestViewInput.swift; sourceTree = "<group>"; };
 		55673C7FB616F2DE2337F034 /* TokenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenViewController.swift; sourceTree = "<group>"; };
 		567F7870FCE813C607E7BE53 /* CityViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewInput.swift; sourceTree = "<group>"; };
 		5956BB718BC061FBB38A4276 /* AddCityPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityPresenterTests.swift; sourceTree = "<group>"; };
@@ -213,8 +248,10 @@
 		623931C40B49B7A0C404FF79 /* AddCityRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityRouter.swift; sourceTree = "<group>"; };
 		62D059A4EE12A5A4554A4A5B /* TokenInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenInitializer.swift; sourceTree = "<group>"; };
 		6564376C53F824628E9307C3 /* TokenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenRouterInput.swift; sourceTree = "<group>"; };
+		684D001EB743F18D52784E2E /* InterestInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestInteractor.swift; sourceTree = "<group>"; };
 		6927BFC2415481E1755FBD29 /* TokenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenInteractor.swift; sourceTree = "<group>"; };
 		6CBC78FFA3B239311FEACD63 /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
+		6D40C7014A241B3D0BA566E5 /* InterestViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
 		6E3CD5F34B2387DDF7E9E2F1 /* IntroInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroInitializer.swift; sourceTree = "<group>"; };
 		733986D86557A59900849B68 /* CityPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityPresenterTests.swift; sourceTree = "<group>"; };
 		762F3E8F84E16514EC145797 /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -223,16 +260,20 @@
 		808C0AA2AE1C1591223AAE85 /* IntroConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroConfigurator.swift; sourceTree = "<group>"; };
 		8186E30D5D304FF98FE6B7B6 /* TokenPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenPresenterTests.swift; sourceTree = "<group>"; };
 		8319B016854D91DEC6E227E2 /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		83526EC59A4F13075A361D81 /* InterestInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestInteractorInput.swift; sourceTree = "<group>"; };
 		853C96C166DC0AAB954D29CC /* CityRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityRouterInput.swift; sourceTree = "<group>"; };
+		8854D4780150DADBB2EBC99D /* InterestInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestInteractorTests.swift; sourceTree = "<group>"; };
 		8975E29E69477B49865E3077 /* CityViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		8B4552D28A6B7CBECE4E2864 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C741EB23D633564431C69EA /* IntroRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroRouter.swift; sourceTree = "<group>"; };
 		8F9970CB6D33FBF386B7A1CF /* IntroInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroInteractorOutput.swift; sourceTree = "<group>"; };
+		9094A323F55D8501FF7DBB6B /* InterestViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestViewOutput.swift; sourceTree = "<group>"; };
 		90F7D196AEBF095B979F9DDC /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
 		942139D38276366B50560E0B /* IntroInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
 		948B3684B05439309E564315 /* CityInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInitializer.swift; sourceTree = "<group>"; };
 		95A962F7A31797F999FE2BFB /* IntroViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroViewInput.swift; sourceTree = "<group>"; };
 		97D075CE1806FEEB6771ACE4 /* AddCityViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityViewController.swift; sourceTree = "<group>"; };
+		98053895133C235B1A13A2DB /* InterestConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestConfigurator.swift; sourceTree = "<group>"; };
 		98445B09BF49C78CB716F9A3 /* Pods_HobbyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12D5431EC19615DC1D3F2E1 /* CityInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractorTests.swift; sourceTree = "<group>"; };
 		A27862C9939238DC62F73953 /* Pods-HobbyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +308,15 @@
 		A62EFD6D1FB1DCC1004B67D5 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		A62EFD7F1FB21367004B67D5 /* InterestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTests.swift; sourceTree = "<group>"; };
 		A62EFD821FB21594004B67D5 /* ViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInput.swift; sourceTree = "<group>"; };
+		A6313C1C1FB38222003D84DD /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		A6313C1E1FB382FF003D84DD /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
+		A6313C211FB383EE003D84DD /* CityCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCellModel.swift; sourceTree = "<group>"; };
+		A6313C231FB386B1003D84DD /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		A6313C241FB386B1003D84DD /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		A6313C271FB38DC0003D84DD /* Interest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interest.storyboard; sourceTree = "<group>"; };
+		A6313C2B1FB395D9003D84DD /* InterestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewCell.swift; sourceTree = "<group>"; };
+		A6313C2C1FB395D9003D84DD /* InterestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestTableViewCell.xib; sourceTree = "<group>"; };
+		A6313C2F1FB396AC003D84DD /* InterestCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCellModel.swift; sourceTree = "<group>"; };
 		A644FAA71FACC9460037B240 /* HobbyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644FAAA1FACC9460037B240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A644FAB11FACC9460037B240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -321,17 +371,22 @@
 		A6B67C801FB048BE0057A778 /* EmbedSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedSegue.swift; sourceTree = "<group>"; };
 		A6B67C811FB048BE0057A778 /* ModuleTransitionSource+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModuleTransitionSource+UIViewController.swift"; sourceTree = "<group>"; };
 		A6C538E30E835611A436D2DB /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySpecifications.swift; sourceTree = "<group>"; };
+		A6EDAC4C1FB39E78007223F4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		A6EDAC501FB3A037007223F4 /* ActivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTests.swift; sourceTree = "<group>"; };
 		A6F83EC21FB04F540010342F /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		A7F1E9C1A445DC847270037C /* LoginRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
 		A81D59D8DF36D4421AC51366 /* CityPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityPresenter.swift; sourceTree = "<group>"; };
 		AA60D693D450D3624F0E6926 /* TokenInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenInteractorOutput.swift; sourceTree = "<group>"; };
 		AA76696B6009808D65E51A5E /* CityViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewTests.swift; sourceTree = "<group>"; };
 		B0EC0518939F9825F4041690 /* CityViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewOutput.swift; sourceTree = "<group>"; };
+		B2E7CBC01795EA3E7DC889A7 /* InterestInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestInitializer.swift; sourceTree = "<group>"; };
 		B97310D5BEEF548F58B919F2 /* CityModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityModuleInput.swift; sourceTree = "<group>"; };
 		BA6F100FFBFA6E049FCB2D14 /* TokenInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenInteractorTests.swift; sourceTree = "<group>"; };
 		BCF650AC28AF2C09399B1EF3 /* TokenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenPresenter.swift; sourceTree = "<group>"; };
 		BF44E54380C8A9C9E639671A /* CityConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityConfigurator.swift; sourceTree = "<group>"; };
 		C71D5DFC0EEEC5D84F405EA0 /* AddCityConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityConfigurator.swift; sourceTree = "<group>"; };
+		CDFFE195C78C9FFE1CD85E72 /* InterestPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestPresenter.swift; sourceTree = "<group>"; };
 		D153D9A851A8FEFC5794DE93 /* Pods-HobbyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyAppTests/Pods-HobbyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D670D8F7BB4E8E5306A0E6B4 /* IntroViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroViewTests.swift; sourceTree = "<group>"; };
 		D6AC0F42ABD96453BB2BE31E /* IntroViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -339,6 +394,7 @@
 		DAF6092D0C76AB9371D949CF /* AddCityInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityInitializer.swift; sourceTree = "<group>"; };
 		DB251A1122CB9BFDECE24280 /* AddCityPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityPresenter.swift; sourceTree = "<group>"; };
 		DF3C1B8E83B0676F970AD50F /* AddCityRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityRouterInput.swift; sourceTree = "<group>"; };
+		E0CF3EFF85BBB77706BD6675 /* InterestRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestRouter.swift; sourceTree = "<group>"; };
 		E25DBDFDAD2735334FDACA0A /* IntroInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroInteractorInput.swift; sourceTree = "<group>"; };
 		E497E3F8312D3616C5CE0192 /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
 		E95F6DC3CA545EDF4400047E /* AddCityRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityRouterTests.swift; sourceTree = "<group>"; };
@@ -349,9 +405,11 @@
 		F1ADF64F6697A6331CDDD9EA /* IntroPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		F1C2F93BDA2ADB02FF4DFB87 /* Pods-HobbyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HobbyApp/Pods-HobbyApp.release.xcconfig"; sourceTree = "<group>"; };
 		F3F2EEDF7AD05F88137461E7 /* TokenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TokenViewOutput.swift; sourceTree = "<group>"; };
+		F446EA387D13ACA80B6FDA1C /* InterestPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestPresenterTests.swift; sourceTree = "<group>"; };
 		F500E412C9EC40215726A345 /* AddCityInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCityInteractor.swift; sourceTree = "<group>"; };
 		F9FACE312E71C6C76C76CDF8 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		FA816895670DA8DD8551F26B /* CityInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractorInput.swift; sourceTree = "<group>"; };
+		FDD97831BAE4EB26EDDFDF2D /* InterestModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InterestModuleInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +432,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A8A84CF5C3C8AE810C93B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F446EA387D13ACA80B6FDA1C /* InterestPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		0529E1CA2357A4D3227F4D43 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +504,14 @@
 				3A6258439AA91C897F805966 /* LoginPresenterTests.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		28955B03250D6DB64F77FDCF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				294352FEEF1BCD76D3BCB413 /* InterestRouterTests.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2CBC56D5F90ED53248D68CAE /* View */ = {
@@ -538,6 +612,14 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		4756C094C10A625AB7C853CD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8854D4780150DADBB2EBC99D /* InterestInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		47F67992662DBBD6C99CD260 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +688,7 @@
 				990197C641C6F92E10106D4E /* Token */,
 				3D769F78CFFDD666616C4F72 /* City */,
 				D099AE9FA753ACCE2C45B1FF /* AddCity */,
+				BBCFD85AB1CA029908FC91CD /* Interest */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -637,12 +720,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5CE4845E9AF6B7288264670E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6313C291FB395B4003D84DD /* Cell */,
+				52B7C5A35EEF51DD3A3BDCBB /* InterestViewInput.swift */,
+				9094A323F55D8501FF7DBB6B /* InterestViewOutput.swift */,
+				6D40C7014A241B3D0BA566E5 /* InterestViewController.swift */,
+				A6313C271FB38DC0003D84DD /* Interest.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		605045EB0B1D0B0753164D49 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D670D8F7BB4E8E5306A0E6B4 /* IntroViewTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		60609AA8341B82BEE5BBD440 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				83526EC59A4F13075A361D81 /* InterestInteractorInput.swift */,
+				34385550A057D4E9A2EF2FE7 /* InterestInteractorOutput.swift */,
+				684D001EB743F18D52784E2E /* InterestInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		634628D3762B69F81162C82E /* Interactor */ = {
@@ -670,6 +775,7 @@
 				57D7E262936510DA063A2CEE /* Login */,
 				F5973BD3B37140AFB66A902B /* Token */,
 				FCCBF31AB72C45E72B8C2079 /* Intro */,
+				761702D2F17AF972C408D9ED /* Interest */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -684,6 +790,35 @@
 				E14986DB1994DD12492F1500 /* Router */,
 			);
 			path = City;
+			sourceTree = "<group>";
+		};
+		761702D2F17AF972C408D9ED /* Interest */ = {
+			isa = PBXGroup;
+			children = (
+				B7BA9C0D76DEF412A855E984 /* Configurator */,
+				771E289ECEF8FC28A6D2EC32 /* View */,
+				4756C094C10A625AB7C853CD /* Interactor */,
+				01A8A84CF5C3C8AE810C93B7 /* Presenter */,
+				28955B03250D6DB64F77FDCF /* Router */,
+			);
+			path = Interest;
+			sourceTree = "<group>";
+		};
+		771E289ECEF8FC28A6D2EC32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				176058620A3A607F2FE07D70 /* InterestViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ABDE72ABEBD99EA9480954D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				98053895133C235B1A13A2DB /* InterestConfigurator.swift */,
+				B2E7CBC01795EA3E7DC889A7 /* InterestInitializer.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		7E60A2460AD5F90883891564 /* Configurator */ = {
@@ -852,6 +987,34 @@
 			path = ViewInput;
 			sourceTree = "<group>";
 		};
+		A6313C201FB383D5003D84DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6313C211FB383EE003D84DD /* CityCellModel.swift */,
+				A6313C231FB386B1003D84DD /* CityTableViewCell.swift */,
+				A6313C241FB386B1003D84DD /* CityTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A6313C291FB395B4003D84DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6313C2F1FB396AC003D84DD /* InterestCellModel.swift */,
+				A6313C2B1FB395D9003D84DD /* InterestTableViewCell.swift */,
+				A6313C2C1FB395D9003D84DD /* InterestTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A6313C2A1FB395BF003D84DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6313C1E1FB382FF003D84DD /* CellViewModelProtocol.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A644FA9E1FACC9460037B240 = {
 			isa = PBXGroup;
 			children = (
@@ -944,9 +1107,10 @@
 				A644FAFC1FAF2F0B0037B240 /* City.swift */,
 				A66370C21FAF84510061AD3C /* Coder.swift */,
 				A66E42161FB08BA60040CFB0 /* Interest.swift */,
-				A66E42251FB0A58E0040CFB0 /* User.swift */,
 				A66E422C1FB0D9F30040CFB0 /* AppKeychain.swift */,
+				A66E42251FB0A58E0040CFB0 /* User.swift */,
 				A66E42311FB0DEEA0040CFB0 /* AppNetworkError.swift */,
+				A6EDAC4C1FB39E78007223F4 /* Activity.swift */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -983,10 +1147,11 @@
 		A644FAE21FACD88F0037B240 /* TargetSpecifications */ = {
 			isa = PBXGroup;
 			children = (
+				A6EDAC491FB39BB9007223F4 /* Activity */,
+				A644FAE31FACD8A30037B240 /* Common */,
 				A66E421E1FB0A0270040CFB0 /* User */,
 				A66E42111FB08A8B0040CFB0 /* Interest */,
 				A644FAE61FACD8C30037B240 /* City */,
-				A644FAE31FACD8A30037B240 /* Common */,
 			);
 			path = TargetSpecifications;
 			sourceTree = "<group>";
@@ -1056,6 +1221,7 @@
 			children = (
 				A66E42191FB093830040CFB0 /* CityTests.swift */,
 				A62EFD7F1FB21367004B67D5 /* InterestTests.swift */,
+				A6EDAC501FB3A037007223F4 /* ActivityTests.swift */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -1089,6 +1255,7 @@
 			isa = PBXGroup;
 			children = (
 				A66E422F1FB0DEC20040CFB0 /* NSErrorExtensions.swift */,
+				A6313C1C1FB38222003D84DD /* UITableViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1114,6 +1281,7 @@
 		A6B67C771FB048930057A778 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A6313C2A1FB395BF003D84DD /* Cell */,
 				A62EFD811FB21583004B67D5 /* ViewInput */,
 				A6B67C781FB048BE0057A778 /* Router */,
 				A6B67C7B1FB048BE0057A778 /* Transitions */,
@@ -1143,6 +1311,14 @@
 			path = Transitions;
 			sourceTree = "<group>";
 		};
+		A6EDAC491FB39BB9007223F4 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		A75997F4913C9F468BDA6F79 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1158,6 +1334,15 @@
 			isa = PBXGroup;
 			children = (
 				4FCDA8278B38A8A13637B321 /* IntroRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AC984B8274FB3AD4AF9B52F6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				130BD09F21BB25F0A77D10A8 /* InterestRouterInput.swift */,
+				E0CF3EFF85BBB77706BD6675 /* InterestRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1178,6 +1363,26 @@
 				942139D38276366B50560E0B /* IntroInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B7BA9C0D76DEF412A855E984 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				02A5831EA911E47C960680C8 /* InterestConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		BBCFD85AB1CA029908FC91CD /* Interest */ = {
+			isa = PBXGroup;
+			children = (
+				5CE4845E9AF6B7288264670E /* View */,
+				DC81D561C142F344D66E6AC1 /* Presenter */,
+				60609AA8341B82BEE5BBD440 /* Interactor */,
+				AC984B8274FB3AD4AF9B52F6 /* Router */,
+				7ABDE72ABEBD99EA9480954D /* Configurator */,
+			);
+			path = Interest;
 			sourceTree = "<group>";
 		};
 		BCDD526A17292642B679CD7A /* Frameworks */ = {
@@ -1234,6 +1439,15 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		DC81D561C142F344D66E6AC1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FDD97831BAE4EB26EDDFDF2D /* InterestModuleInput.swift */,
+				CDFFE195C78C9FFE1CD85E72 /* InterestPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		E14986DB1994DD12492F1500 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -1275,6 +1489,7 @@
 		F667401280B1EEC862C43696 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6313C201FB383D5003D84DD /* Cell */,
 				567F7870FCE813C607E7BE53 /* CityViewInput.swift */,
 				B0EC0518939F9825F4041690 /* CityViewOutput.swift */,
 				8975E29E69477B49865E3077 /* CityViewController.swift */,
@@ -1398,13 +1613,16 @@
 				A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */,
 				A644FACF1FACC9870037B240 /* Colors.json in Resources */,
 				A644FAEB1FACDD350037B240 /* city.json in Resources */,
+				A6313C2E1FB395D9003D84DD /* InterestTableViewCell.xib in Resources */,
 				A644FAE01FACD8270037B240 /* City.storyboard in Resources */,
 				A644FACE1FACC9870037B240 /* Localizable.strings in Resources */,
 				A644FAED1FACDD440037B240 /* cities.json in Resources */,
 				A6B67C761FB047AD0057A778 /* AddCity.storyboard in Resources */,
+				A6313C281FB38DC0003D84DD /* Interest.storyboard in Resources */,
 				A644FAB21FACC9460037B240 /* Assets.xcassets in Resources */,
 				A66E42281FB0BFD20040CFB0 /* Token.storyboard in Resources */,
 				A62EFD6E1FB1DCC1004B67D5 /* Intro.storyboard in Resources */,
+				A6313C261FB386B1003D84DD /* CityTableViewCell.xib in Resources */,
 				A66E42241FB0A1440040CFB0 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1589,6 +1807,7 @@
 				A644FAE51FACD8BC0037B240 /* TargetSpecification.swift in Sources */,
 				A66370C71FAF88750061AD3C /* APIProviderErrors.swift in Sources */,
 				99C88CA78EF3FD5D78FA029E /* CityViewInput.swift in Sources */,
+				A6313C301FB396AC003D84DD /* InterestCellModel.swift in Sources */,
 				AA9BEC982980D46FAE873427 /* CityViewOutput.swift in Sources */,
 				A78464AE0742E45E6908DAF0 /* CityViewController.swift in Sources */,
 				A66370C31FAF84510061AD3C /* Coder.swift in Sources */,
@@ -1619,6 +1838,7 @@
 				B706C36A8F9DBE2083BD1B39 /* AddCityViewOutput.swift in Sources */,
 				A66E42171FB08BA60040CFB0 /* Interest.swift in Sources */,
 				BC0DAE1AE37896B1231276A9 /* AddCityViewController.swift in Sources */,
+				A6313C1F1FB382FF003D84DD /* CellViewModelProtocol.swift in Sources */,
 				A66E42201FB0A0440040CFB0 /* UserSpecification.swift in Sources */,
 				9EB3999B8661D54AAF4A57C1 /* AddCityModuleInput.swift in Sources */,
 				A6B67C871FB048BF0057A778 /* ModuleTransitionSource.swift in Sources */,
@@ -1627,7 +1847,9 @@
 				5A25C46E8C08279C4854F8B8 /* AddCityInteractorInput.swift in Sources */,
 				B5771FC33231A961C5BA7A3C /* AddCityInteractorOutput.swift in Sources */,
 				CF8C8AF4469C528B332139D1 /* AddCityInteractor.swift in Sources */,
+				A6313C251FB386B1003D84DD /* CityTableViewCell.swift in Sources */,
 				A6F83EC31FB04F540010342F /* AppManager.swift in Sources */,
+				A6313C1D1FB38222003D84DD /* UITableViewExtensions.swift in Sources */,
 				AC05D15477AA688EA548E15D /* AddCityRouterInput.swift in Sources */,
 				163B88940E4648780DB98433 /* AddCityRouter.swift in Sources */,
 				A185314863995BDDCD1E1792 /* AddCityConfigurator.swift in Sources */,
@@ -1649,6 +1871,8 @@
 				A66E42261FB0A58E0040CFB0 /* User.swift in Sources */,
 				460445640481E28520868320 /* TokenViewInput.swift in Sources */,
 				A66E42351FB0E4880040CFB0 /* FreeMethods.swift in Sources */,
+				A6313C2D1FB395D9003D84DD /* InterestTableViewCell.swift in Sources */,
+				A6313C221FB383EE003D84DD /* CityCellModel.swift in Sources */,
 				8D7035C672210C0A25C1EB50 /* TokenViewOutput.swift in Sources */,
 				B56D77B5633F1ABE057E3E3F /* TokenViewController.swift in Sources */,
 				125D64CA8D8B6598C8733ACE /* TokenModuleInput.swift in Sources */,
@@ -1669,9 +1893,23 @@
 				3B56A3131968FA7DDE5FC2BD /* IntroInteractorOutput.swift in Sources */,
 				2C547850C31120E3DF1BF75F /* IntroInteractor.swift in Sources */,
 				9255EB6A5B27B964AFE017F3 /* IntroRouterInput.swift in Sources */,
+				A6EDAC4B1FB39CBB007223F4 /* ActivitySpecifications.swift in Sources */,
 				F24EC495FF137299D641D15B /* IntroRouter.swift in Sources */,
 				E1E35F6E2A3DF7F97FA60C13 /* IntroConfigurator.swift in Sources */,
 				A5DCEFDE985D75FBFE7472F7 /* IntroInitializer.swift in Sources */,
+				141A5D30C467CAE960312669 /* InterestViewInput.swift in Sources */,
+				661A053EE6F77429EDB50717 /* InterestViewOutput.swift in Sources */,
+				540E545B675D9AF30C6966AE /* InterestViewController.swift in Sources */,
+				EDBDCF4C35D6F39827FDD51B /* InterestModuleInput.swift in Sources */,
+				C887AA59535144AF21785EE0 /* InterestPresenter.swift in Sources */,
+				DD3A1A8643AAB5CDC53EB9C8 /* InterestInteractorInput.swift in Sources */,
+				87975B1BBAF18D7AB337D74E /* InterestInteractorOutput.swift in Sources */,
+				DB32501EFBC6709B0A6655F4 /* InterestInteractor.swift in Sources */,
+				437149AB236117495032A307 /* InterestRouterInput.swift in Sources */,
+				D43D0572D8F31A0F81DF6594 /* InterestRouter.swift in Sources */,
+				75E340D6302814D4F824B00D /* InterestConfigurator.swift in Sources */,
+				A6EDAC4D1FB39E78007223F4 /* Activity.swift in Sources */,
+				3AD2BFE198994772494F6FA9 /* InterestInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1713,6 +1951,7 @@
 				4C0DA3A1CC0810D4C1DBB8AE /* LoginConfiguratorTests.swift in Sources */,
 				88961853B75BE81C24ADCC2B /* LoginViewTests.swift in Sources */,
 				6752168E06266678D5958604 /* LoginInteractorTests.swift in Sources */,
+				A6EDAC511FB3A037007223F4 /* ActivityTests.swift in Sources */,
 				951C4496542BF225E1962EB2 /* LoginPresenterTests.swift in Sources */,
 				498BDFFA6BDB54FF42F230D7 /* LoginRouterTests.swift in Sources */,
 				ED2FF4715EDFBABCABAF18DE /* TokenConfiguratorTests.swift in Sources */,
@@ -1725,6 +1964,11 @@
 				E3F3E372F87DD63A9AEB6267 /* IntroInteractorTests.swift in Sources */,
 				E6F2623EFB9BE994139A7DA6 /* IntroPresenterTests.swift in Sources */,
 				4E1A17D948BE03C2302D94F1 /* IntroRouterTests.swift in Sources */,
+				FB0B5E679515B150BBAEE9FD /* InterestConfiguratorTests.swift in Sources */,
+				4EB3B575E70B29B0075740BD /* InterestViewTests.swift in Sources */,
+				6863C24C60CBF3DA602903B4 /* InterestInteractorTests.swift in Sources */,
+				D8BF1899F42983DCC6F63DAA /* InterestPresenterTests.swift in Sources */,
+				7989B06EAD43D03E7E0B1450 /* InterestRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
