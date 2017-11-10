@@ -30,6 +30,16 @@ class CityTests: XCTestCase {
         XCTAssertEqual(city.name, "City")
         XCTAssertEqual(city.id, 1)
     }
+    func testParseJSONWithWrongData() {
+        let data: [String: Any] = [
+            "wrongId": "wrong"
+        ]
+        let city: City = City.fromJSON(data) as! City
+        XCTAssertNotNil(city)
+        //XCTAssertEqual(city.name, "City")
+        //XCTAssertEqual(city.id, 1)
+    }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

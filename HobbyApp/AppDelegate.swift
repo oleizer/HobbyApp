@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PINRemoteImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupGlobalStyles()
+        setupCaches()
         return true
     }
 
@@ -45,6 +47,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     // MARK: - Private
+    private func setupCaches() {
+        let manager = PINRemoteImageManager.shared()
+        let diskAgeLimit: TimeInterval = 1_209_600
+        let diskByteLimit: UInt = 250_000_000
+        let memoryByteLimit: UInt = 10_000_000
+        manager.pinCache?.diskCache.ageLimit = diskAgeLimit
+        manager.pinCache?.diskCache.byteLimit = diskByteLimit
+        manager.pinCache?.memoryCache.costLimit = memoryByteLimit
+    }
     private func setupGlobalStyles() {
         //Navigation bar
         UINavigationBar.appearance().largeTitleTextAttributes = [

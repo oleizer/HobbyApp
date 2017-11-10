@@ -20,12 +20,21 @@ class ActivityTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     func testParseJSON() {
+        let pic: [String: Any] = [
+            "Id": 122,
+            "url": "http://test.mhbb.ru/b/api/picture/112",
+            "IsMain": true,
+            ]
+        let org: [String: Any] = [
+            "Id": 1,
+            "Name": "Name",
+            "CityId": 1,
+            "City": "City",
+            "Sobriety": true,
+            "Email": "email@email.ri",
+            "Phone": "77013875885",
+            ]
         let data: [String: Any] = [
             "Id": 1,
             "Name": "Name",
@@ -34,7 +43,7 @@ class ActivityTests: XCTestCase {
             "AgeFrom": 2,
             "AgeTo": 33,
             "Free": false,
-
+            "Organizer": org
         ]
         let model: Activity = Activity.fromJSON(data) as! Activity
         XCTAssertNotNil(model)

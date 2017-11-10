@@ -8,53 +8,40 @@
 import Moya
 
 enum ActivitySpecification {
-    case cityId(cityId: Int)
-    case editCity(cityId: Int, name: String)
-    case deleteCity(cityId: Int)
-    case searchCity(keyword: String)
-    case cities
-    case addCity
+    case search(params: [String: Any])
 }
 
 extension ActivitySpecification: TargetSpecification {
     var requiresToken: Bool {
         return false
     }
-    
-    //public var baseURL: URL { return URL(string: "http://test.mhbb.ru/b")! }
+
     var path: String {
         switch self {
-        case .cityId(let cityId): return "/api/city/\(cityId)"
-        case .editCity(let cityId, _): return "/api/city/\(cityId)"
-        case .deleteCity(let cityId): return "/api/city/\(cityId)"
-        case .searchCity: return "/api/city/search"
-        case .cities: return "/api/city"
-        case .addCity: return "/api/city"
+        case .search:
+//            var path: String = "/activity/search"
+//            if let cityId = param["cityID"] {
+//                path.append("cityId=\(cityId)")
+//            }
+            return "/api/activity/search"
         }
     }
     var method: Moya.Method {
         switch self {
-        case .cities, .cityId, .searchCity:
+        case .search:
             return .get
-        case .addCity:
-            return .post
-        case .editCity:
-            return .put
-        case .deleteCity:
-            return .delete
-            //        default:
-            //            return .get
         }
     }
     var task: Task {
-        return .requestPlain
+        switch self {
+        case .search(let params):
+            return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        }
     }
     var mappingType: MappingType {
         switch self {
-        case .cities:
-            return .city
-        default:
-            return .city
+        case .search:
+            return .activity
         }
     }
     //    var sampleData: Data {
@@ -72,10 +59,10 @@ extension ActivitySpecification: TargetSpecification {
 //
 extension ActivitySpecification: Fallible {
     typealias Error = UserError
-    
+
     enum UserError: NetworkError {
         case userNotFound
-        
+
         static func error(from: MoyaError) -> UserError {
             switch from {
             case .underlying( _):
@@ -84,7 +71,7 @@ extension ActivitySpecification: Fallible {
                 return .userNotFound
             }
         }
-        
+
     }
-    
+
 }

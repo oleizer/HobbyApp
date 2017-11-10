@@ -9,10 +9,7 @@
 import UIKit
 
 class InterestViewController: UIViewController, InterestViewInput {
-
     @IBOutlet private weak var tableView: UITableView!
-
-
     var output: InterestViewOutput!
     // MARK: IBOutlet
 
@@ -21,8 +18,6 @@ class InterestViewController: UIViewController, InterestViewInput {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
-
     // MARK: InterestViewInput
     func setupInitialState() {
         tableView.register(InterestTableViewCell.self)
@@ -43,8 +38,7 @@ extension InterestViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model = InterestCellModel(interest: output.object(atIndex: indexPath.row))
-        return tableView.dequeueReusableCell(withModel: model, for: indexPath)
+        return tableView.dequeueReusableCell(withModel: InterestCellModel(interest: output.object(atIndex: indexPath.row)), for: indexPath)
     }
     // MARK: - UITableViewDelegate
 
