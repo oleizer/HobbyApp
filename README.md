@@ -5,3 +5,11 @@
 [![Build Status](https://travis-ci.org/oleizer/HobbyApp.svg?branch=master)](https://travis-ci.org/oleizer/HobbyApp)
 
 ### Тестовое Задание, Open Source
+
+
+### Make команды
+
+* help: Показать список команд
+* count: Показать количество строк кода
+* clean: Удалить все чсто явязано с подами
+* lint: Автокорекция кода
