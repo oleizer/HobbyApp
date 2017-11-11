@@ -8,6 +8,7 @@
 
 import Foundation
 import MBProgressHUD
+
 protocol ViewInput: class {
     func showProgress()
     func hideProgress()

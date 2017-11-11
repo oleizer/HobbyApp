@@ -17,6 +17,7 @@ enum MappingType: String {
     case user = "user"
     case interest = "interest"
     case city = "city"
+    case activity = "activity"
 
     var fromJSON: FromJSONClosure {
         switch self {
@@ -32,6 +33,8 @@ enum MappingType: String {
             return AppNetworkError.fromJSON
         case .interest:
             return Interest.fromJSON
+        case .activity:
+            return Activity.fromJSON
         }
     }
 }

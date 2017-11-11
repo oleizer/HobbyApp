@@ -7,6 +7,20 @@ import Foundation
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 enum L10n {
 
+  enum Activitydetail {
+
+    enum Cell {
+      /// Адрес
+      static let address = L10n.tr("Localizable", "ActivityDetail.Cell.address")
+      /// Возраст
+      static let age = L10n.tr("Localizable", "ActivityDetail.Cell.age")
+      /// Организатор
+      static let organizer = L10n.tr("Localizable", "ActivityDetail.Cell.organizer")
+      /// Цены
+      static let price = L10n.tr("Localizable", "ActivityDetail.Cell.price")
+    }
+  }
+
   enum City {
 
     enum Navigation {

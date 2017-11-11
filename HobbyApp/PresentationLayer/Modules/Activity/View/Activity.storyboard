@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n12-f7-9bz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity View Controller-->
+        <scene sceneID="3aU-h2-Z0D">
+            <objects>
+                <viewController storyboardIdentifier="ActivityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oPt-Se-XPR" customClass="ActivityViewController" customModule="HobbyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QII-bs-Mxt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8MO-NC-fp5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oPt-Se-XPR" id="Szj-Ka-G7T"/>
+                                    <outlet property="delegate" destination="oPt-Se-XPR" id="zZ0-C1-Ixe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8MO-NC-fp5" firstAttribute="top" secondItem="ulT-c2-xbO" secondAttribute="top" id="BqU-Qh-dEI"/>
+                            <constraint firstItem="ulT-c2-xbO" firstAttribute="bottom" secondItem="8MO-NC-fp5" secondAttribute="bottom" id="KZt-hW-le9"/>
+                            <constraint firstItem="8MO-NC-fp5" firstAttribute="leading" secondItem="ulT-c2-xbO" secondAttribute="leading" id="Kh6-wM-cLQ"/>
+                            <constraint firstItem="8MO-NC-fp5" firstAttribute="trailing" secondItem="ulT-c2-xbO" secondAttribute="trailing" id="NeJ-2Y-RmA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ulT-c2-xbO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YTv-iK-Eb7"/>
+                    <connections>
+                        <outlet property="tableView" destination="8MO-NC-fp5" id="dbY-ye-Rs3"/>
+                        <segue destination="NIX-0P-Rky" kind="show" identifier="toActivityDetail" id="Tmf-SO-OEj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KL-Uc-wn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="QSr-i8-BPb" customClass="ActivityModuleInitializer" customModule="HobbyApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="activityViewController" destination="oPt-Se-XPR" id="LoV-2O-FjE"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="448.80000000000001" y="100.29985007496252"/>
+        </scene>
+        <!--ActivityDetail-->
+        <scene sceneID="Ztm-2L-D4t">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActivityDetail" id="NIX-0P-Rky" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxa-Mj-IRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hEF-Bq-zEP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n12-f7-9bz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H7i-z7-onF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oPt-Se-XPR" kind="relationship" relationship="rootViewController" id="Z7P-8l-X2a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XfO-Ub-n5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="100"/>
+        </scene>
+    </scenes>
+</document>

@@ -30,7 +30,7 @@ class {{ module_info.name }}ViewTests: XCTestCase {
         // when
         self.view?.viewDidLoad()
         // then
-        XCTAssert(self.output?.viewLoadedWasCalled == true)
+        XCTAssert(self.output?.viewIsReadyWasCalled == true)
     }
     final class {{ module_info.name }}ViewOutputMock: {{ module_info.name }}ViewOutput {
         var viewIsReadyWasCalled: Bool = false

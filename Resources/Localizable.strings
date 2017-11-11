@@ -16,3 +16,8 @@
 "City.Navigation.Title" = "Выбор города";
 
 "Error.UnknownError" = "Неизвестная ошибка";
+
+"ActivityDetail.Cell.organizer" = "Организатор";
+"ActivityDetail.Cell.age" = "Возраст";
+"ActivityDetail.Cell.address" = "Адрес";
+"ActivityDetail.Cell.price" = "Цены";

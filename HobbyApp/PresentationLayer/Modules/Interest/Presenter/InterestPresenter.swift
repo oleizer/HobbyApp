@@ -8,10 +8,6 @@
 
 class InterestPresenter: InterestModuleInput, InterestViewOutput, InterestInteractorOutput {
 
-
-
-
-
     weak var view: InterestViewInput!
     var interactor: InterestInteractorInput!
     var router: InterestRouterInput!

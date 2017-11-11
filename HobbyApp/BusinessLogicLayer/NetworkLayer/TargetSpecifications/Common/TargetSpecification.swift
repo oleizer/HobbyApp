@@ -61,17 +61,18 @@ extension TargetType {
             ]
         return assigned
     }
-    func stubbedData(_ filename: String) -> Data {
-        let bundle = Bundle.main
-        let path = bundle.path(forResource: filename, ofType: "json")
-        return (try! Data(contentsOf: URL(fileURLWithPath: path!)))
-    }
+
     var stubbedNetworkResponse: EndpointSampleResponse {
         switch self {
         default:
             return .networkResponse(200, sampleData)
         }
     }
+}
+func stubbedData(_ filename: String) -> Data {
+    let bundle = Bundle.main
+    let path = bundle.path(forResource: filename, ofType: "json")
+    return (try! Data(contentsOf: URL(fileURLWithPath: path!)))
 }
 //
 //extension TargetType {

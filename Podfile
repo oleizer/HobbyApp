@@ -3,6 +3,9 @@ platform :ios, '10.0'
 target 'HobbyApp' do
     use_frameworks!
     pod 'Crashlytics'
+    pod 'AlamofireImage'
+pod 'PINCache', '3.0.1-beta.6'
+pod 'PINRemoteImage', '3.0.0-beta.13'
 	pod 'Validator'
     pod 'Fabric'
 	pod 'PromiseKit'

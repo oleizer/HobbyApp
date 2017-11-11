@@ -52,6 +52,20 @@ extension UIViewController {
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 enum StoryboardScene {
+  enum Activity: StoryboardType {
+    static let storyboardName = "Activity"
+
+    static let initialScene = InitialSceneType<UINavigationController>(storyboard: Activity.self)
+
+    static let activityViewController = SceneType<HobbyApp.ActivityViewController>(storyboard: Activity.self, identifier: "ActivityViewController")
+  }
+  enum ActivityDetail: StoryboardType {
+    static let storyboardName = "ActivityDetail"
+
+    static let initialScene = InitialSceneType<HobbyApp.ActivityDetailViewController>(storyboard: ActivityDetail.self)
+
+    static let activityDetailViewController = SceneType<HobbyApp.ActivityDetailViewController>(storyboard: ActivityDetail.self, identifier: "ActivityDetailViewController")
+  }
   enum AddCity: StoryboardType {
     static let storyboardName = "AddCity"
 
@@ -102,6 +116,9 @@ enum StoryboardScene {
 }
 
 enum StoryboardSegue {
+  enum Activity: String, SegueType {
+    case toActivityDetail
+  }
   enum City: String, SegueType {
     case toAddCity
     case toInterest
