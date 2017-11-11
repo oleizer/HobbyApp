@@ -17,9 +17,28 @@
                     <view key="view" contentMode="scaleToFill" id="sDM-Sv-PSe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-g7-2mf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cd1-eR-6nV" id="ebw-Gw-fle"/>
+                                    <outlet property="delegate" destination="cd1-eR-6nV" id="q4O-03-RtH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AQc-g7-2mf" firstAttribute="top" secondItem="BQU-YU-w3p" secondAttribute="top" id="1GA-zD-7Yk"/>
+                            <constraint firstItem="BQU-YU-w3p" firstAttribute="bottom" secondItem="AQc-g7-2mf" secondAttribute="bottom" id="YsO-tN-gUi"/>
+                            <constraint firstItem="BQU-YU-w3p" firstAttribute="trailing" secondItem="AQc-g7-2mf" secondAttribute="trailing" id="aEF-2u-QjB"/>
+                            <constraint firstItem="AQc-g7-2mf" firstAttribute="leading" secondItem="BQU-YU-w3p" secondAttribute="leading" id="rhH-if-Wzp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BQU-YU-w3p"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="AQc-g7-2mf" id="Rq4-py-5Vu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwv-7w-SW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="WCo-oK-Bn8" customClass="ActivityDetailModuleInitializer" customModule="HobbyApp" customModuleProvider="target">

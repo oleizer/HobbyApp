@@ -21,7 +21,7 @@ class ActivityModuleConfigurator {
 
         let router = ActivityRouter()
         router.transitionHandler = viewController
-        
+
         let presenter = ActivityPresenter()
         presenter.view = viewController
         presenter.router = router

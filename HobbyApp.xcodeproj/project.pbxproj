@@ -169,6 +169,13 @@
 		A6EDAC4B1FB39CBB007223F4 /* ActivitySpecifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */; };
 		A6EDAC4D1FB39E78007223F4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4C1FB39E78007223F4 /* Activity.swift */; };
 		A6EDAC511FB3A037007223F4 /* ActivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC501FB3A037007223F4 /* ActivityTests.swift */; };
+		A6EEBA361FB757440043FD87 /* ActivityDetailCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEBA351FB757440043FD87 /* ActivityDetailCellModel.swift */; };
+		A6EEBA391FB757650043FD87 /* ActivityDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEBA371FB757650043FD87 /* ActivityDetailImageCell.swift */; };
+		A6EEBA3A1FB757650043FD87 /* ActivityDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EEBA381FB757650043FD87 /* ActivityDetailImageCell.xib */; };
+		A6EEBA3D1FB75CA80043FD87 /* ActivityDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEBA3B1FB75CA80043FD87 /* ActivityDetailDescriptionCell.swift */; };
+		A6EEBA3E1FB75CA80043FD87 /* ActivityDetailDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EEBA3C1FB75CA80043FD87 /* ActivityDetailDescriptionCell.xib */; };
+		A6EEBA411FB75FD20043FD87 /* ActivityDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEBA3F1FB75FD20043FD87 /* ActivityDetailInfoCell.swift */; };
+		A6EEBA421FB75FD20043FD87 /* ActivityDetailInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EEBA401FB75FD20043FD87 /* ActivityDetailInfoCell.xib */; };
 		A6F83E981FB04A510010342F /* AddCityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171FE41F91D17091B1954B5D /* AddCityViewInput.swift */; };
 		A6F83E991FB04A510010342F /* AddCityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED9FBACCF570BF9B212DB09 /* AddCityViewOutput.swift */; };
 		A6F83E9A1FB04A510010342F /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D075CE1806FEEB6771ACE4 /* AddCityViewController.swift */; };
@@ -445,6 +452,13 @@
 		A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySpecifications.swift; sourceTree = "<group>"; };
 		A6EDAC4C1FB39E78007223F4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A6EDAC501FB3A037007223F4 /* ActivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTests.swift; sourceTree = "<group>"; };
+		A6EEBA351FB757440043FD87 /* ActivityDetailCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailCellModel.swift; sourceTree = "<group>"; };
+		A6EEBA371FB757650043FD87 /* ActivityDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailImageCell.swift; sourceTree = "<group>"; };
+		A6EEBA381FB757650043FD87 /* ActivityDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailImageCell.xib; sourceTree = "<group>"; };
+		A6EEBA3B1FB75CA80043FD87 /* ActivityDetailDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailDescriptionCell.swift; sourceTree = "<group>"; };
+		A6EEBA3C1FB75CA80043FD87 /* ActivityDetailDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailDescriptionCell.xib; sourceTree = "<group>"; };
+		A6EEBA3F1FB75FD20043FD87 /* ActivityDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailInfoCell.swift; sourceTree = "<group>"; };
+		A6EEBA401FB75FD20043FD87 /* ActivityDetailInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailInfoCell.xib; sourceTree = "<group>"; };
 		A6F83EC21FB04F540010342F /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		A7F1E9C1A445DC847270037C /* LoginRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
 		A81D59D8DF36D4421AC51366 /* CityPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityPresenter.swift; sourceTree = "<group>"; };
@@ -1102,6 +1116,7 @@
 		8BFE5E22BD2718F785D016E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6EEBA341FB756FB0043FD87 /* Cell */,
 				CBD9C283DA87FB609C7C2435 /* ActivityDetailViewInput.swift */,
 				F3C3242D966C54588C9E9C5D /* ActivityDetailViewOutput.swift */,
 				0F7DD4B2E53E17C82EB43F7B /* ActivityDetailViewController.swift */,
@@ -1596,6 +1611,20 @@
 			path = Activity;
 			sourceTree = "<group>";
 		};
+		A6EEBA341FB756FB0043FD87 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEBA351FB757440043FD87 /* ActivityDetailCellModel.swift */,
+				A6EEBA371FB757650043FD87 /* ActivityDetailImageCell.swift */,
+				A6EEBA381FB757650043FD87 /* ActivityDetailImageCell.xib */,
+				A6EEBA3B1FB75CA80043FD87 /* ActivityDetailDescriptionCell.swift */,
+				A6EEBA3C1FB75CA80043FD87 /* ActivityDetailDescriptionCell.xib */,
+				A6EEBA3F1FB75FD20043FD87 /* ActivityDetailInfoCell.swift */,
+				A6EEBA401FB75FD20043FD87 /* ActivityDetailInfoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A75997F4913C9F468BDA6F79 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1945,6 +1974,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A644FAB51FACC9460037B240 /* LaunchScreen.storyboard in Resources */,
+				A6EEBA3A1FB757650043FD87 /* ActivityDetailImageCell.xib in Resources */,
+				A6EEBA3E1FB75CA80043FD87 /* ActivityDetailDescriptionCell.xib in Resources */,
 				A644FACF1FACC9870037B240 /* Colors.json in Resources */,
 				A644FAEB1FACDD350037B240 /* city.json in Resources */,
 				A6313C2E1FB395D9003D84DD /* InterestTableViewCell.xib in Resources */,
@@ -1961,6 +1992,7 @@
 				A62EFD6E1FB1DCC1004B67D5 /* Intro.storyboard in Resources */,
 				A6313C261FB386B1003D84DD /* CityTableViewCell.xib in Resources */,
 				A66E42241FB0A1440040CFB0 /* Login.storyboard in Resources */,
+				A6EEBA421FB75FD20043FD87 /* ActivityDetailInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2186,6 +2218,7 @@
 				A66E42171FB08BA60040CFB0 /* Interest.swift in Sources */,
 				BC0DAE1AE37896B1231276A9 /* AddCityViewController.swift in Sources */,
 				A6313C1F1FB382FF003D84DD /* CellViewModelProtocol.swift in Sources */,
+				A6EEBA361FB757440043FD87 /* ActivityDetailCellModel.swift in Sources */,
 				A66E42201FB0A0440040CFB0 /* UserSpecification.swift in Sources */,
 				9EB3999B8661D54AAF4A57C1 /* AddCityModuleInput.swift in Sources */,
 				A6B67C871FB048BF0057A778 /* ModuleTransitionSource.swift in Sources */,
@@ -2202,6 +2235,7 @@
 				163B88940E4648780DB98433 /* AddCityRouter.swift in Sources */,
 				A185314863995BDDCD1E1792 /* AddCityConfigurator.swift in Sources */,
 				A6B67C851FB048BF0057A778 /* ModuleInput.swift in Sources */,
+				A6EEBA411FB75FD20043FD87 /* ActivityDetailInfoCell.swift in Sources */,
 				07BFE261FF513F8F8E5315B1 /* AddCityInitializer.swift in Sources */,
 				C3B4F62AEB4F50ED38196EB2 /* LoginViewInput.swift in Sources */,
 				0F755C9ADBF3DF61B37EA856 /* LoginViewOutput.swift in Sources */,
@@ -2248,6 +2282,7 @@
 				E1E35F6E2A3DF7F97FA60C13 /* IntroConfigurator.swift in Sources */,
 				A5DCEFDE985D75FBFE7472F7 /* IntroInitializer.swift in Sources */,
 				141A5D30C467CAE960312669 /* InterestViewInput.swift in Sources */,
+				A6EEBA391FB757650043FD87 /* ActivityDetailImageCell.swift in Sources */,
 				661A053EE6F77429EDB50717 /* InterestViewOutput.swift in Sources */,
 				540E545B675D9AF30C6966AE /* InterestViewController.swift in Sources */,
 				EDBDCF4C35D6F39827FDD51B /* InterestModuleInput.swift in Sources */,
@@ -2260,6 +2295,7 @@
 				75E340D6302814D4F824B00D /* InterestConfigurator.swift in Sources */,
 				A6EDAC4D1FB39E78007223F4 /* Activity.swift in Sources */,
 				3AD2BFE198994772494F6FA9 /* InterestInitializer.swift in Sources */,
+				A6EEBA3D1FB75CA80043FD87 /* ActivityDetailDescriptionCell.swift in Sources */,
 				916BBBFA0AA77AB083C61125 /* ActivityViewInput.swift in Sources */,
 				0A012C15FDE6172D971A44D5 /* ActivityViewOutput.swift in Sources */,
 				C64D705E86A7014D26F35C78 /* ActivityViewController.swift in Sources */,

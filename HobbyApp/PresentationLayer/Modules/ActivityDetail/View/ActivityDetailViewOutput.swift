@@ -14,4 +14,10 @@ protocol ActivityDetailViewOutput {
     */
 
     func viewIsReady()
+    func numberOfSections() -> Int
+    func numberOfRows(inSection section: Int) -> Int
+    func sectionType(inSection section: Int) -> SectionType
+    func infoRowType(inRow row: Int) -> InfoRowType
+
+    func getActivity() -> Activity
 }

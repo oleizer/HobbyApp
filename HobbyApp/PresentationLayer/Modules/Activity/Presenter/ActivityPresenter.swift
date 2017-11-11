@@ -26,7 +26,7 @@ class ActivityPresenter: ActivityModuleInput, ActivityViewOutput, ActivityIntera
         view.setupInitialState()
         loadInterests()
     }
-    
+
     func didSelectRow(atIndex index: Int) {
         guard let model: Activity = activities[index] else { return }
         router.showActivityDetail(model)

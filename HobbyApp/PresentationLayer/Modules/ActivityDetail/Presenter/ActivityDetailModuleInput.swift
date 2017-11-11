@@ -8,5 +8,5 @@
 
 protocol ActivityDetailModuleInput: class, ModuleInput {
     func setActivity(activity: Activity)
-    func saveActivity(_ activity: Activity)
+
 }

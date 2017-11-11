@@ -64,7 +64,7 @@ extension CitySpecification: TargetSpecification {
             return .networkResponse(200, sampleData)
         }
     }
-    
+
     var sampleData: Data {
         switch self {
         case .cities:
