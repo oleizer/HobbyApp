@@ -1,5 +1,5 @@
 //
-//  ActivityActivityConfigurator.swift
+//  ActivityDetailActivityDetailConfigurator.swift
 //  HobbyApp
 //
 //  Created by Oleg Leizer on 10/11/2017.
@@ -8,29 +8,29 @@
 
 import UIKit
 
-class ActivityModuleConfigurator {
+class ActivityDetailModuleConfigurator {
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
 
-        if let viewController = viewInput as? ActivityViewController {
+        if let viewController = viewInput as? ActivityDetailViewController {
             configure(viewController: viewController)
         }
     }
 
-    private func configure(viewController: ActivityViewController) {
+    private func configure(viewController: ActivityDetailViewController) {
 
-        let router = ActivityRouter()
+        let router = ActivityDetailRouter()
         router.transitionHandler = viewController
-        
-        let presenter = ActivityPresenter()
+        let presenter = ActivityDetailPresenter()
         presenter.view = viewController
         presenter.router = router
 
-        let interactor = ActivityInteractor()
+        let interactor = ActivityDetailInteractor()
         interactor.output = presenter
 
         presenter.interactor = interactor
         viewController.output = presenter
+        viewController.moduleInput = presenter
     }
 
 }

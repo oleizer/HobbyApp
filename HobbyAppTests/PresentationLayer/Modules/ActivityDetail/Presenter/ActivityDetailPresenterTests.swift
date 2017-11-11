@@ -1,22 +1,22 @@
 //
-//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
-//  {{ module_info.project_name }}
+//  ActivityDetailActivityDetailPresenterTests.swift
+//  HobbyApp
 //
-//  Created by {{ developer.name }} on {{ date }}.
-//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//  Created by Oleg Leizer on 10/11/2017.
+//  Copyright © 2017 idev.kz. All rights reserved.
 //
 
 import XCTest
-@testable import {{ module_info.project_name }}
+@testable import HobbyApp
 
-class {{ module_info.name }}PresenterTest: XCTestCase {
-    private var presenter: {{ module_info.name }}Presenter = {{ module_info.name }}Presenter()
+class ActivityDetailPresenterTest: XCTestCase {
+    private var presenter: ActivityDetailPresenter = ActivityDetailPresenter()
     private var view: MockViewController = MockViewControlle()
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        presenter = {{ module_info.name }}Presenter()
+        presenter = ActivityDetailPresenter()
         presenter.router = MockRouter()
         view = MockViewController()
         presenter.view = view
@@ -32,15 +32,15 @@ class {{ module_info.name }}PresenterTest: XCTestCase {
         //XCTAssertTrue((presenter.view as! MockViewController).setupInitialStateWasCalled)
     }
 
-    class MockInteractor: {{ module_info.name }}InteractorInput {
+    class MockInteractor: ActivityDetailInteractorInput {
 
     }
 
-    class MockRouter: {{ module_info.name }}RouterInput {
+    class MockRouter: ActivityDetailRouterInput {
 
     }
 
-    class MockViewController: {{ module_info.name }}ViewInput {
+    class MockViewController: ActivityDetailViewInput {
 
         func setupInitialState() {
 

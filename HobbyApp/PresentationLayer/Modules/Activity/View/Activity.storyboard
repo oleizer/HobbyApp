@@ -39,6 +39,7 @@
                     <navigationItem key="navigationItem" id="YTv-iK-Eb7"/>
                     <connections>
                         <outlet property="tableView" destination="8MO-NC-fp5" id="dbY-ye-Rs3"/>
+                        <segue destination="NIX-0P-Rky" kind="show" identifier="toActivityDetail" id="Tmf-SO-OEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5KL-Uc-wn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,6 +50,14 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="448.80000000000001" y="100.29985007496252"/>
+        </scene>
+        <!--ActivityDetail-->
+        <scene sceneID="Ztm-2L-D4t">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActivityDetail" id="NIX-0P-Rky" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxa-Mj-IRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="232"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hEF-Bq-zEP">

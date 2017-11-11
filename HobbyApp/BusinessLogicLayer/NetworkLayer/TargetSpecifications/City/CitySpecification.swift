@@ -10,11 +10,11 @@ import Moya
 
 enum CitySpecification {
     case cityId(cityId: Int)
-    case editCity(cityId: Int, name: String)
-    case deleteCity(cityId: Int)
+    //case editCity(cityId: Int, name: String)
+    //case deleteCity(cityId: Int)
     case searchCity(keyword: String)
     case cities
-    case addCity
+    //case addCity
 }
 
 extension CitySpecification: TargetSpecification {
@@ -26,23 +26,23 @@ extension CitySpecification: TargetSpecification {
     var path: String {
         switch self {
         case .cityId(let cityId): return "/api/city/\(cityId)"
-        case .editCity(let cityId, _): return "/api/city/\(cityId)"
-        case .deleteCity(let cityId): return "/api/city/\(cityId)"
+        //case .editCity(let cityId, _): return "/api/city/\(cityId)"
+        //case .deleteCity(let cityId): return "/api/city/\(cityId)"
         case .searchCity: return "/api/city/search"
         case .cities: return "/api/city"
-        case .addCity: return "/api/city"
+        //case .addCity: return "/api/city"
         }
     }
     var method: Moya.Method {
         switch self {
         case .cities, .cityId, .searchCity:
             return .get
-        case .addCity:
-            return .post
-        case .editCity:
-            return .put
-        case .deleteCity:
-            return .delete
+//        case .addCity:
+//            return .post
+//        case .editCity:
+//            return .put
+//        case .deleteCity:
+//            return .delete
 //        default:
 //            return .get
         }
@@ -58,19 +58,28 @@ extension CitySpecification: TargetSpecification {
             return .city
         }
     }
-//    var sampleData: Data {
-//        switch self {
-//        case .cities:
-//            return stubbedData("cities")
-//        case .cityId:
-//            return stubbedData("city")
-//        }
-//    }
+    var stubbedNetworkResponse: EndpointSampleResponse {
+        switch self {
+        default:
+            return .networkResponse(200, sampleData)
+        }
+    }
+    
+    var sampleData: Data {
+        switch self {
+        case .cities:
+            return stubbedData("cities")
+        case .cityId:
+            return stubbedData("city")
+        case .searchCity:
+            return stubbedData("cities")
+        }
+    }
     var headers: [String : String]? {
         return nil
     }
 }
-//
+
 extension CitySpecification: Fallible {
     typealias Error = UserError
 

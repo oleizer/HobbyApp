@@ -13,39 +13,30 @@ class CityTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    
+    func testParseJSONArray() {
+        let citiesRaw = stubbedJSONArray(fileName: "cities")
+        XCTAssert(citiesRaw.count > 0)
+        
+        let cityRaw: [String: Any] = citiesRaw.first!
+        let city: City = City.fromJSON(cityRaw) as! City
+        XCTAssertNotNil(city)
+    }
     func testParseJSON() {
+        let id = 22
+        let name = "Karaganda"
         let data: [String: Any] = [
-            "Id": 1,
-            "Name": "City"
+            "Id": id,
+            "Name": name
         ]
         let city: City = City.fromJSON(data) as! City
         XCTAssertNotNil(city)
-        XCTAssertEqual(city.name, "City")
-        XCTAssertEqual(city.id, 1)
+        XCTAssertEqual(city.name, name)
+        XCTAssertEqual(city.id, id)
     }
-    func testParseJSONWithWrongData() {
-        let data: [String: Any] = [
-            "wrongId": "wrong"
-        ]
-        let city: City = City.fromJSON(data) as! City
-        XCTAssertNotNil(city)
-        //XCTAssertEqual(city.name, "City")
-        //XCTAssertEqual(city.id, 1)
-    }
-    
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

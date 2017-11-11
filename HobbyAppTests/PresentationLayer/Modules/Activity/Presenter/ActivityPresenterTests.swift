@@ -10,10 +10,16 @@ import XCTest
 @testable import HobbyApp
 
 class ActivityPresenterTest: XCTestCase {
+    private var presenter: ActivityPresenter = ActivityPresenter()
+    private var view: MockViewController = MockViewController()
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        presenter = ActivityPresenter()
+        presenter.router = MockRouter()
+        view = MockViewController()
+        presenter.view = view
     }
 
     override func tearDown() {
@@ -21,12 +27,15 @@ class ActivityPresenterTest: XCTestCase {
         super.tearDown()
     }
 
+    
+    func testThatPresenterHandlesViewIsReadyEvent() {
+       // presenter.viewIsReady()
+        //XCTAssertTrue((presenter.view as! MockViewController).setupInitialStateWasCalled)
+    }
     class MockInteractor: ActivityInteractorInput {
         func loadActivities() {
             
         }
-        
-
     }
 
     class MockRouter: ActivityRouterInput {
@@ -34,6 +43,8 @@ class ActivityPresenterTest: XCTestCase {
     }
 
     class MockViewController: ActivityViewInput {
+        var setupInitialStateWasCalled: Bool = false
+
         func showContent() {
             
         }
@@ -52,7 +63,7 @@ class ActivityPresenterTest: XCTestCase {
         
 
         func setupInitialState() {
-
+            setupInitialStateWasCalled = true
         }
     }
 }

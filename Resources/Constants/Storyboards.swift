@@ -59,6 +59,13 @@ enum StoryboardScene {
 
     static let activityViewController = SceneType<HobbyApp.ActivityViewController>(storyboard: Activity.self, identifier: "ActivityViewController")
   }
+  enum ActivityDetail: StoryboardType {
+    static let storyboardName = "ActivityDetail"
+
+    static let initialScene = InitialSceneType<HobbyApp.ActivityDetailViewController>(storyboard: ActivityDetail.self)
+
+    static let activityDetailViewController = SceneType<HobbyApp.ActivityDetailViewController>(storyboard: ActivityDetail.self, identifier: "ActivityDetailViewController")
+  }
   enum AddCity: StoryboardType {
     static let storyboardName = "AddCity"
 
@@ -109,6 +116,9 @@ enum StoryboardScene {
 }
 
 enum StoryboardSegue {
+  enum Activity: String, SegueType {
+    case toActivityDetail
+  }
   enum City: String, SegueType {
     case toAddCity
     case toInterest

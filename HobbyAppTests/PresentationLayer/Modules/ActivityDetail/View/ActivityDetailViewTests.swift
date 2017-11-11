@@ -1,24 +1,24 @@
 //
-//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
-//  {{ module_info.project_name }}
+//  ActivityDetailActivityDetailViewTests.swift
+//  HobbyApp
 //
-//  Created by {{ developer.name }} on {{ date }}.
-//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//  Created by Oleg Leizer on 10/11/2017.
+//  Copyright © 2017 idev.kz. All rights reserved.
 //
 
 import XCTest
-@testable import {{ module_info.project_name }}
+@testable import HobbyApp
 
-class {{ module_info.name }}ViewTests: XCTestCase {
+class ActivityDetailViewTests: XCTestCase {
 
-    private var view: {{ module_info.name }}ViewController?
-    private var output: {{ module_info.name }}ViewOutputMock?
+    private var view: ActivityDetailViewController?
+    private var output: ActivityDetailViewOutputMock?
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        view = {{ module_info.name }}ViewController()
-        output = {{ module_info.name }}ViewOutputMock()
+        view = ActivityDetailViewController()
+        output = ActivityDetailViewOutputMock()
         view?.output = output
     }
 
@@ -32,7 +32,7 @@ class {{ module_info.name }}ViewTests: XCTestCase {
         // then
         XCTAssert(self.output?.viewIsReadyWasCalled == true)
     }
-    final class {{ module_info.name }}ViewOutputMock: {{ module_info.name }}ViewOutput {
+    final class ActivityDetailViewOutputMock: ActivityDetailViewOutput {
         var viewIsReadyWasCalled: Bool = false
 
         func viewIsReadyWasCalled() {
