@@ -27,16 +27,11 @@ class CityTests: XCTestCase {
         let city: City = City.fromJSON(cityRaw) as! City
         XCTAssertNotNil(city)
     }
-    func testParseJSON() {
-        let id = 22
-        let name = "Karaganda"
-        let data: [String: Any] = [
-            "Id": id,
-            "Name": name
-        ]
-        let city: City = City.fromJSON(data) as! City
-        XCTAssertNotNil(city)
-        XCTAssertEqual(city.name, name)
-        XCTAssertEqual(city.id, id)
+    func testParseJSONData() {
+        let data = stubbedJSONData(fileName: "city")
+        let city = City.fromJSON(data) as! City
+        XCTAssertEqual(city.name, "Караганда")
+        XCTAssertEqual(city.id, 22)
+        
     }
 }

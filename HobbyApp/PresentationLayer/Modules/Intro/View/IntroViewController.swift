@@ -11,17 +11,17 @@ import UIKit
 class IntroViewController: UIViewController, IntroViewInput {
 
     var output: IntroViewOutput!
+    
     // MARK: IBOutlet
-
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet private weak var nextButton: UIButton!
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
 
     // MARK: IntroViewInput
     func setupInitialState() {
@@ -34,6 +34,6 @@ class IntroViewController: UIViewController, IntroViewInput {
     }
 
     @IBAction func nextButtonTouched(_ sender: Any) {
-        output.showLogin()
+        output.continueAction()
     }
 }

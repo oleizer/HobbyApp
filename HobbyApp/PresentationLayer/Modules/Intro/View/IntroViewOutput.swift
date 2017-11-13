@@ -14,6 +14,5 @@ protocol IntroViewOutput {
     */
 
     func viewIsReady()
-    func showLogin()
-
+    func continueAction()
 }

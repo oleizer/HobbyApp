@@ -32,6 +32,10 @@ class ActivityViewTests: XCTestCase {
         XCTAssert(self.output?.viewIsReadyWasCalled == true)
     }
     final class ActivityViewOutputMock: ActivityViewOutput {
+        func didSelectRow(atIndex index: Int) {
+            
+        }
+        
         var viewIsReadyWasCalled: Bool = false
 
         func viewIsReady() {
@@ -39,20 +43,7 @@ class ActivityViewTests: XCTestCase {
         }
         
         func object(atIndex index: Int) -> Activity {
-            let pic: [String: Any] = [
-                "Id": 122,
-                "url": "http://test.mhbb.ru/b/api/picture/112",
-                "IsMain": true,
-                ]
-            let org: [String: Any] = [
-                "Id": 1,
-                "Name": "Name",
-                "CityId": 1,
-                "City": "City",
-                "Sobriety": true,
-                "Email": "email@email.ri",
-                "Phone": "77013875885",
-                ]
+            
             let data: [String: Any] = [
                 "Id": 1,
                 "Name": "Name",
@@ -61,7 +52,20 @@ class ActivityViewTests: XCTestCase {
                 "AgeFrom": 2,
                 "AgeTo": 33,
                 "Free": false,
-                "Organizer": org
+                "MainPicture": [
+                    "Id": 122,
+                    "url": "http://test.mhbb.ru/b/api/picture/112",
+                    "IsMain": true,
+                ],
+                "Organizer": [
+                    "Id": 1,
+                    "Name": "Name",
+                    "CityId": 1,
+                    "City": "City",
+                    "Sobriety": true,
+                    "Email": "email@email.ri",
+                    "Phone": "77013875885",
+                ]
             ]
             let model: Activity = Activity.fromJSON(data) as! Activity
             return model

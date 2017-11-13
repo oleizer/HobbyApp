@@ -22,6 +22,14 @@ class IntroInteractorTests: XCTestCase {
     }
 
     class MockPresenter: IntroInteractorOutput {
+        func loadUserSuccessful(_ user: User) {
+            
+        }
+        
+        func loadUserFailure(_ error: Error) {
+            
+        }
+        
 
     }
 }

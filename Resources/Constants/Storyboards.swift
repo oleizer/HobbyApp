@@ -124,6 +124,7 @@ enum StoryboardSegue {
     case toInterest
   }
   enum Intro: String, SegueType {
+    case toActivity
     case toLogin
   }
   enum Login: String, SegueType {

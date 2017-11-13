@@ -11,7 +11,7 @@ import XCTest
 
 class ActivityDetailPresenterTest: XCTestCase {
     private var presenter: ActivityDetailPresenter = ActivityDetailPresenter()
-    private var view: MockViewController = MockViewControlle()
+    private var view: MockViewController = MockViewController()
 
     override func setUp() {
         super.setUp()
@@ -37,10 +37,20 @@ class ActivityDetailPresenterTest: XCTestCase {
     }
 
     class MockRouter: ActivityDetailRouterInput {
+        var transitionHandler: ModuleTransitionSource!
+        
 
     }
 
     class MockViewController: ActivityDetailViewInput {
+        func showProgress() {
+            
+        }
+        
+        func hideProgress() {
+            
+        }
+        
 
         func setupInitialState() {
 

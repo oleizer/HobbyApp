@@ -135,7 +135,7 @@ extension APIProvider {
             case 200...299, 300...399:
                 handleNetworkSuccess(data: data, target: target, statusCode: statusCode, response: response, success: success, failure: failure)
             case 401:
-                print("401")
+                handleServerError(target.path, failure: failure, data: data, statusCode: statusCode)
             default:
                 handleServerError(target.path, failure: failure, data: data, statusCode: statusCode)
             }

@@ -10,5 +10,6 @@ import Foundation
 
 protocol IntroRouterInput {
     func showLogin()
+    func showActivity()
 
 }

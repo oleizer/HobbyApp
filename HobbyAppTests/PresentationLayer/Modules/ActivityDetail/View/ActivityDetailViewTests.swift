@@ -35,8 +35,54 @@ class ActivityDetailViewTests: XCTestCase {
     final class ActivityDetailViewOutputMock: ActivityDetailViewOutput {
         var viewIsReadyWasCalled: Bool = false
 
-        func viewIsReadyWasCalled() {
+        func viewIsReady() {
             viewIsReadyWasCalled = true
         }
+        
+        func numberOfSections() -> Int {
+            return 0
+        }
+        
+        func numberOfRows(inSection section: Int) -> Int {
+            return 0
+        }
+        
+        func sectionType(inSection section: Int) -> SectionType {
+            return .header
+        }
+        
+        func infoRowType(inRow row: Int) -> InfoRowType {
+            return .organizer
+        }
+        
+        func getActivity() -> Activity {
+            let data: [String: Any] = [
+                "Id": 1,
+                "Name": "Name",
+                "Description": "Description",
+                "Voices": 2,
+                "AgeFrom": 2,
+                "AgeTo": 33,
+                "Free": false,
+                "MainPicture": [
+                    "Id": 122,
+                    "url": "http://test.mhbb.ru/b/api/picture/112",
+                    "IsMain": true,
+                ],
+                "Organizer": [
+                    "Id": 1,
+                    "Name": "Name",
+                    "CityId": 1,
+                    "City": "City",
+                    "Sobriety": true,
+                    "Email": "email@email.ri",
+                    "Phone": "77013875885",
+                ]
+            ]
+            let model: Activity = Activity.fromJSON(data) as! Activity
+            return model
+        }
+        
+
     }
 }

@@ -16,4 +16,7 @@ class IntroRouter: IntroRouterInput {
             window?.rootViewController = module.loginViewController
         }
     }
+    func showActivity() {
+        
+    }
 }

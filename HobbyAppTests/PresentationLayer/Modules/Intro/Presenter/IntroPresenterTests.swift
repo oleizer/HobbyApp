@@ -10,33 +10,68 @@ import XCTest
 @testable import HobbyApp
 
 class IntroPresenterTest: XCTestCase {
-
+    private var presenter: IntroPresenter = IntroPresenter()
+    private var view: MockViewController = MockViewController()
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        presenter = IntroPresenter()
+        presenter.router = MockRouter()
+        view = MockViewController()
+        presenter.view = view
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
 
-    class MockInteractor: IntroInteractorInput {
-
+    func testThatPresenterHandlesViewLoadedEvent() {
+        presenter.viewIsReady()
+        XCTAssertTrue((presenter.view as! MockViewController).setupInitialStateWasCalled)
     }
-
-    class MockRouter: IntroRouterInput {
-        func showLogin() {
+    func testLoginModuleWasCalled() {
+        var token = AuthToken()
+        token.token = nil
+        presenter.continueAction()
+        XCTAssertTrue((presenter.router as! MockRouter).showLoginModuleWasCalled)
+    }
+//    func testActivityModuleWasCalled() {
+//        var token = AuthToken()
+//        token.token = "Token"
+//        presenter.continueAction()
+//        //XCTAssertTrue((presenter.router as! MockRouter).showActivityModuleWasCalled)
+//    }
+    class MockInteractor: IntroInteractorInput {
+        func loadUser() {
             
         }
         
 
     }
 
+    class MockRouter: IntroRouterInput {
+        var showLoginModuleWasCalled: Bool = false
+        var showActivityModuleWasCalled: Bool = false
+
+        func showActivity(){
+            showActivityModuleWasCalled = true
+        }
+        func showLogin() {
+            showLoginModuleWasCalled = true
+        }
+    }
+
     class MockViewController: IntroViewInput {
-
+        func showProgress() {
+            
+        }
+        
+        func hideProgress() {
+            
+        }
+        
+        var setupInitialStateWasCalled: Bool = false
         func setupInitialState() {
-
+            setupInitialStateWasCalled = true
         }
     }
 }

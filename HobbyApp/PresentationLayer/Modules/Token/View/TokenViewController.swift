@@ -8,9 +8,12 @@
 
 import UIKit
 
-class TokenViewController: UIViewController, TokenViewInput {
+class TokenViewController: UIViewController, TokenViewInput, ModuleTransitionDestination {
+    
 
     var output: TokenViewOutput!
+    var moduleInput: ModuleInput!
+
     // MARK: IBOutlet
     @IBOutlet weak var tokenTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!

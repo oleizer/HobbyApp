@@ -10,15 +10,40 @@ import XCTest
 @testable import HobbyApp
 
 class IntroViewTests: XCTestCase {
-
+    private var view: IntroViewController?
+    private var output: IntroViewOutputMock?
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        view = IntroViewController()
+        output = IntroViewOutputMock()
+        view?.output = output
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        view = nil
+        output = nil
         super.tearDown()
     }
+    func testSuccessViewDidLoad() {
+        self.view?.viewDidLoad()
+        XCTAssert(self.output?.viewIsReadyWasCalled == true)
+    }
+    func testContinueAction() {
+        self.view?.nextButtonTouched(self)
+        XCTAssert(self.output?.continueActionWasCalled == true)
+    }
+    final class IntroViewOutputMock: IntroViewOutput {
+        var viewIsReadyWasCalled: Bool = false
+        var continueActionWasCalled: Bool = false
 
+        func continueAction() {
+            continueActionWasCalled = true
+        }
+        
+        
+        func viewIsReady() {
+            viewIsReadyWasCalled = true
+        }
+    }
 }

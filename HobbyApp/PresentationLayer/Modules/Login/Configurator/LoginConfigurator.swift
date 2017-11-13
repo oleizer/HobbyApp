@@ -21,6 +21,7 @@ class LoginModuleConfigurator {
 
         let router = LoginRouter()
         router.transitionHandler = viewController
+        
         let presenter = LoginPresenter()
         presenter.view = viewController
         presenter.router = router

@@ -74,6 +74,7 @@
                         <outlet property="nextButton" destination="e2g-k4-dd9" id="7Wo-fT-RbZ"/>
                         <outlet property="welcomeLabel" destination="rSl-jK-iel" id="BRZ-lM-HyF"/>
                         <segue destination="7bj-ny-ys5" kind="show" identifier="toLogin" id="1D8-OF-4Tz"/>
+                        <segue destination="aoJ-Lq-ahV" kind="show" identifier="toActivity" id="9Lo-af-Z6G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NP1-V2-yk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -92,6 +93,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFe-hs-rQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="735" y="-73"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Jf1-wJ-QnM">
+            <objects>
+                <viewControllerPlaceholder id="aoJ-Lq-ahV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M86-PY-Eg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="122"/>
         </scene>
     </scenes>
     <resources>

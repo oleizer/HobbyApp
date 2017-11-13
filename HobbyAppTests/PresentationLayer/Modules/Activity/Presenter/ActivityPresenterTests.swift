@@ -39,6 +39,10 @@ class ActivityPresenterTest: XCTestCase {
     }
 
     class MockRouter: ActivityRouterInput {
+        func showActivityDetail(_ activity: Activity) {
+            
+        }
+        
 
     }
 

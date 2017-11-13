@@ -9,5 +9,6 @@
 import Foundation
 
 protocol IntroInteractorOutput: class {
-
+    func loadUserSuccessful(_ user: User)
+    func loadUserFailure(_ error: Error)
 }

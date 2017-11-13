@@ -6,6 +6,6 @@
 //  Copyright © 2017 idev.kz. All rights reserved.
 //
 
-protocol TokenModuleInput: class {
+protocol TokenModuleInput: class, ModuleInput {
 
 }
