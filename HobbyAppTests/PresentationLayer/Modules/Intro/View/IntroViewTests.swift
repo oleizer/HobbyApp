@@ -12,9 +12,9 @@ import XCTest
 class IntroViewTests: XCTestCase {
     private var view: IntroViewController?
     private var output: IntroViewOutputMock?
+    
     override func setUp() {
         super.setUp()
-        
         view = IntroViewController()
         output = IntroViewOutputMock()
         view?.output = output
@@ -25,18 +25,21 @@ class IntroViewTests: XCTestCase {
         output = nil
         super.tearDown()
     }
+    
     func testSuccessViewDidLoad() {
         self.view?.viewDidLoad()
         XCTAssert(self.output?.viewIsReadyWasCalled == true)
     }
+    
     func testContinueAction() {
         self.view?.nextButtonTouched(self)
         XCTAssert(self.output?.continueActionWasCalled == true)
     }
+    
     final class IntroViewOutputMock: IntroViewOutput {
         var viewIsReadyWasCalled: Bool = false
         var continueActionWasCalled: Bool = false
-
+    
         func continueAction() {
             continueActionWasCalled = true
         }

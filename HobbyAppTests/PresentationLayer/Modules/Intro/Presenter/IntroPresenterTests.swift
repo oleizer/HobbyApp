@@ -12,12 +12,16 @@ import XCTest
 class IntroPresenterTest: XCTestCase {
     private var presenter: IntroPresenter = IntroPresenter()
     private var view: MockViewController = MockViewController()
+    private var interactor: MockInteractor = MockInteractor()
+    
     override func setUp() {
         super.setUp()
         presenter = IntroPresenter()
         presenter.router = MockRouter()
         view = MockViewController()
         presenter.view = view
+        interactor = MockInteractor()
+        presenter.interactor = interactor
     }
 
     override func tearDown() {
@@ -28,24 +32,27 @@ class IntroPresenterTest: XCTestCase {
         presenter.viewIsReady()
         XCTAssertTrue((presenter.view as! MockViewController).setupInitialStateWasCalled)
     }
+    
     func testLoginModuleWasCalled() {
         var token = AuthToken()
         token.token = nil
         presenter.continueAction()
         XCTAssertTrue((presenter.router as! MockRouter).showLoginModuleWasCalled)
     }
-//    func testActivityModuleWasCalled() {
-//        var token = AuthToken()
-//        token.token = "Token"
-//        presenter.continueAction()
-//        //XCTAssertTrue((presenter.router as! MockRouter).showActivityModuleWasCalled)
-//    }
+    
+    func testActivityModuleWasCalled() {
+        var token = AuthToken()
+        token.token = "Token"
+        presenter.continueAction()
+        XCTAssertTrue((presenter.interactor as! MockInteractor).loadUserWasCalled)
+    }
+    
     class MockInteractor: IntroInteractorInput {
-        func loadUser() {
-            
-        }
+        var loadUserWasCalled: Bool = false
         
-
+        func loadUser() {
+            loadUserWasCalled = true
+        }
     }
 
     class MockRouter: IntroRouterInput {
@@ -55,21 +62,19 @@ class IntroPresenterTest: XCTestCase {
         func showActivity(){
             showActivityModuleWasCalled = true
         }
+        
         func showLogin() {
             showLoginModuleWasCalled = true
         }
     }
 
     class MockViewController: IntroViewInput {
-        func showProgress() {
-            
-        }
-        
-        func hideProgress() {
-            
-        }
-        
         var setupInitialStateWasCalled: Bool = false
+
+        func showProgress() {}
+        
+        func hideProgress() {}
+        
         func setupInitialState() {
             setupInitialStateWasCalled = true
         }

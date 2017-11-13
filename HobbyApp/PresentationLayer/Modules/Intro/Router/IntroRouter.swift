@@ -17,6 +17,11 @@ class IntroRouter: IntroRouterInput {
         }
     }
     func showActivity() {
-        
+        if let window = UIApplication.shared.delegate?.window {
+            let module = ActivityModuleInitializer()
+            let viewController = StoryboardScene.Activity.activityViewController.instantiate()
+            module.activityViewController = viewController
+            window?.rootViewController = module.activityViewController
+        }
     }
 }

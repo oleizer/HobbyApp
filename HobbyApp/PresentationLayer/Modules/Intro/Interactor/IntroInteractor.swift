@@ -15,7 +15,5 @@ class IntroInteractor: IntroInteractorInput {
         }).catch(execute: { error in
             self.output.loadUserFailure(error)
         })
-
     }
-
 }
