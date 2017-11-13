@@ -10,5 +10,5 @@ import Foundation
 
 protocol LoginRouterInput {
 
-    func showToken()
+    func showToken(withEmail email: String)
 }

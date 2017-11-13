@@ -7,18 +7,26 @@
 //
 
 class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
+
+    
     weak var view: TokenViewInput!
     var interactor: TokenInteractorInput!
     var router: TokenRouterInput!
-
+    private var email: String!
+    
+    // MARK: - TokenViewOutput
     func viewIsReady() {
-
+        view.setupInitialState()
     }
 
     func showSelectCity() {
 
     }
 
+    
+    func showEmail() -> String {
+        return self.email
+    }
     func confirm(_ token: String) {
         view.showProgress()
         interactor.confirm(token)
@@ -32,5 +40,10 @@ class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
     func confirmTokenSuccessful() {
         view.hideProgress()
         router.showSelectCity()
+    }
+    
+    // MARK: - TokenModuleInput
+    func setEmail(_ email: String) {
+        self.email = email
     }
 }

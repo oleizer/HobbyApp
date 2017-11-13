@@ -14,8 +14,10 @@ class LoginViewController: UIViewController, LoginViewInput {
     // MARK: - IBOutlet
     @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var loginButton: UIButton!
-
+    @IBOutlet weak var keyboardBottomConstraint: NSLayoutConstraint!
     // MARK: - Varibles
+    private var keyboardWillShowObserver: NotificationObserver?
+    private var keyboardWillHideObserver: NotificationObserver?
     private var email: String {
         get { return emailTextField.text?.trimmingCharacters(in: CharacterSet.whitespaces) ?? "" }
         set { emailTextField.text = newValue }
@@ -24,13 +26,14 @@ class LoginViewController: UIViewController, LoginViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
+        email = "oleizer@gmail.com"
+        setupKeyboardObservers()
     }
-
+    deinit {
+        teardownKeyboardObservers()
+    }
     @IBAction func loginButtonTouched(_ sender: Any) {
-        output.login("oleizer@gmail.com")
-        //output.login("")
-
-
+        output.login(email)
     }
 
     // MARK: LoginViewInput
@@ -39,7 +42,6 @@ class LoginViewController: UIViewController, LoginViewInput {
     }
     func hideLoadingHUD() {
         AppHUD.hideLoadingHudInView(view)
-
     }
 
 
@@ -64,11 +66,37 @@ class LoginViewController: UIViewController, LoginViewInput {
         emailTextField.tintColor = ColorName.dark.color
         emailTextField.textAlignment = .left
         emailTextField.contentVerticalAlignment = .center
+        
     }
     func showMessage(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func setupKeyboardObservers() {
+        keyboardWillShowObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillShow, block: keyboardWillChangeAnimated)
+        keyboardWillHideObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillHide, block: keyboardWillChangeAnimated)
+    }
+    
+    private func teardownKeyboardObservers() {
+        keyboardWillShowObserver?.removeObserver()
+        keyboardWillHideObserver?.removeObserver()
+        keyboardWillShowObserver = nil
+        keyboardWillHideObserver = nil
+    }
+    
+    func keyboardWillChangeAnimated(_ keyboard: Keyboard) {
+        keyboardWillChange(keyboard, animated: true)
+    }
+    
+    func keyboardWillChange(_ keyboard: Keyboard, animated: Bool) {
+        let bottomInset = keyboard.keyboardBottomInset(inView: self)
+        elloAnimate(duration: keyboard.duration, options: keyboard.options, animated: animated) {
+            self.keyboardTopConstraint.update(offset: -bottomInset)
+            self.keyboardIsAnimating(keyboard)
+            self.layoutIfNeeded()
+        }
     }
 }

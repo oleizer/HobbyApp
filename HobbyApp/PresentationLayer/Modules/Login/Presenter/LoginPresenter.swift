@@ -11,19 +11,21 @@ class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
     weak var view: LoginViewInput!
     var interactor: LoginInteractorInput!
     var router: LoginRouterInput!
-
+    
+    private var email: String?
     func viewIsReady() {
         view.setupInitialState()
     }
 
     func login(_ email: String) {
         //view.showLoadingHUD()
+        self.email = email
         view.showProgress()
         self.interactor.login(email)
     }
     func loginSuccessful() {
         view.hideProgress()
-        router.showToken()
+        router.showToken(withEmail: email!)
     }
 
     func loginFailed(_ error: Error) {

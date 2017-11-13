@@ -16,4 +16,6 @@ protocol TokenViewOutput {
     func viewIsReady()
     func confirm(_ token: String)
     func showSelectCity()
+    
+    func showEmail() -> String
 }

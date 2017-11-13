@@ -22,11 +22,14 @@ class TokenViewController: UIViewController, TokenViewInput, ModuleTransitionDes
         super.viewDidLoad()
         output.viewIsReady()
     }
+    
 
 
     // MARK: TokenViewInput
     func setupInitialState() {
+        self.navigationItem.title = output.showEmail()
     }
+    
     @IBAction func saveButtonTouched(_ sender: Any) {
         //output.login("oleizer@gmail.com")
         output.confirm("6e548e6831adebf50f9280d10b805347f34598805c3f75e388646bc53069be02")

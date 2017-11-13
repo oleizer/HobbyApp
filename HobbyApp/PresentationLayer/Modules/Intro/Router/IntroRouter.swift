@@ -21,7 +21,8 @@ class IntroRouter: IntroRouterInput {
             let module = ActivityModuleInitializer()
             let viewController = StoryboardScene.Activity.activityViewController.instantiate()
             module.activityViewController = viewController
-            window?.rootViewController = module.activityViewController
+            let nav = UINavigationController(rootViewController: module.activityViewController)
+            window?.rootViewController = nav
         }
     }
 }

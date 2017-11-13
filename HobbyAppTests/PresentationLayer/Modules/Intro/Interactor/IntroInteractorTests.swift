@@ -10,26 +10,28 @@ import XCTest
 @testable import HobbyApp
 
 class IntroInteractorTests: XCTestCase {
+    private var interactor: IntroInteractor = IntroInteractor()
+    private var presenter: MockPresenter = MockPresenter()
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        interactor = IntroInteractor()
+        presenter = MockPresenter()
+        interactor.output = presenter
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testLoadUserSuccess() {
     }
 
     class MockPresenter: IntroInteractorOutput {
         func loadUserSuccessful(_ user: User) {
-            
         }
         
         func loadUserFailure(_ error: Error) {
-            
         }
-        
-
     }
 }

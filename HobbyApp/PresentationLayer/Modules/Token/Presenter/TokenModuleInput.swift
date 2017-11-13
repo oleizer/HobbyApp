@@ -7,5 +7,6 @@
 //
 
 protocol TokenModuleInput: class, ModuleInput {
+    func setEmail(_ email: String)
 
 }

@@ -8,7 +8,9 @@
 
 class LoginRouter: LoginRouterInput {
     var transitionHandler: ModuleTransitionSource!
-    func showToken() {
-        transitionHandler.openModule(segueIdentifier: StoryboardSegue.Login.toToken.rawValue)
+    func showToken(withEmail email: String) {
+        transitionHandler.openModule(segueIdentifier: StoryboardSegue.Login.toToken.rawValue, configurationBlock: { (moduleInput: TokenModuleInput) in
+            moduleInput.setEmail(email)
+        })
     }
 }
