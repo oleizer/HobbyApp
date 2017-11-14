@@ -19,30 +19,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBe-HW-oxE">
-                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="33B-o6-MUU"/>
+                                    <constraint firstAttribute="height" constant="50" id="33B-o6-MUU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButtonTouched:" destination="Dua-Tf-V8d" eventType="touchUpInside" id="e7w-Ss-vyU"/>
+                                    <action selector="loginAction:" destination="Dua-Tf-V8d" eventType="touchUpInside" id="giB-3h-YoY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для авторизации введите ваш email адрес на который будет выслан ключ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e4-6D-zBH">
-                                <rect key="frame" x="20" y="90.5" width="335" height="33.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhQ-hu-XNM" customClass="EmailTextField" customModule="HobbyApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="154" width="335" height="56"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UhQ-hu-XNM" customClass="EmailTextField" customModule="HobbyApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="94" width="335" height="60"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="0D5-kY-GoW"/>
+                                    <constraint firstAttribute="height" constant="60" id="0D5-kY-GoW"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
@@ -53,25 +47,31 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для авторизации введите ваш адрес электронной почты на который будет выслан ключ который необходимо ввести" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e4-6D-zBH">
+                                <rect key="frame" x="30" y="169" width="315" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59073429404145072" green="0.59073429404145072" blue="0.59073429404145072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="UhQ-hu-XNM" secondAttribute="trailing" constant="20" id="05t-5L-aNl"/>
                             <constraint firstItem="UhQ-hu-XNM" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="20" id="0tC-oY-xzl"/>
+                            <constraint firstItem="7e4-6D-zBH" firstAttribute="top" secondItem="UhQ-hu-XNM" secondAttribute="bottom" constant="15" id="AKC-LH-87k"/>
                             <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="bBe-HW-oxE" secondAttribute="trailing" id="EMl-gQ-FwM"/>
-                            <constraint firstItem="UhQ-hu-XNM" firstAttribute="top" secondItem="bF9-B5-tLr" secondAttribute="top" constant="90" id="LBK-qt-GbF"/>
-                            <constraint firstItem="7e4-6D-zBH" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="20" id="RBE-9v-xrd"/>
-                            <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="7e4-6D-zBH" secondAttribute="trailing" constant="20" id="V1x-1P-Odk"/>
+                            <constraint firstItem="UhQ-hu-XNM" firstAttribute="top" secondItem="bF9-B5-tLr" secondAttribute="top" constant="30" id="LBK-qt-GbF"/>
+                            <constraint firstItem="7e4-6D-zBH" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" constant="30" id="RBE-9v-xrd"/>
+                            <constraint firstItem="bF9-B5-tLr" firstAttribute="trailing" secondItem="7e4-6D-zBH" secondAttribute="trailing" constant="30" id="V1x-1P-Odk"/>
                             <constraint firstItem="bBe-HW-oxE" firstAttribute="leading" secondItem="bF9-B5-tLr" secondAttribute="leading" id="Z10-hT-Fng"/>
                             <constraint firstItem="bF9-B5-tLr" firstAttribute="bottom" secondItem="bBe-HW-oxE" secondAttribute="bottom" id="ZsC-0y-ZNS"/>
-                            <constraint firstItem="UhQ-hu-XNM" firstAttribute="top" secondItem="7e4-6D-zBH" secondAttribute="bottom" constant="30" id="m7R-vh-Jdv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bF9-B5-tLr"/>
                     </view>
                     <navigationItem key="navigationItem" id="HvM-14-hXD"/>
                     <connections>
+                        <outlet property="bottomConstraint" destination="ZsC-0y-ZNS" id="Rbd-Vk-Nm3"/>
                         <outlet property="emailTextField" destination="UhQ-hu-XNM" id="zhC-6d-Au9"/>
-                        <outlet property="keyboardBottomConstraint" destination="ZsC-0y-ZNS" id="KfU-AJ-NQh"/>
                         <outlet property="loginButton" destination="bBe-HW-oxE" id="2mA-IU-NaU"/>
                         <segue destination="97l-8G-YGO" kind="show" identifier="toToken" id="zvl-jJ-Nt0"/>
                     </connections>

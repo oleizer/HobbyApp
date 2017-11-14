@@ -54,9 +54,19 @@ enum L10n {
 
   enum Login {
 
+    enum Emailtextfield {
+      /// Email
+      static let placeholder = L10n.tr("Localizable", "Login.EmailTextField.Placeholder")
+    }
+
     enum Navigation {
       /// Авторизация
       static let title = L10n.tr("Localizable", "Login.Navigation.Title")
+    }
+
+    enum Nextbutton {
+      /// Продолжить
+      static let title = L10n.tr("Localizable", "Login.NextButton.title")
     }
   }
 }

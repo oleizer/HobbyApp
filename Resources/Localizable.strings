@@ -12,6 +12,9 @@
 
 
 "Login.Navigation.Title" = "Авторизация";
+"Login.NextButton.title" = "Продолжить";
+"Login.EmailTextField.Placeholder" = "Email";
+
 
 "City.Navigation.Title" = "Выбор города";
 

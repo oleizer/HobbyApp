@@ -17,6 +17,8 @@ class TokenViewController: UIViewController, TokenViewInput, ModuleTransitionDes
     // MARK: IBOutlet
     @IBOutlet weak var tokenTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()

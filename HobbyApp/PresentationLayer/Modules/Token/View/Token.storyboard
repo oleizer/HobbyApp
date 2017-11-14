@@ -25,7 +25,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kus-jf-yny">
-                                <rect key="frame" x="50" y="150" width="275" height="30"/>
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eI0-dF-bi9"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saveButtonTouched:" destination="Fae-PE-gAb" eventType="touchUpInside" id="Tr7-3f-d8k"/>
@@ -34,16 +37,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JFS-Rg-Ylx" firstAttribute="trailing" secondItem="kus-jf-yny" secondAttribute="trailing" constant="50" id="4s8-w9-bnq"/>
+                            <constraint firstItem="JFS-Rg-Ylx" firstAttribute="trailing" secondItem="kus-jf-yny" secondAttribute="trailing" id="4s8-w9-bnq"/>
                             <constraint firstItem="mLk-aD-Ogl" firstAttribute="top" secondItem="JFS-Rg-Ylx" secondAttribute="top" constant="50" id="JLa-NU-hhm"/>
                             <constraint firstItem="mLk-aD-Ogl" firstAttribute="leading" secondItem="JFS-Rg-Ylx" secondAttribute="leading" constant="50" id="Mw2-KX-mmf"/>
-                            <constraint firstItem="kus-jf-yny" firstAttribute="leading" secondItem="JFS-Rg-Ylx" secondAttribute="leading" constant="50" id="hqz-Fo-VTZ"/>
-                            <constraint firstItem="kus-jf-yny" firstAttribute="top" secondItem="mLk-aD-Ogl" secondAttribute="bottom" constant="50" id="uJv-0c-XWr"/>
+                            <constraint firstItem="JFS-Rg-Ylx" firstAttribute="bottom" secondItem="kus-jf-yny" secondAttribute="bottom" id="b6V-no-tGo"/>
+                            <constraint firstItem="kus-jf-yny" firstAttribute="leading" secondItem="JFS-Rg-Ylx" secondAttribute="leading" id="hqz-Fo-VTZ"/>
                             <constraint firstItem="JFS-Rg-Ylx" firstAttribute="trailing" secondItem="mLk-aD-Ogl" secondAttribute="trailing" constant="50" id="ymA-OE-ZQa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JFS-Rg-Ylx"/>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="b6V-no-tGo" id="Mnk-O2-sak"/>
                         <outlet property="saveButton" destination="kus-jf-yny" id="McL-QZ-L26"/>
                         <outlet property="tokenTextField" destination="mLk-aD-Ogl" id="xxc-gW-5C6"/>
                         <segue destination="Kbm-pU-0Ne" kind="show" identifier="toSelectCity" id="QOg-OY-6ju"/>

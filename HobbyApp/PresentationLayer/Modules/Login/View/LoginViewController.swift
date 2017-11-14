@@ -8,18 +8,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginViewInput {
+class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
 
     var output: LoginViewOutput!
     // MARK: - IBOutlet
     @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var keyboardBottomConstraint: NSLayoutConstraint!
-    
-    
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     // MARK: - Varibles
-    private var keyboardWillShowObserver: NotificationObserver?
-    private var keyboardWillHideObserver: NotificationObserver?
     
     private var email: String {
         get { return emailTextField.text?.trimmingCharacters(in: CharacterSet.whitespaces) ?? "" }
@@ -30,14 +26,13 @@ class LoginViewController: UIViewController, LoginViewInput {
         super.viewDidLoad()
         output.viewIsReady()
         email = "oleizer@gmail.com"
-        setupKeyboardObservers()
+        //setupKeyboardObservers()
     }
-    deinit {
-        teardownKeyboardObservers()
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        stopObservingKeyboardChanges()
     }
-    @IBAction func loginButtonTouched(_ sender: Any) {
-        output.login(email)
-    }
+
 
     // MARK: LoginViewInput
     func showLoadingHUD() {
@@ -49,6 +44,7 @@ class LoginViewController: UIViewController, LoginViewInput {
 
 
     func setupInitialState() {
+        startObservingKeyboardChanges()
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -58,7 +54,9 @@ class LoginViewController: UIViewController, LoginViewInput {
 
 
         loginButton.backgroundColor = ColorName.orange.color
-        loginButton.layer.cornerRadius = loginButton.bounds.height / 2
+        loginButton.setTitle(L10n.Login.Nextbutton.title, for: .normal)
+        
+        //loginButton.layer.cornerRadius = loginButton.bounds.height / 2
 
 
         emailTextField.font = FontFamily.SFUIText.medium.font(size: 20)
@@ -69,8 +67,15 @@ class LoginViewController: UIViewController, LoginViewInput {
         emailTextField.tintColor = ColorName.dark.color
         emailTextField.textAlignment = .left
         emailTextField.contentVerticalAlignment = .center
-
+        emailTextField.placeholder = L10n.Login.Emailtextfield.placeholder
+        emailTextField.delegate = self
+        
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     func showMessage(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -78,29 +83,60 @@ class LoginViewController: UIViewController, LoginViewInput {
         self.present(alert, animated: true, completion: nil)
     }
 
-    private func setupKeyboardObservers() {
-        keyboardWillShowObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillShow, block: keyboardWillChangeAnimated)
-        keyboardWillHideObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillHide, block: keyboardWillChangeAnimated)
+//    private func setupKeyboardObservers() {
+//        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: nil) { (notification) in
+//            self.keyboardWillShow(notification)
+//        }
+//        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillHide, object: nil, queue: nil) { (notification) in
+//            self.keyboardWillHide(notification)
+//        }
+//    }
+//
+//    private func teardownKeyboardObservers() {
+//        NotificationCenter.default.removeObserver(self)
+//    }
+
+//    private func keyboardWillShow(_ notification: Notification) {
+//        let verticalPadding: CGFloat = 0
+//        guard let value = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue else { return }
+//        let keyboardHeight = value.cgRectValue.height
+//        self.keyboardBottomConstraint.constant = keyboardHeight + verticalPadding
+//        UIView.animate(withDuration: 0.1, animations: { () -> Void in
+//            self.view.layoutIfNeeded()
+//        })
+//    }
+//    private func keyboardWillHide(_ notification: Notification) {
+//        self.keyboardBottomConstraint.constant = 0
+//        UIView.animate(withDuration: 0.1, animations: { () -> Void in
+//            self.view.layoutIfNeeded()
+//        })
+//    }
+//    func keyboardWillChangeAnimated(_ keyboard: Keyboard) {
+//        keyboardWillChange(keyboard, animated: true)
+//    }
+//
+//    func keyboardWillChange(_ keyboard: Keyboard, animated: Bool) {
+//        let bottomInset = keyboard.keyboardBottomInset(inView: self.view)
+//
+//        appAnimate(duration: keyboard.duration, options: keyboard.options, animated: animated) {
+//            self.keyboardBottomConstraint.constant = -bottomInset
+//            //self.keyboardIsAnimating(keyboard)
+//            self.view.layoutIfNeeded()
+//        }
+//    }
+    
+    @IBAction func loginAction(_ sender: Any) {
+        view.endEditing(true)
+        output.login(email)
     }
+}
 
-    private func teardownKeyboardObservers() {
-        keyboardWillShowObserver?.removeObserver()
-        keyboardWillHideObserver?.removeObserver()
-        keyboardWillShowObserver = nil
-        keyboardWillHideObserver = nil
-    }
-
-    func keyboardWillChangeAnimated(_ keyboard: Keyboard) {
-        keyboardWillChange(keyboard, animated: true)
-    }
-
-    func keyboardWillChange(_ keyboard: Keyboard, animated: Bool) {
-        let bottomInset = keyboard.keyboardBottomInset(inView: self.view)
-
-        appAnimate(duration: keyboard.duration, options: keyboard.options, animated: animated) {
-            self.keyboardBottomConstraint.constant = -bottomInset
-            //self.keyboardIsAnimating(keyboard)
-            self.view.layoutIfNeeded()
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextField {
+            loginAction(self)
+            return false
         }
+        return true
     }
 }
