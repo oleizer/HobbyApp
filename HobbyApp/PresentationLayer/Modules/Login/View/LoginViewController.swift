@@ -92,11 +92,11 @@ class LoginViewController: UIViewController, LoginViewInput {
     }
     
     func keyboardWillChange(_ keyboard: Keyboard, animated: Bool) {
-        let bottomInset = keyboard.keyboardBottomInset(inView: self)
-        elloAnimate(duration: keyboard.duration, options: keyboard.options, animated: animated) {
-            self.keyboardTopConstraint.update(offset: -bottomInset)
-            self.keyboardIsAnimating(keyboard)
-            self.layoutIfNeeded()
-        }
+//        let bottomInset = keyboard.keyboardBottomInset(inView: self)
+//        elloAnimate(duration: keyboard.duration, options: keyboard.options, animated: animated) {
+//            self.keyboardTopConstraint.update(offset: -bottomInset)
+//            self.keyboardIsAnimating(keyboard)
+//            self.layoutIfNeeded()
+//        }
     }
 }

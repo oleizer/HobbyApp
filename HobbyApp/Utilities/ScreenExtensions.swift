@@ -55,9 +55,9 @@ class Window {
             return Window._width ?? UIWindow.mainWindow.frame.size.width
         }
         set {
-            if AppSetup.shared.isTesting {
-                Window._width = newValue
-            }
+//            if AppSetup.shared.isTesting {
+//                Window._width = newValue
+//            }
         }
     }
 }
@@ -73,9 +73,9 @@ class DeviceScreen {
             return DeviceScreen._scale ?? UIScreen.main.scale
         }
         set {
-            if AppSetup.shared.isTesting {
-                DeviceScreen._scale = newValue
-            }
+//            if AppSetup.shared.isTesting {
+//                DeviceScreen._scale = newValue
+//            }
         }
     }
 }
