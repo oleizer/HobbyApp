@@ -48,11 +48,11 @@ class ActivityDetailPresenter: ActivityDetailModuleInput, ActivityDetailViewOutp
             return infoRows.count
         }
     }
-    
+
     func infoRowType(inRow row: Int) -> InfoRowType {
         return infoRows[row]
     }
-    
+
     func sectionType(inSection section: Int) -> SectionType {
         return sections[section]
     }

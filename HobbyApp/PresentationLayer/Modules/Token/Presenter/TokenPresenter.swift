@@ -8,12 +8,12 @@
 
 class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
 
-    
+
     weak var view: TokenViewInput!
     var interactor: TokenInteractorInput!
     var router: TokenRouterInput!
     private var email: String!
-    
+
     // MARK: - TokenViewOutput
     func viewIsReady() {
         view.setupInitialState()
@@ -23,7 +23,7 @@ class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
 
     }
 
-    
+
     func showEmail() -> String {
         return self.email
     }
@@ -41,7 +41,7 @@ class TokenPresenter: TokenModuleInput, TokenViewOutput, TokenInteractorOutput {
         view.hideProgress()
         router.showSelectCity()
     }
-    
+
     // MARK: - TokenModuleInput
     func setEmail(_ email: String) {
         self.email = email

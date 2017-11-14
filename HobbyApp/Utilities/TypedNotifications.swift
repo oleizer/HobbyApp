@@ -25,7 +25,7 @@ func postNotification<A>(_ note: TypedNotification<A>, value: A) {
 
 class NotificationObserver {
     let observer: NSObjectProtocol
-    
+
     init<A>(notification: TypedNotification<A>, block aBlock: @escaping (A) -> Void) {
         observer = NotificationCenter.default.addObserver(forName: notification.name, object: nil, queue: nil) { note in
             if let value = (note.userInfo?["value"] as? Box<A>)?.value {
@@ -35,13 +35,13 @@ class NotificationObserver {
             }
         }
     }
-    
+
     func removeObserver() {
         NotificationCenter.default.removeObserver(observer)
     }
-    
+
     deinit {
         removeObserver()
     }
-    
+
 }

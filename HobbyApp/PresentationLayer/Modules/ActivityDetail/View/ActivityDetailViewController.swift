@@ -26,7 +26,7 @@ class ActivityDetailViewController: UIViewController, ActivityDetailViewInput, M
     func setupInitialState() {
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
-        
+
         tableView.register(ActivityDetailImageCell.self)
         tableView.register(ActivityDetailDescriptionCell.self)
         tableView.register(ActivityDetailInfoCell.self)
@@ -44,7 +44,7 @@ extension ActivityDetailViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         switch output.sectionType(inSection: indexPath.section) {
         case .header:
             let model = ActivityDetailImageCellModel(model: output.getActivity())

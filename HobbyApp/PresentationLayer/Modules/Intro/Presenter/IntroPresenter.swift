@@ -7,7 +7,7 @@
 //
 
 class IntroPresenter: IntroModuleInput, IntroViewOutput, IntroInteractorOutput {
-    
+
     weak var view: IntroViewInput!
     var interactor: IntroInteractorInput!
     var router: IntroRouterInput!
@@ -25,14 +25,14 @@ class IntroPresenter: IntroModuleInput, IntroViewOutput, IntroInteractorOutput {
             router.showLogin()
         }
     }
-    
+
     // MARK: - IntroInteractorOutput
     func loadUserSuccessful(_ user: User) {
         view.hideProgress()
 
         router.showActivity()
     }
-    
+
     func loadUserFailure(_ error: Error) {
         view.hideProgress()
         AuthToken.reset()

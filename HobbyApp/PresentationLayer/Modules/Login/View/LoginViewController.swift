@@ -66,7 +66,7 @@ class LoginViewController: UIViewController, LoginViewInput {
         emailTextField.tintColor = ColorName.dark.color
         emailTextField.textAlignment = .left
         emailTextField.contentVerticalAlignment = .center
-        
+
     }
     func showMessage(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -74,29 +74,30 @@ class LoginViewController: UIViewController, LoginViewInput {
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
     }
-    
+
     private func setupKeyboardObservers() {
         keyboardWillShowObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillShow, block: keyboardWillChangeAnimated)
         keyboardWillHideObserver = NotificationObserver(notification: Keyboard.Notifications.KeyboardWillHide, block: keyboardWillChangeAnimated)
     }
-    
+
     private func teardownKeyboardObservers() {
         keyboardWillShowObserver?.removeObserver()
         keyboardWillHideObserver?.removeObserver()
         keyboardWillShowObserver = nil
         keyboardWillHideObserver = nil
     }
-    
+
     func keyboardWillChangeAnimated(_ keyboard: Keyboard) {
         keyboardWillChange(keyboard, animated: true)
     }
-    
+
     func keyboardWillChange(_ keyboard: Keyboard, animated: Bool) {
-//        let bottomInset = keyboard.keyboardBottomInset(inView: self)
-//        elloAnimate(duration: keyboard.duration, options: keyboard.options, animated: animated) {
-//            self.keyboardTopConstraint.update(offset: -bottomInset)
-//            self.keyboardIsAnimating(keyboard)
-//            self.layoutIfNeeded()
-//        }
+        let bottomInset = keyboard.keyboardBottomInset(inView: self.view)
+
+        appAnimate(duration: keyboard.duration, options: keyboard.options, animated: animated) {
+            self.keyboardBottomConstraint.constant = -bottomInset
+            //self.keyboardIsAnimating(keyboard)
+            self.view.layoutIfNeeded()
+        }
     }
 }

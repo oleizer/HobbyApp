@@ -11,7 +11,7 @@ class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
     weak var view: LoginViewInput!
     var interactor: LoginInteractorInput!
     var router: LoginRouterInput!
-    
+
     private var email: String?
     func viewIsReady() {
         view.setupInitialState()
