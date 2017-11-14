@@ -119,6 +119,10 @@
 		A62FE15E1FB998D900ADA488 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE15A1FB998D900ADA488 /* Box.swift */; };
 		A62FE15F1FB998D900ADA488 /* MutableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE15B1FB998D900ADA488 /* MutableBox.swift */; };
 		A62FE1601FB998D900ADA488 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A62FE15C1FB998D900ADA488 /* LICENSE.txt */; };
+		A62FE1631FBB557700ADA488 /* ValidatorRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE1621FBB557700ADA488 /* ValidatorRules.swift */; };
+		A62FE1651FBB582700ADA488 /* ValidatableControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE1641FBB582700ADA488 /* ValidatableControl.swift */; };
+		A62FE1671FBB58A200ADA488 /* UIKitValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE1661FBB58A200ADA488 /* UIKitValidator.swift */; };
+		A62FE1691FBB59FA00ADA488 /* UITextFieldExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE1681FBB59FA00ADA488 /* UITextFieldExtentions.swift */; };
 		A6313C1D1FB38222003D84DD /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C1C1FB38222003D84DD /* UITableViewExtensions.swift */; };
 		A6313C1F1FB382FF003D84DD /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C1E1FB382FF003D84DD /* CellViewModelProtocol.swift */; };
 		A6313C221FB383EE003D84DD /* CityCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6313C211FB383EE003D84DD /* CityCellModel.swift */; };
@@ -419,6 +423,10 @@
 		A62FE15A1FB998D900ADA488 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		A62FE15B1FB998D900ADA488 /* MutableBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableBox.swift; sourceTree = "<group>"; };
 		A62FE15C1FB998D900ADA488 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		A62FE1621FBB557700ADA488 /* ValidatorRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorRules.swift; sourceTree = "<group>"; };
+		A62FE1641FBB582700ADA488 /* ValidatableControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatableControl.swift; sourceTree = "<group>"; };
+		A62FE1661FBB58A200ADA488 /* UIKitValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitValidator.swift; sourceTree = "<group>"; };
+		A62FE1681FBB59FA00ADA488 /* UITextFieldExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtentions.swift; sourceTree = "<group>"; };
 		A6313C1C1FB38222003D84DD /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		A6313C1E1FB382FF003D84DD /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
 		A6313C211FB383EE003D84DD /* CityCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCellModel.swift; sourceTree = "<group>"; };
@@ -1376,6 +1384,16 @@
 			path = Box;
 			sourceTree = "<group>";
 		};
+		A62FE1611FBB54EF00ADA488 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				A62FE1621FBB557700ADA488 /* ValidatorRules.swift */,
+				A62FE1641FBB582700ADA488 /* ValidatableControl.swift */,
+				A62FE1661FBB58A200ADA488 /* UIKitValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		A6313C201FB383D5003D84DD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1490,6 +1508,7 @@
 		A644FAD11FACC9B40037B240 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A62FE1611FBB54EF00ADA488 /* Validator */,
 				A644FAE11FACD87F0037B240 /* NetworkLayer */,
 			);
 			path = BusinessLogicLayer;
@@ -1652,6 +1671,7 @@
 				A66E422F1FB0DEC20040CFB0 /* NSErrorExtensions.swift */,
 				A6313C1C1FB38222003D84DD /* UITableViewExtensions.swift */,
 				A62A35421FB88154007870B7 /* FileManagerExtensions.swift */,
+				A62FE1681FBB59FA00ADA488 /* UITextFieldExtentions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2472,6 +2492,7 @@
 				A6B67C891FB048BF0057A778 /* ModuleTransitionSource+UIViewController.swift in Sources */,
 				351B6C5F275240358611E77D /* CityPresenter.swift in Sources */,
 				A66E42301FB0DEC20040CFB0 /* NSErrorExtensions.swift in Sources */,
+				A62FE1691FBB59FA00ADA488 /* UITextFieldExtentions.swift in Sources */,
 				A6B67C861FB048BF0057A778 /* ModuleOutput.swift in Sources */,
 				A66370C11FAF83360061AD3C /* MappingType.swift in Sources */,
 				E5E803697BCDC6EB10FEDD45 /* CityInteractorInput.swift in Sources */,
@@ -2507,8 +2528,10 @@
 				A62FE1521FB9975100ADA488 /* Keyboard.swift in Sources */,
 				CF8C8AF4469C528B332139D1 /* AddCityInteractor.swift in Sources */,
 				A6313C251FB386B1003D84DD /* CityTableViewCell.swift in Sources */,
+				A62FE1631FBB557700ADA488 /* ValidatorRules.swift in Sources */,
 				A6F83EC31FB04F540010342F /* AppManager.swift in Sources */,
 				A60F5DFB1FB5E06700678973 /* ActivityService.swift in Sources */,
+				A62FE1651FBB582700ADA488 /* ValidatableControl.swift in Sources */,
 				A6313C1D1FB38222003D84DD /* UITableViewExtensions.swift in Sources */,
 				AC05D15477AA688EA548E15D /* AddCityRouterInput.swift in Sources */,
 				163B88940E4648780DB98433 /* AddCityRouter.swift in Sources */,
@@ -2570,6 +2593,7 @@
 				DD3A1A8643AAB5CDC53EB9C8 /* InterestInteractorInput.swift in Sources */,
 				87975B1BBAF18D7AB337D74E /* InterestInteractorOutput.swift in Sources */,
 				DB32501EFBC6709B0A6655F4 /* InterestInteractor.swift in Sources */,
+				A62FE1671FBB58A200ADA488 /* UIKitValidator.swift in Sources */,
 				437149AB236117495032A307 /* InterestRouterInput.swift in Sources */,
 				D43D0572D8F31A0F81DF6594 /* InterestRouter.swift in Sources */,
 				75E340D6302814D4F824B00D /* InterestConfigurator.swift in Sources */,

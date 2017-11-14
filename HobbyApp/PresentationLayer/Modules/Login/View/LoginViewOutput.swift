@@ -14,5 +14,6 @@ protocol LoginViewOutput {
     */
 
     func viewIsReady()
+    func setupValidation(forEmailInput emailInput: AnyValidatableControl<String>)
     func login(_ email: String)
 }
