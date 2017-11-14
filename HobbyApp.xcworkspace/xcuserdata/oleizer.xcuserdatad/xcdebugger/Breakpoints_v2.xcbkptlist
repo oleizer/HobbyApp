@@ -393,7 +393,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
             endingLineNumber = "95"
-            landmarkName = "keyboardWillChange(_:animated:)"
+            landmarkName = "keyboardWillChangeAnimated(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -409,7 +409,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
-            landmarkName = "setupKeyboardObservers()"
+            landmarkName = "showMessage(title:message:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -425,7 +425,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
-            landmarkName = "keyboardWillChangeAnimated(_:)"
+            landmarkName = "teardownKeyboardObservers()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

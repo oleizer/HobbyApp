@@ -15,9 +15,12 @@ class LoginViewController: UIViewController, LoginViewInput {
     @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var keyboardBottomConstraint: NSLayoutConstraint!
+    
+    
     // MARK: - Varibles
     private var keyboardWillShowObserver: NotificationObserver?
     private var keyboardWillHideObserver: NotificationObserver?
+    
     private var email: String {
         get { return emailTextField.text?.trimmingCharacters(in: CharacterSet.whitespaces) ?? "" }
         set { emailTextField.text = newValue }
