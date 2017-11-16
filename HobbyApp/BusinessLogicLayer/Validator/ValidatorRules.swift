@@ -17,12 +17,10 @@ protocol Validator {
 // MARK: - Validation error
 
 public enum ValidationError: Error {
-
     case wrongInput(description: String)
 }
 
 extension ValidationError: LocalizedError {
-
     public var errorDescription: String? {
         switch self {
         case .wrongInput(let description):

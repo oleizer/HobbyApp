@@ -18,9 +18,8 @@ class IntroPresenter: IntroModuleInput, IntroViewOutput, IntroInteractorOutput {
     }
     //Открытие логина либо списка хобби в зависимости от результатов проверки на наличие токена
     func continueAction() {
-        if checkIfLoggedIn() {
+        if interactor.checkIfLoggedIn() {
             checkUser()
-            //router.showActivity()
         }else{
             router.showLogin()
         }
@@ -29,7 +28,6 @@ class IntroPresenter: IntroModuleInput, IntroViewOutput, IntroInteractorOutput {
     // MARK: - IntroInteractorOutput
     func loadUserSuccessful(_ user: User) {
         view.hideProgress()
-
         router.showActivity()
     }
 
@@ -42,14 +40,5 @@ class IntroPresenter: IntroModuleInput, IntroViewOutput, IntroInteractorOutput {
     private func checkUser() {
         view.showProgress()
         interactor.loadUser()
-    }
-    //Проверка на наличие токена в keychain
-    private func checkIfLoggedIn() -> Bool {
-        let token = AuthToken()
-        if token.token != nil {
-            return true
-        }else{
-            return false
-        }
     }
 }

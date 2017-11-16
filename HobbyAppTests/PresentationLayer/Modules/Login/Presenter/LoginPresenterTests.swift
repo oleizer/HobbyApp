@@ -34,6 +34,10 @@ class LoginPresenterTest: XCTestCase {
     }
 
     class MockRouter: LoginRouterInput {
+        func showToken(withEmail email: String) {
+            
+        }
+        
         func showToken() {
             
         }

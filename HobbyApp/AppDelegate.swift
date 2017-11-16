@@ -20,9 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+
+        UIViewController.performSwizzling()
+
+        if AppSetup.shared.isTesting {
+            if UIScreen.main.scale > 2 {
+                fatalError("Tests should be run in a @2x retina device (for snapshot specs to work)")
+            }
+
+//            if Bundle.main.bundleIdentifier != "kz.idev.HobbyAppDev" {
+//                fatalError("Tests should be run with a bundle id of kz.idev.HobbyAppDev")
+//            }
+        }
         setupGlobalStyles()
         setupCaches()
-        UIViewController.performSwizzling()
+
         return true
     }
 

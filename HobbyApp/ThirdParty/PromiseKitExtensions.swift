@@ -2,13 +2,11 @@
 //  PromiseKitExtensions.swift
 //  HobbyApp
 //
-//  Created by Олег Лейзер on 06.11.2017.
+//  Created by Олег Лейзер on 15.11.2017.
 //  Copyright © 2017 Олег Лейзер. All rights reserved.
 //
 
-import Foundation
 import PromiseKit
-
 
 extension Promise {
 

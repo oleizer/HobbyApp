@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroViewController: UIViewController, IntroViewInput {
+class IntroViewController: UIViewController, IntroViewInput, ViewInput {
 
     var output: IntroViewOutput!
 

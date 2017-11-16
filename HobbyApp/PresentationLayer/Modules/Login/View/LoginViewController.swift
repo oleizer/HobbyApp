@@ -15,16 +15,11 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     // MARK: - Varibles
-    private var email: String {
-        get { return emailTextField.text?.trimmingCharacters(in: CharacterSet.whitespaces) ?? "" }
-        set { emailTextField.text = newValue }
-    }
+
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
-        email = "oleizer@gmail.com"
-        //setupKeyboardObservers()
     }
     override func viewWillDisappear(_ animated: Bool) {
         stopObservingKeyboardChanges()
@@ -32,12 +27,6 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
     }
 
     // MARK: LoginViewInput
-    func showLoadingHUD() {
-        AppHUD.showLoadingHudInView(view)
-    }
-    func hideLoadingHUD() {
-        AppHUD.hideLoadingHudInView(view)
-    }
 
     func setupInitialState() {
         startObservingKeyboardChanges()
@@ -72,10 +61,15 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
         self.present(alert, animated: true, completion: nil)
     }
 
+    func setEmail(email: String) {
+        //self.email = email
+        emailTextField.text = email
+        emailTextField.displayValidationResult(result: .valid)
+    }
     // MARK: - Actions
     @IBAction func loginAction(_ sender: Any) {
         view.endEditing(true)
-        output.login(email)
+        output.login(emailTextField.text!)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
