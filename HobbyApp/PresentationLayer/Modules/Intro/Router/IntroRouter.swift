@@ -13,7 +13,8 @@ class IntroRouter: IntroRouterInput {
             let module = LoginModuleInitializer()
             let viewController = StoryboardScene.Login.loginViewController.instantiate()
             module.loginViewController = viewController
-            window?.rootViewController = module.loginViewController
+            let nav = UINavigationController(rootViewController: module.loginViewController)
+            window?.rootViewController = nav
         }
     }
     func showActivity() {

@@ -38,8 +38,7 @@ class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
     }
 
     // MARK: - LoginInteractorOutput
-
-    func loginSuccessful() {
+    func loginSuccessful(_ email: String) {
         view.hideProgress()
         router.showToken(withEmail: email)
     }

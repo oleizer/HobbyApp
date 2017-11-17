@@ -26,7 +26,7 @@ class IntroPresenter: IntroModuleInput, IntroViewOutput, IntroInteractorOutput {
     }
 
     // MARK: - IntroInteractorOutput
-    func loadUserSuccessful(_ user: User) {
+    func loadUserSuccessful() {
         view.hideProgress()
         router.showActivity()
     }

@@ -24,14 +24,36 @@ class IntroInteractorTests: XCTestCase {
         super.tearDown()
     }
     
-    func testLoadUserSuccess() {
+    func testUserNotLogged() {
+        var authToken = AuthToken()
+        authToken.token = nil
+        XCTAssertFalse(interactor.checkIfLoggedIn())
     }
-
+    
+    func testCheckIfLoggedIn() {
+        var authToken = AuthToken()
+        authToken.token = "Token"
+        XCTAssertTrue(interactor.checkIfLoggedIn())
+    }
+    
+    func testLoadUserSuccessWasCalled() {
+        presenter.loadUserSuccessful()
+        XCTAssertTrue(presenter.loadUserSuccesfulWasCalled)
+    }
+    func testLoadUserFailureWasCalled() {
+        presenter.loadUserFailure(NSError())
+        XCTAssertTrue(presenter.loadUserFailureWasCalled)
+    }
     class MockPresenter: IntroInteractorOutput {
-        func loadUserSuccessful(_ user: User) {
+        var loadUserSuccesfulWasCalled: Bool = false
+        var loadUserFailureWasCalled: Bool = false
+
+        func loadUserSuccessful() {
+            loadUserSuccesfulWasCalled = true
         }
         
         func loadUserFailure(_ error: Error) {
+            loadUserFailureWasCalled = true
         }
     }
 }

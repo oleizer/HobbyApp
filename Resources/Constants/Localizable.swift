@@ -59,6 +59,11 @@ enum L10n {
       static let placeholder = L10n.tr("Localizable", "Login.EmailTextField.Placeholder")
     }
 
+    enum Infolabel {
+      /// Для авторизации введите ваш адрес электронной почты на который будет выслан ключ который необходимо ввести на следущем экране
+      static let text = L10n.tr("Localizable", "Login.InfoLabel.text")
+    }
+
     enum Navigation {
       /// Авторизация
       static let title = L10n.tr("Localizable", "Login.Navigation.Title")

@@ -48,6 +48,15 @@ class IntroPresenterTest: XCTestCase {
     }
     
     class MockInteractor: IntroInteractorInput {
+        func checkIfLoggedIn() -> Bool {
+            let token = AuthToken()
+            if token.token != nil {
+                return true
+            }else{
+                return false
+            }
+        }
+        
         var loadUserWasCalled: Bool = false
         
         func loadUser() {

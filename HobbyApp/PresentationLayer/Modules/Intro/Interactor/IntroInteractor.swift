@@ -11,7 +11,7 @@ class IntroInteractor: IntroInteractorInput {
     
     func loadUser() {
         UserService().loadUser(with: AuthToken().token!).thenFinally(execute: { user in
-            self.output.loadUserSuccessful(user)
+            self.output.loadUserSuccessful()
         }).catch(execute: { error in
             self.output.loadUserFailure(error)
         })

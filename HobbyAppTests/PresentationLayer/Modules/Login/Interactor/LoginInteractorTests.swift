@@ -22,7 +22,7 @@ class LoginInteractorTests: XCTestCase {
     }
 
     class MockPresenter: LoginInteractorOutput {
-        func loginSuccessful() {
+        func loginSuccessful(_ email: String) {
             
         }
         

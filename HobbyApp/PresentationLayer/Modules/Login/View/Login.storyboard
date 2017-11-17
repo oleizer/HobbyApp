@@ -72,6 +72,7 @@
                     <connections>
                         <outlet property="bottomConstraint" destination="ZsC-0y-ZNS" id="Rbd-Vk-Nm3"/>
                         <outlet property="emailTextField" destination="UhQ-hu-XNM" id="zhC-6d-Au9"/>
+                        <outlet property="infoLabel" destination="7e4-6D-zBH" id="cZ4-mB-Jh6"/>
                         <outlet property="loginButton" destination="bBe-HW-oxE" id="2mA-IU-NaU"/>
                         <segue destination="97l-8G-YGO" kind="show" identifier="toToken" id="zvl-jJ-Nt0"/>
                     </connections>

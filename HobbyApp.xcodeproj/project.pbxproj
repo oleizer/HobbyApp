@@ -102,6 +102,7 @@
 		A60F5E041FB5F56800678973 /* ActivityCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F5E031FB5F56800678973 /* ActivityCellModel.swift */; };
 		A60F5E061FB60BF700678973 /* CityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F5E051FB60BF700678973 /* CityServiceTests.swift */; };
 		A60F5E0B1FB616E000678973 /* ActivityDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60F5E0A1FB616E000678973 /* ActivityDetail.storyboard */; };
+		A61DC46D1FBDE9D70076AA91 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = A61DC46C1FBDE9D70076AA91 /* user.json */; };
 		A62A35431FB88154007870B7 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A35421FB88154007870B7 /* FileManagerExtensions.swift */; };
 		A62A35641FB8AB9F007870B7 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A35631FB8AB9F007870B7 /* AppConfiguration.swift */; };
 		A62A35651FB8AC2A007870B7 /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F5E081FB6122500678973 /* XCTestCaseExtensions.swift */; };
@@ -387,6 +388,7 @@
 		A60F5E051FB60BF700678973 /* CityServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityServiceTests.swift; sourceTree = "<group>"; };
 		A60F5E081FB6122500678973 /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
 		A60F5E0A1FB616E000678973 /* ActivityDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityDetail.storyboard; sourceTree = "<group>"; };
+		A61DC46C1FBDE9D70076AA91 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		A62A35421FB88154007870B7 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		A62A35561FB8A5CD007870B7 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62A355A1FB8A5CD007870B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1599,6 +1601,7 @@
 			children = (
 				A644FAEA1FACDD350037B240 /* city.json */,
 				A644FAEC1FACDD440037B240 /* cities.json */,
+				A61DC46C1FBDE9D70076AA91 /* user.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -2174,6 +2177,7 @@
 				A644FAE01FACD8270037B240 /* City.storyboard in Resources */,
 				A644FACE1FACC9870037B240 /* Localizable.strings in Resources */,
 				A644FAED1FACDD440037B240 /* cities.json in Resources */,
+				A61DC46D1FBDE9D70076AA91 /* user.json in Resources */,
 				A60F5E0B1FB616E000678973 /* ActivityDetail.storyboard in Resources */,
 				A60F5DFD1FB5E94900678973 /* Activity.storyboard in Resources */,
 				A6B67C761FB047AD0057A778 /* AddCity.storyboard in Resources */,

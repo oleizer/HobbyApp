@@ -12,9 +12,7 @@ class LoginInteractor: LoginInteractorInput {
 
     func login(_ email: String) {
         UserService().login(email: email).thenFinally { user in
-            //print("User: \(user.email)")
-            //result(nil)
-            self.output.loginSuccessful()
+            self.output.loginSuccessful(email)
             }.catch { error in
                 print(error)
                 //let errorTitle = error.appErrorMessage ?? L10n.Error.unknownError

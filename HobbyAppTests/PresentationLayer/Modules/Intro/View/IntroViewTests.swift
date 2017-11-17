@@ -43,8 +43,6 @@ class IntroViewTests: XCTestCase {
         func continueAction() {
             continueActionWasCalled = true
         }
-        
-        
         func viewIsReady() {
             viewIsReadyWasCalled = true
         }

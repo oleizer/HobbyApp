@@ -46,6 +46,10 @@ class LoginPresenterTest: XCTestCase {
     }
 
     class MockViewController: LoginViewInput {
+        func setEmail(email: String) {
+            
+        }
+        
         func showProgress() {
             
         }

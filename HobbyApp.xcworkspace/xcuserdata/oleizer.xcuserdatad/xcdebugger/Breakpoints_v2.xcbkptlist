@@ -134,7 +134,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/PresentationLayer/Modules/Intro/Interactor/IntroInteractor.swift"
-            timestampString = "532534102.848656"
+            timestampString = "532618568.221133"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/PresentationLayer/Modules/Intro/Presenter/IntroPresenter.swift"
-            timestampString = "532534102.848727"
+            timestampString = "532618568.221216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -164,7 +164,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/PresentationLayer/Modules/Intro/Interactor/IntroInteractor.swift"
-            timestampString = "532534102.849054"
+            timestampString = "532618568.221282"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/PresentationLayer/Modules/Intro/Interactor/IntroInteractor.swift"
-            timestampString = "532534102.849105"
+            timestampString = "532618568.221336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -276,11 +276,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyAppTests/PresentationLayer/Modules/Intro/Presenter/IntroPresenterTests.swift"
-            timestampString = "532256236.536815"
+            timestampString = "532618568.221581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "loadUser()"
             landmarkType = "7">
          </BreakpointContent>
@@ -292,12 +292,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyAppTests/PresentationLayer/Modules/Intro/Interactor/IntroInteractorTests.swift"
-            timestampString = "532256236.536869"
+            timestampString = "532618568.221649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "loadUserSuccessful(_:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "loadUserSuccessful()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -308,7 +308,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/PresentationLayer/Modules/Intro/Interactor/IntroInteractor.swift"
-            timestampString = "532534102.849311"
+            timestampString = "532618568.221705"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -356,12 +356,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HobbyApp/PresentationLayer/Modules/Login/View/LoginViewController.swift"
-            timestampString = "532534102.849366"
+            timestampString = "532618568.221761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "loginAction(_:)"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "setEmail(email:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/PresentationLayer/Modules/Intro/Presenter/IntroPresenter.swift"
+            timestampString = "532618568.221812"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "continueAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyAppTests/PresentationLayer/Modules/Intro/Presenter/IntroPresenterTests.swift"
+            timestampString = "532618568.221862"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testLoginModuleWasCalled()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyApp/PresentationLayer/Modules/Intro/Interactor/IntroInteractor.swift"
+            timestampString = "532618568.221916"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "checkIfLoggedIn()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyAppTests/PresentationLayer/Modules/Intro/Presenter/IntroPresenterTests.swift"
+            timestampString = "532618568.221963"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "checkIfLoggedIn()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

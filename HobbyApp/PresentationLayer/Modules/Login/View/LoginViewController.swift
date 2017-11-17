@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
     var output: LoginViewOutput!
     // MARK: - IBOutlet
+    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var emailTextField: EmailTextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
@@ -40,6 +41,8 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
 
         loginButton.backgroundColor = ColorName.orange.color
         loginButton.setTitle(L10n.Login.Nextbutton.title, for: .normal)
+        
+        infoLabel.text = L10n.Login.Infolabel.text
 
 
         emailTextField.font = FontFamily.SFUIText.medium.font(size: 20)

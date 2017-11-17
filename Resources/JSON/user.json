@@ -1,0 +1,18 @@
+
+{
+    "Id": 2091,
+    "Email": "oleizer@gmail.com",
+    "Name": null,
+    "Phone": null,
+    "Picture": {
+        "Id": 1174,
+        "Filename": "jira_ava",
+        "IsMain": true,
+        "LinkedObjectId": 2091,
+        "LinkedObjectType": 3,
+        "Url": "http://test.mhbb.ru/b/api/picture/1174"
+    },
+    "RoleName": "PortalAdmin",
+    "CityId": 1,
+    "CityName": "Караганда"
+}
