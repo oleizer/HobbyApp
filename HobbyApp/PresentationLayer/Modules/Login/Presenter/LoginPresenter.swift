@@ -19,7 +19,7 @@ class LoginPresenter: LoginModuleInput, LoginViewOutput, LoginInteractorOutput {
     // MARK: - LoginViewOutput
 
     func viewIsReady() {
-        view.setEmail(email: "oleizer@gmail.com")
+        //view.setEmail(email: "oleizer@gmail.com")
         view.setupInitialState()
     }
     func setupValidation(forEmailInput emailInput: AnyValidatableControl<String>) {

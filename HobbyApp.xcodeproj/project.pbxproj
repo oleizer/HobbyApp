@@ -103,12 +103,12 @@
 		A60F5E061FB60BF700678973 /* CityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F5E051FB60BF700678973 /* CityServiceTests.swift */; };
 		A60F5E0B1FB616E000678973 /* ActivityDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60F5E0A1FB616E000678973 /* ActivityDetail.storyboard */; };
 		A61DC46D1FBDE9D70076AA91 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = A61DC46C1FBDE9D70076AA91 /* user.json */; };
+		A61DC4711FBF1E080076AA91 /* CitySpecificationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61DC4701FBF1E080076AA91 /* CitySpecificationSpec.swift */; };
 		A62A35431FB88154007870B7 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A35421FB88154007870B7 /* FileManagerExtensions.swift */; };
 		A62A35641FB8AB9F007870B7 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A35631FB8AB9F007870B7 /* AppConfiguration.swift */; };
 		A62A35651FB8AC2A007870B7 /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F5E081FB6122500678973 /* XCTestCaseExtensions.swift */; };
 		A62A35691FB8AD11007870B7 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A35681FB8AD11007870B7 /* Stubs.swift */; };
 		A62A356A1FB8AE38007870B7 /* CitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A35601FB8A731007870B7 /* CitySpec.swift */; };
-		A62EFD551FB1D9D9004B67D5 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD541FB1D9D9004B67D5 /* EmailTextField.swift */; };
 		A62EFD6C1FB1DB85004B67D5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD6B1FB1DB85004B67D5 /* Fonts.swift */; };
 		A62EFD6E1FB1DCC1004B67D5 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62EFD6D1FB1DCC1004B67D5 /* Intro.storyboard */; };
 		A62EFD801FB21367004B67D5 /* InterestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EFD7F1FB21367004B67D5 /* InterestTests.swift */; };
@@ -163,7 +163,6 @@
 		A66E42131FB08AAB0040CFB0 /* InterestSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42121FB08AAB0040CFB0 /* InterestSpecification.swift */; };
 		A66E42151FB08B650040CFB0 /* InterestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42141FB08B650040CFB0 /* InterestService.swift */; };
 		A66E42171FB08BA60040CFB0 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42161FB08BA60040CFB0 /* Interest.swift */; };
-		A66E421D1FB095910040CFB0 /* CitySpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E421C1FB095910040CFB0 /* CitySpecificationTests.swift */; };
 		A66E42201FB0A0440040CFB0 /* UserSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E421F1FB0A0440040CFB0 /* UserSpecification.swift */; };
 		A66E42221FB0A0D50040CFB0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E42211FB0A0D50040CFB0 /* UserService.swift */; };
 		A66E42241FB0A1440040CFB0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66E42231FB0A1440040CFB0 /* Login.storyboard */; };
@@ -184,6 +183,9 @@
 		A6B67C871FB048BF0057A778 /* ModuleTransitionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C7F1FB048BE0057A778 /* ModuleTransitionSource.swift */; };
 		A6B67C881FB048BF0057A778 /* EmbedSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C801FB048BE0057A778 /* EmbedSegue.swift */; };
 		A6B67C891FB048BF0057A778 /* ModuleTransitionSource+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B67C811FB048BE0057A778 /* ModuleTransitionSource+UIViewController.swift */; };
+		A6CE301D1FBF2416002C8A12 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CE301C1FBF2416002C8A12 /* AppTextField.swift */; };
+		A6CE301F1FBF2495002C8A12 /* FloatLabelTextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CE301E1FBF2495002C8A12 /* FloatLabelTextFieldExtensions.swift */; };
+		A6CE30211FBF29F0002C8A12 /* AppTextFieldStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CE30201FBF29F0002C8A12 /* AppTextFieldStrategy.swift */; };
 		A6D6AD466EB916E91229E6DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4552D28A6B7CBECE4E2864 /* LoginViewController.swift */; };
 		A6EDAC4B1FB39CBB007223F4 /* ActivitySpecifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */; };
 		A6EDAC4D1FB39E78007223F4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EDAC4C1FB39E78007223F4 /* Activity.swift */; };
@@ -389,13 +391,13 @@
 		A60F5E081FB6122500678973 /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
 		A60F5E0A1FB616E000678973 /* ActivityDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivityDetail.storyboard; sourceTree = "<group>"; };
 		A61DC46C1FBDE9D70076AA91 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		A61DC4701FBF1E080076AA91 /* CitySpecificationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySpecificationSpec.swift; sourceTree = "<group>"; };
 		A62A35421FB88154007870B7 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		A62A35561FB8A5CD007870B7 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62A355A1FB8A5CD007870B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A62A35601FB8A731007870B7 /* CitySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySpec.swift; sourceTree = "<group>"; };
 		A62A35631FB8AB9F007870B7 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		A62A35681FB8AD11007870B7 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
-		A62EFD541FB1D9D9004B67D5 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		A62EFD561FB1DAF7004B67D5 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
 		A62EFD571FB1DAF7004B67D5 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
 		A62EFD581FB1DAF7004B67D5 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
@@ -475,7 +477,6 @@
 		A66E42121FB08AAB0040CFB0 /* InterestSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestSpecification.swift; sourceTree = "<group>"; };
 		A66E42141FB08B650040CFB0 /* InterestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestService.swift; sourceTree = "<group>"; };
 		A66E42161FB08BA60040CFB0 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
-		A66E421C1FB095910040CFB0 /* CitySpecificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySpecificationTests.swift; sourceTree = "<group>"; };
 		A66E421F1FB0A0440040CFB0 /* UserSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSpecification.swift; sourceTree = "<group>"; };
 		A66E42211FB0A0D50040CFB0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A66E42231FB0A1440040CFB0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -497,6 +498,9 @@
 		A6B67C801FB048BE0057A778 /* EmbedSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedSegue.swift; sourceTree = "<group>"; };
 		A6B67C811FB048BE0057A778 /* ModuleTransitionSource+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModuleTransitionSource+UIViewController.swift"; sourceTree = "<group>"; };
 		A6C538E30E835611A436D2DB /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		A6CE301C1FBF2416002C8A12 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		A6CE301E1FBF2495002C8A12 /* FloatLabelTextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextFieldExtensions.swift; sourceTree = "<group>"; };
+		A6CE30201FBF29F0002C8A12 /* AppTextFieldStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextFieldStrategy.swift; sourceTree = "<group>"; };
 		A6EDAC4A1FB39CBB007223F4 /* ActivitySpecifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySpecifications.swift; sourceTree = "<group>"; };
 		A6EDAC4C1FB39E78007223F4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		A6EDAC501FB3A037007223F4 /* ActivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTests.swift; sourceTree = "<group>"; };
@@ -1035,9 +1039,9 @@
 			isa = PBXGroup;
 			children = (
 				FCCBF31AB72C45E72B8C2079 /* Intro */,
+				57D7E262936510DA063A2CEE /* Login */,
 				6E1EFC38F2BAC6842C455588 /* City */,
 				9F7BA0C5A0FDC7EB9FC04B79 /* AddCity */,
-				57D7E262936510DA063A2CEE /* Login */,
 				F5973BD3B37140AFB66A902B /* Token */,
 				761702D2F17AF972C408D9ED /* Interest */,
 				5C208A46FCB1B7C5CCB54215 /* Activity */,
@@ -1296,6 +1300,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A61DC46E1FBF1DD50076AA91 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A61DC46F1FBF1DE00076AA91 /* NetworkLayer */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		A61DC46F1FBF1DE00076AA91 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A61DC4701FBF1E080076AA91 /* CitySpecificationSpec.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
 		A62A353F1FB87EE2007870B7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1306,6 +1326,7 @@
 		A62A35571FB8A5CD007870B7 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				A61DC46E1FBF1DD50076AA91 /* BusinessLogicLayer */,
 				A65C18E01FBC235E00D06751 /* Utilities */,
 				A62A356B1FB8B078007870B7 /* Model */,
 				A62A35671FB8AD02007870B7 /* Helpers */,
@@ -1669,7 +1690,6 @@
 		A66E421B1FB0955D0040CFB0 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				A66E421C1FB095910040CFB0 /* CitySpecificationTests.swift */,
 				A60F5E051FB60BF700678973 /* CityServiceTests.swift */,
 			);
 			path = NetworkLayer;
@@ -1687,7 +1707,7 @@
 			isa = PBXGroup;
 			children = (
 				A66E42361FB183020040CFB0 /* AppHUD.swift */,
-				A62EFD541FB1D9D9004B67D5 /* EmailTextField.swift */,
+				A6CE301C1FBF2416002C8A12 /* AppTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1700,6 +1720,7 @@
 				A62A35421FB88154007870B7 /* FileManagerExtensions.swift */,
 				A62FE1681FBB59FA00ADA488 /* UITextFieldExtentions.swift */,
 				A65C18E31FBC25A900D06751 /* CGRectExtensions.swift */,
+				A6CE301E1FBF2495002C8A12 /* FloatLabelTextFieldExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1711,6 +1732,7 @@
 				A62FE1511FB9975100ADA488 /* Keyboard.swift */,
 				A62FE1531FB9976900ADA488 /* TypedNotifications.swift */,
 				A62FE1551FB9986800ADA488 /* ScreenExtensions.swift */,
+				A6CE30201FBF29F0002C8A12 /* AppTextFieldStrategy.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -2245,6 +2267,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -2253,6 +2276,7 @@
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
@@ -2263,6 +2287,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -2271,6 +2296,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
@@ -2309,6 +2335,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -2317,6 +2344,7 @@
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
@@ -2331,6 +2359,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -2339,6 +2368,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
@@ -2381,6 +2411,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/InputMask/InputMask.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -2389,6 +2420,7 @@
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
@@ -2399,6 +2431,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InputMask.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -2407,6 +2440,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
@@ -2485,6 +2519,7 @@
 				A62A356A1FB8AE38007870B7 /* CitySpec.swift in Sources */,
 				A62A35641FB8AB9F007870B7 /* AppConfiguration.swift in Sources */,
 				A62A35691FB8AD11007870B7 /* Stubs.swift in Sources */,
+				A61DC4711FBF1E080076AA91 /* CitySpecificationSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2506,6 +2541,7 @@
 				A66370BF1FAF83070061AD3C /* JSONAble.swift in Sources */,
 				A66370BC1FAF82930061AD3C /* NetworkError.swift in Sources */,
 				A66E42131FB08AAB0040CFB0 /* InterestSpecification.swift in Sources */,
+				A6CE301D1FBF2416002C8A12 /* AppTextField.swift in Sources */,
 				A60ADCC11FAF713300C358E0 /* APIProvider.swift in Sources */,
 				A66370BA1FAF82400061AD3C /* Mapper.swift in Sources */,
 				A644FAE51FACD8BC0037B240 /* TargetSpecification.swift in Sources */,
@@ -2513,6 +2549,7 @@
 				A66370C71FAF88750061AD3C /* APIProviderErrors.swift in Sources */,
 				99C88CA78EF3FD5D78FA029E /* CityViewInput.swift in Sources */,
 				A6313C301FB396AC003D84DD /* InterestCellModel.swift in Sources */,
+				A6CE30211FBF29F0002C8A12 /* AppTextFieldStrategy.swift in Sources */,
 				AA9BEC982980D46FAE873427 /* CityViewOutput.swift in Sources */,
 				A78464AE0742E45E6908DAF0 /* CityViewController.swift in Sources */,
 				A66370C31FAF84510061AD3C /* Coder.swift in Sources */,
@@ -2535,7 +2572,6 @@
 				235A4EDFBF68AAB9135C13BE /* CityInteractor.swift in Sources */,
 				A644FAF01FACE07C0037B240 /* CityService.swift in Sources */,
 				A6B67C841FB048BF0057A778 /* ModuleTransition.swift in Sources */,
-				A62EFD551FB1D9D9004B67D5 /* EmailTextField.swift in Sources */,
 				EC195948EBF8A5DAFE05BF82 /* CityRouterInput.swift in Sources */,
 				E02A1AE4983431C99D6FDFA6 /* CityRouter.swift in Sources */,
 				BB0AAEE6CBFE54576240C2E7 /* CityConfigurator.swift in Sources */,
@@ -2648,6 +2684,7 @@
 				A62FE15D1FB998D900ADA488 /* BoxType.swift in Sources */,
 				EF6A9A8FCC05A8006A21A20E /* ActivityDetailViewOutput.swift in Sources */,
 				00EA39CA8573CE3090153169 /* ActivityDetailViewController.swift in Sources */,
+				A6CE301F1FBF2495002C8A12 /* FloatLabelTextFieldExtensions.swift in Sources */,
 				8E3FD3E2B18A26F0570B9AD0 /* ActivityDetailModuleInput.swift in Sources */,
 				4E87414589C346313F2D4D7A /* ActivityDetailPresenter.swift in Sources */,
 				0AC878AC36C398A3AB63682D /* ActivityDetailInteractorInput.swift in Sources */,
@@ -2691,7 +2728,6 @@
 				A6F83EA81FB04B920010342F /* ModuleInput.swift in Sources */,
 				A6F83EA21FB04A610010342F /* AddCityConfigurator.swift in Sources */,
 				9718CF55136FEAD58B67262B /* AddCityInteractorTests.swift in Sources */,
-				A66E421D1FB095910040CFB0 /* CitySpecificationTests.swift in Sources */,
 				A6F83EA31FB04A610010342F /* AddCityInitializer.swift in Sources */,
 				A6F83E9E1FB04A5A0010342F /* AddCityInteractorOutput.swift in Sources */,
 				4D431A61D648BE37E779ECD3 /* AddCityPresenterTests.swift in Sources */,

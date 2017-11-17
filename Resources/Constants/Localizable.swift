@@ -57,6 +57,8 @@ enum L10n {
     enum Emailtextfield {
       /// Email
       static let placeholder = L10n.tr("Localizable", "Login.EmailTextField.Placeholder")
+      /// Почта
+      static let title = L10n.tr("Localizable", "Login.EmailTextField.Title")
     }
 
     enum Infolabel {

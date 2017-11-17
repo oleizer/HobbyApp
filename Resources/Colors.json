@@ -2,5 +2,8 @@
 {
     "dark": "#333333",
     "orange": "#FD5739",
-    "lightGray": "#F5F5F5"
+    "lightGray": "#F5F5F5",
+    "grayCC": "#cccccc",
+    "gray77": "#777777",
+
 }

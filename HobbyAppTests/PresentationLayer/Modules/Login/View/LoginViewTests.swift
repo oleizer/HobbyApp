@@ -10,15 +10,46 @@ import XCTest
 @testable import HobbyApp
 
 class LoginViewTests: XCTestCase {
-
+    private var view: LoginViewController?
+    private var output: LoginViewOutputMock?
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        view = LoginViewController()
+        output = LoginViewOutputMock()
+        view?.output = output
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        view = nil
+        output = nil
         super.tearDown()
     }
+    func testSuccessViewDidLoad() {
+        self.view?.viewDidLoad()
+        XCTAssert(self.output?.viewIsReadyWasCalled == true)
+    }
+    
+//    func testLoginAction() {
+//        view?.setEmail(email: "test@test.test")
+//        self.view?.loginAction(self)
+//        XCTAssert(self.output?.loginActionWasCalled == true)
+//    }
+    
+    final class LoginViewOutputMock: LoginViewOutput {
+        var viewIsReadyWasCalled: Bool = false
+        var loginActionWasCalled: Bool = false
+        
+        func setupValidation(forEmailInput emailInput: AnyValidatableControl<String>) {
+            
+        }
+        
+        func login(_ email: String) {
+            loginActionWasCalled = true
+        }
+        
 
+        func viewIsReady() {
+            viewIsReadyWasCalled = true
+        }
+    }
 }

@@ -11,9 +11,9 @@ import UIKit
 class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
     var output: LoginViewOutput!
     // MARK: - IBOutlet
-    @IBOutlet weak var infoLabel: UILabel!
-    @IBOutlet weak var emailTextField: EmailTextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet private weak var infoLabel: UILabel!
+    @IBOutlet private weak var emailTextField: AppTextField!
+    @IBOutlet private weak var loginButton: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     // MARK: - Varibles
 
@@ -41,22 +41,11 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
 
         loginButton.backgroundColor = ColorName.orange.color
         loginButton.setTitle(L10n.Login.Nextbutton.title, for: .normal)
-        
         infoLabel.text = L10n.Login.Infolabel.text
 
-
-        emailTextField.font = FontFamily.SFUIText.medium.font(size: 20)
-        emailTextField.borderStyle = .none
-        emailTextField.layer.masksToBounds = true
-        emailTextField.layer.cornerRadius = 10
-        emailTextField.backgroundColor = ColorName.lightGray.color
-        emailTextField.tintColor = ColorName.dark.color
-        emailTextField.textAlignment = .left
-        emailTextField.contentVerticalAlignment = .center
-        emailTextField.placeholder = L10n.Login.Emailtextfield.placeholder
-        emailTextField.delegate = self
-
+        AppTextFieldStyle(EmailAppTextField()).styleTextField(textField: emailTextField)
     }
+    
     func showMessage(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -72,7 +61,7 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
     // MARK: - Actions
     @IBAction func loginAction(_ sender: Any) {
         view.endEditing(true)
-        output.login(emailTextField.text!)
+        output.login(emailTextField.text ?? "ddd")
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

@@ -14,6 +14,8 @@
 "Login.Navigation.Title" = "Авторизация";
 "Login.NextButton.title" = "Продолжить";
 "Login.EmailTextField.Placeholder" = "Email";
+"Login.EmailTextField.Title" = "Почта";
+
 "Login.InfoLabel.text" = "Для авторизации введите ваш адрес электронной почты на который будет выслан ключ который необходимо ввести на следущем экране";
 
 

@@ -13,10 +13,9 @@ class IntroViewController: UIViewController, IntroViewInput, ViewInput {
     var output: IntroViewOutput!
 
     // MARK: IBOutlet
-    @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet private weak var welcomeLabel: UILabel!
+    @IBOutlet private weak var infoLabel: UILabel!
     @IBOutlet private weak var nextButton: UIButton!
-
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()

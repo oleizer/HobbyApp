@@ -13,11 +13,13 @@ class IntroPresenterTest: XCTestCase {
     private var presenter: IntroPresenter = IntroPresenter()
     private var view: MockViewController = MockViewController()
     private var interactor: MockInteractor = MockInteractor()
-    
+    private var router: MockRouter = MockRouter()
+
     override func setUp() {
         super.setUp()
         presenter = IntroPresenter()
-        presenter.router = MockRouter()
+        router = MockRouter()
+        presenter.router = router
         view = MockViewController()
         presenter.view = view
         interactor = MockInteractor()
@@ -48,6 +50,8 @@ class IntroPresenterTest: XCTestCase {
     }
     
     class MockInteractor: IntroInteractorInput {
+        var loadUserWasCalled: Bool = false
+
         func checkIfLoggedIn() -> Bool {
             let token = AuthToken()
             if token.token != nil {
@@ -56,9 +60,6 @@ class IntroPresenterTest: XCTestCase {
                 return false
             }
         }
-        
-        var loadUserWasCalled: Bool = false
-        
         func loadUser() {
             loadUserWasCalled = true
         }
