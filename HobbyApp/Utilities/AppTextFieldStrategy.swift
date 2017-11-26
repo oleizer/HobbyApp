@@ -15,11 +15,6 @@ final class AppTextFieldStyle {
     private let strategy: AppTextFieldStrategy
     init(_ strategy: AppTextFieldStrategy!) {
         self.strategy = strategy
-//        if let str = strategy {
-//            self.strategy = str
-//        }else{
-//            self.strategy = EmailAppTextField()
-//        }
     }
     func styleTextField(textField: AppTextField) {
         self.strategy.styleTextField(textField: textField)
@@ -36,19 +31,16 @@ final class CommonAppTextField: AppTextFieldStrategy {
         textField.enablesReturnKeyAutomatically = true
     }
 }
-
 final class EmailAppTextField: AppTextFieldStrategy {
     func styleTextField(textField: AppTextField) {
         CommonAppTextField().styleTextField(textField: textField)
         textField.title = L10n.Login.Emailtextfield.title
         textField.placeholder = L10n.Login.Emailtextfield.placeholder
-        
         textField.clearButtonMode = .whileEditing
         textField.keyboardType = .emailAddress
         textField.returnKeyType = .next
         textField.isSecureTextEntry = false
         textField.clearsOnInsertion = false
-        
         textField.placeholderFont = FontFamily.SFUIDisplay.light.font(size: 16)
         textField.placeholderColor = ColorName.grayCC.color
         textField.selectedTitleColor = ColorName.gray77.color
@@ -60,4 +52,27 @@ final class EmailAppTextField: AppTextFieldStrategy {
         textField.selectedLineHeight = 1
     }
 }
+
+final class TokenAppTextField: AppTextFieldStrategy {
+    func styleTextField(textField: AppTextField) {
+        CommonAppTextField().styleTextField(textField: textField)
+        textField.title = L10n.Token.Tokentextfield.title
+        textField.placeholder = L10n.Token.Tokentextfield.placeholder
+        textField.clearButtonMode = .whileEditing
+        textField.keyboardType = .default
+        textField.returnKeyType = .done
+        textField.isSecureTextEntry = false
+        textField.clearsOnInsertion = false
+        textField.placeholderFont = FontFamily.SFUIDisplay.light.font(size: 16)
+        textField.placeholderColor = ColorName.grayCC.color
+        textField.selectedTitleColor = ColorName.gray77.color
+        textField.titleLabel.font = FontFamily.SFUIDisplay.regular.font(size: 12)
+        textField.textColor = ColorName.dark.color
+        textField.lineHeight = 1
+        textField.lineColor = ColorName.grayCC.color
+        textField.selectedLineColor = ColorName.gray77.color
+        textField.selectedLineHeight = 1
+    }
+}
+
 

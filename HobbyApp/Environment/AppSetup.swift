@@ -16,7 +16,6 @@ class AppSetup {
     lazy var isIphoneX: Bool = _isIphoneX()
     lazy var isIpad: Bool = _isIpad()
 
-    lazy var statusBarHeight: CGFloat = _statusBarHeight()
     lazy var bestBottomMargin: CGFloat = _bestBottomMargin()
 
     var imageQuality: CGFloat = 0.8
@@ -39,13 +38,6 @@ private func _isTesting() -> Bool {
 
 private func _isIphoneX() -> Bool {
     return UIScreen.main.bounds.size.height == 812
-}
-
-private func _statusBarHeight() -> CGFloat {
-    if AppSetup.shared.isIphoneX {
-        return 44
-    }
-    return 20
 }
 
 private func _bestBottomMargin() -> CGFloat {

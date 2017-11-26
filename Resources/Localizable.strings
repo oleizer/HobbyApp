@@ -5,6 +5,10 @@
   Created by Олег Лейзер on 20.10.2017.
   Copyright © 2017 Олег Лейзер. All rights reserved.
 */
+
+"Common.NextButton.title" = "Продолжить";
+
+
 "Intro.Welcome.text" = "Добро пожаловать в Тестоваое приложение";
 "Intro.Message.text" = "Для продолжения Вам необходимо авторизироваться. Для этого нажмите кнопку \"Продолжить\"";
 "Intro.Next.title" = "Продолжить";
@@ -12,11 +16,16 @@
 
 
 "Login.Navigation.Title" = "Авторизация";
-"Login.NextButton.title" = "Продолжить";
 "Login.EmailTextField.Placeholder" = "Email";
 "Login.EmailTextField.Title" = "Почта";
-
 "Login.InfoLabel.text" = "Для авторизации введите ваш адрес электронной почты на который будет выслан ключ который необходимо ввести на следущем экране";
+
+"Token.Navigation.Title" = "Подтверждение";
+"Token.TokenTextField.Placeholder" = "Токен";
+"Token.TokenTextField.Title" = "Токен";
+"Token.InfoLabel.text" = "Для авторизации введите ваш адрес электронной почты на который будет выслан ключ который необходимо ввести на следущем экране";
+
+
 
 
 "City.Navigation.Title" = "Выбор города";

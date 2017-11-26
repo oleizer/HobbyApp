@@ -40,7 +40,7 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
         navigationItem.title = L10n.Login.Navigation.title
 
         loginButton.backgroundColor = ColorName.orange.color
-        loginButton.setTitle(L10n.Login.Nextbutton.title, for: .normal)
+        loginButton.setTitle(L10n.Common.Nextbutton.title, for: .normal)
         infoLabel.text = L10n.Login.Infolabel.text
 
         AppTextFieldStyle(EmailAppTextField()).styleTextField(textField: emailTextField)
@@ -61,7 +61,7 @@ class LoginViewController: UIViewController, LoginViewInput, KeyboardHandler {
     // MARK: - Actions
     @IBAction func loginAction(_ sender: Any) {
         view.endEditing(true)
-        output.login(emailTextField.text ?? "ddd")
+        output.login(emailTextField.text!)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

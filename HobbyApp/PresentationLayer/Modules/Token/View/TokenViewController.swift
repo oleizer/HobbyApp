@@ -15,7 +15,7 @@ class TokenViewController: UIViewController, TokenViewInput, ModuleTransitionDes
     var moduleInput: ModuleInput!
 
     // MARK: IBOutlet
-    @IBOutlet weak var tokenTextField: UITextField!
+    @IBOutlet weak var tokenTextField: AppTextField!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
 
@@ -29,7 +29,9 @@ class TokenViewController: UIViewController, TokenViewInput, ModuleTransitionDes
 
     // MARK: TokenViewInput
     func setupInitialState() {
+        AppTextFieldStyle(TokenAppTextField()).styleTextField(textField: tokenTextField)
         self.navigationItem.title = output.showEmail()
+        
     }
 
     @IBAction func saveButtonTouched(_ sender: Any) {

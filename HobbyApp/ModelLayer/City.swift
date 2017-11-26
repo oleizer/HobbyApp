@@ -36,6 +36,7 @@ final class City: JSONAble {
         encoder.encodeObject(name, forKey: "name")
         super.encode(with: coder)
     }
+    
     override class func fromJSON(_ data: [String: Any]) -> JSONAble {
         let json = JSON(data)
         let id = json["Id"].intValue

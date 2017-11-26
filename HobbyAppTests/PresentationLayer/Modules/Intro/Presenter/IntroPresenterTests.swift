@@ -27,6 +27,8 @@ class IntroPresenterTest: XCTestCase {
     }
 
     override func tearDown() {
+        presenter = nil
+        router = nil
         super.tearDown()
     }
 

@@ -32,17 +32,25 @@ final class AppTextField: FloatLabelTextField {
         let rect = bounds.shrink(left: 15).inset(top: -25, sides: 15, bottom: 0)
         return rect
     }
-    
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = bounds.shrink(left: 15).inset(top: 15, sides: 15, bottom: 0)
+        var rect = bounds.shrink(left: 15).inset(top: 15, sides: 15, bottom: 0)
+        if let leftView = leftView {
+            rect = rect.shrink(right: leftView.frame.size.width + 6)
+        }
         return rect
     }
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = bounds.shrink(left: 15).inset(top: 15, left: 15, bottom: 0, right: 10)
+        var rect = bounds.shrink(left: 15).inset(top: 15, left: 15, bottom: 0, right: 10)
+        if let leftView = leftView {
+            rect = rect.shrink(right: leftView.frame.size.width + 6)
+        }
         return rect
     }
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        let rect = bounds.shrink(left: 15).inset(top: 15, left: 15, bottom: -10, right: 10).offsetBy(dx: -30, dy: 0)
+        var rect = bounds.shrink(left: 15).inset(top: 15, left: 15, bottom: -10, right: 10).offsetBy(dx: -30, dy: 0)
+        if let leftView = leftView {
+            rect = rect.shrink(right: leftView.frame.size.width + 6)
+        }
         return rect
     }
     override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
@@ -56,7 +64,6 @@ final class AppTextField: FloatLabelTextField {
         rect.origin.x -= 10
         return rect
     }
-    
     override func becomeFirstResponder() -> Bool {
         let value = super.becomeFirstResponder()
         firstResponderDidChange?(true)

@@ -11,6 +11,8 @@ end
 def common_pods
     pod 'Crashlytics'
     pod 'AlamofireImage'
+pod 'Moya-ModelMapper', '~> 6.0'
+	pod 'ObjectMapper'
     pod 'PINCache', '3.0.1-beta.6'
     pod 'PINRemoteImage', '3.0.0-beta.13'
     pod 'Validator'
@@ -18,7 +20,7 @@ def common_pods
 	pod 'InputMask'
     pod 'Fabric'
     pod 'PromiseKit'
-    pod 'Moya'
+pod 'Moya', '~> 10.0'
     pod 'SnapKit'
     pod 'SwiftGen'
     pod 'MBProgressHUD'

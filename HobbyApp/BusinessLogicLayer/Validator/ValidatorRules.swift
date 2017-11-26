@@ -44,7 +44,7 @@ struct ValidationRuleEmail: ValidationRule {
     }
     func validate(input: String?) -> Bool {
         guard let input = input, !input.isEmpty else { return false }
-        return NSPredicate(format: "SELF MATCHES %@", EmailValidationPattern.standard.pattern).evaluate(with: input)
+        return NSPredicate(format: "SELF MATCHES %@", EmailValidationPattern.simple.pattern).evaluate(with: input)
 
     }
 }

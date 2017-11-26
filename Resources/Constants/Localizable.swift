@@ -29,6 +29,14 @@ enum L10n {
     }
   }
 
+  enum Common {
+
+    enum Nextbutton {
+      /// Продолжить
+      static let title = L10n.tr("Localizable", "Common.NextButton.title")
+    }
+  }
+
   enum Error {
     /// Неизвестная ошибка
     static let unknownError = L10n.tr("Localizable", "Error.UnknownError")
@@ -70,10 +78,25 @@ enum L10n {
       /// Авторизация
       static let title = L10n.tr("Localizable", "Login.Navigation.Title")
     }
+  }
 
-    enum Nextbutton {
-      /// Продолжить
-      static let title = L10n.tr("Localizable", "Login.NextButton.title")
+  enum Token {
+
+    enum Infolabel {
+      /// Для авторизации введите ваш адрес электронной почты на который будет выслан ключ который необходимо ввести на следущем экране
+      static let text = L10n.tr("Localizable", "Token.InfoLabel.text")
+    }
+
+    enum Navigation {
+      /// Подтверждение
+      static let title = L10n.tr("Localizable", "Token.Navigation.Title")
+    }
+
+    enum Tokentextfield {
+      /// Токен
+      static let placeholder = L10n.tr("Localizable", "Token.TokenTextField.Placeholder")
+      /// Токен
+      static let title = L10n.tr("Localizable", "Token.TokenTextField.Title")
     }
   }
 }
